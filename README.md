@@ -30,19 +30,18 @@ The main components of the project are:
 .
 ├── README.md                     # This README file
 ├── code
-│   ├── network_construction.py   # Code for extracting fALFF, computing connectivity, and building networks.
-│   ├── network_of_networks.py    # Code for aggregating 200-ROI networks into 7×7 network-of-networks.
-│   ├── null_networks.py          # Code for generating null networks (shuffling and random rewiring).
-│   ├── stats_and_visualization.py# Code for outlier detection, statistical tests, and plotting.
+│   ├── NetworkCreator.py   # Code for extracting fALFF, computing connectivity, and building networks.
+│   ├── NetworkXNetworks    # Code for aggregating 200-ROI networks into 7×7 network-of-networks.
+│   ├── NullNetworkCreator.py          # Code for generating null networks (shuffling and random rewiring).
+│   ├── GroupLevelAnalysis # Code for outlier detection, statistical tests, and plotting.
 │   └── ml_classification.py      # (Optional) Machine learning classification using logistic regression and/or GNNs.
 ├── data
 │   ├── Atlas
 │   │   ├── CC200.nii             # Craddock 200 atlas.
 │   │   └── Yeo7_1mm_reoriented.nii.gz  # Yeo 7 network atlas (downloaded manually if nilearn fails).
-│   ├── ASDNetworks               # Contains subject-specific GraphML files for ASD group.
-│   └── ControlNetworks           # Contains subject-specific GraphML files for Control group.
+│   ├── ASD               # Contains subject-specific GraphML files for ASD group.
+│   └── Control           # Contains subject-specific GraphML files for Control group.
 ├── results
-│   ├── Network_of_Networks       # Aggregated 7-node network-of-networks (GraphML outputs).
 │   ├── stats                     # CSV files with statistical test results.
 │   └── plots                     # Generated figures and boxplots.
 └── requirements.txt              # List of required Python packages.
@@ -54,18 +53,6 @@ Ensure you have Python 3.7 or later installed. Then install the required package
 
 ```bash
 pip install -r requirements.txt
-```
-
-An example `requirements.txt` might include:
-```
-numpy
-scipy
-pandas
-matplotlib
-seaborn
-networkx
-nibabel
-scikit-learn
 ```
 
 *Note:* If you plan to experiment with graph neural networks, you might also install [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/).
