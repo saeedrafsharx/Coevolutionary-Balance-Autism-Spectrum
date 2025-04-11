@@ -12,7 +12,7 @@ The main components of the project are:
 - **Network-of-Networks Analysis:**  
   - Aggregation of ROI-level networks into a 7×7 network-of-networks (each node representing one of the Yeo networks).
   - Calculation of coevolutionary energy using the formula:
-    \[E = - \sum_{(u,v)\in \text{edges}} \text{fALFF}[u] \times \text{weight}_{u,v} \times \text{fALFF}[v]\]
+    \ $E = - \sum_{(u,v)\in \text{edges}} \text{fALFF}[u] \times \text{weight}_{u,v} \times \text{fALFF}[v]$ \
 - **Null Network Generation:**  
   - Generation of null networks via shuffling node fALFF values.
   - Generation of null networks via random edge rewiring.
