@@ -9,8 +9,8 @@ The main components of the project are:
   - Extraction of fALFF values from preprocessed 3D NIfTI images.
   - Computation of functional connectivity from time series data.
   - Creation of subject-specific brain networks saved in GraphML format.
-- **Network-of-Networks Analysis:**  
-  - Aggregation of ROI-level networks into a 7×7 network-of-networks (each node representing one of the Yeo networks).
+- **Network Analysis:**  
+  - Aggregation of 200 ROIs into 7 networks (each group of nodes representing one of the Yeo7 networks).
   - Calculation of coevolutionary energy using the formula:
      $E = - \sum_{(u,v)\in \text{edges}} \text{fALFF}[u] \times \text{weight}_{u,v} \times \text{fALFF}[v]$ 
 - **Null Network Generation:**  
