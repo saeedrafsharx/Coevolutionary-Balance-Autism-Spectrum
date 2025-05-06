@@ -1,114 +1,174 @@
+Thought for a couple of seconds
+
+
+```markdown
 # Brain Network Analysis Using Coevolutionary Balance Theory
 
-This repository contains code for constructing brain networks from preprocessed fMRI data and analyzing them using coevolutionary balance theory. In our framework, nodes represent regional fALFF values and edges represent functional connectivity (correlation) between brain regions. We employ standard neuroimaging atlases (e.g., Craddock 200 for ROIs and Yeo 7 or Yeo 17 for large-scale networks) and a consistent preprocessing pipeline (e.g., CPAC with "filt_global" strategy) to generate subject-specific networks. Our analyses include the computation of an energy measure based on a two-body Hamiltonian derived from coevolutionary balance theory, the generation of null networks (using both shuffling and random rewiring methods), and statistical group comparisons (e.g., ASD vs. Control) with robust outlier handling.
+This repository contains code for constructing brain networks from preprocessed fMRI data and analyzing them using coevolutionary balance theory. In our framework, nodes represent regional fALFF values and edges represent functional connectivity (correlation) between brain regions. We employ standard neuroimaging atlases (e.g., Craddock 200 for ROIs and Yeo 7 for large-scale networks) and a consistent preprocessing pipeline (e.g., CPAC with “filt_global” strategy) to generate subject-specific networks. Our analyses include the computation of an energy measure based on a two-body Hamiltonian derived from coevolutionary balance theory, the generation of null networks (using both shuffling and random rewiring methods), and statistical group comparisons (e.g., ASD vs. Control) with robust outlier handling.
 
-## Overview
-
-The main components of the project are:
-- **Network Construction:**  
-  - Extraction of fALFF values from preprocessed 3D NIfTI images.
-  - Computation of functional connectivity from time series data.
-  - Creation of subject-specific brain networks saved in GraphML format.
-- **Network Analysis:**  
-  - Aggregation of 200 ROIs into 7 networks (each group of nodes representing one of the Yeo7 networks).
-  - Calculation of coevolutionary energy using the formula:
-     $E = - \sum_{(u,v)\in \text{edges}} \text{fALFF}[u] \times \text{weight}_{u,v} \times \text{fALFF}[v]$ 
-- **Null Network Generation:**  
-  - Generation of null networks via shuffling node fALFF values of subject networks whilst keeping the network structure.
-- **Statistical Analysis:**  
-  - Outlier detection using an interquartile range (IQR)–based method.
-  - Normality testing (Shapiro–Wilk), equality of variances (Levene), and group-level comparisons using t-tests and Wilcoxon rank-sum tests.
-- **Machine Learning:**  
-  - Classification of ASD versus Control using multiple methods and algorithms comparatively.
+---
 
 ## Repository Structure
 
 ```
+
 .
-├── README.md                     # This README file
-├── code
-│   ├── NetworkCreator.py   # Code for extracting fALFF, computing connectivity, and building networks.
-│   ├── NetworkXNetworks    # Code for aggregating 200-ROI networks into 7×7 network-of-networks.
-│   ├── NullNetworkCreator.py          # Code for generating null networks (shuffling and random rewiring).
-│   ├── GroupLevelAnalysis # Code for outlier detection, statistical tests, and plotting.
-│   └── ml_classification.py      # Machine learning classification using logistic regression and/or GNNs.
+├── atlas
+│   ├── CC200.nii                       # Craddock 200 ROI atlas
+│   ├── CC200\_ROI\_labels.csv           # ROI label lookup for CC200
+│   ├── Yeo2011\_7Networks\_MNI152\_…     # Yeo 7 large-scale network atlas
+│   └── Yeo7\_1mm\_reoriented.nii.gz      # Reoriented Yeo 7 atlas for nilearn
+│
+├── codes
+│   ├── Machine-Learning
+│   │   ├── FeatureExtraction.py        # extract network-of-networks features
+│   │   ├── KNNClassifier.py
+│   │   ├── SVMClassifier.py
+│   │   └── XGBoostClassifier.py
+│   │
+│   └── Network-Creation-Model-Validation
+│       ├── NetworkCreator.py           # extract fALFF, compute connectivity, save GraphML
+│       └── ModelValidation.py          # null-model generation & energy computation
+│
+├── Sub-network-Analysis
+│   ├── Regional-Energy-Analysis.py     # compute coevolutionary energy per Yeo subnet
+│   └── Sub-Network-Connectivity-Tool.py # connectivity metrics between Yeo networks
+│
+├── Whole-Brain-Network-Analysis
+│   ├── NetworkEnergyComputer.py        # aggregate ROI energies to whole-brain measure
+│   └── GroupLevelComparison.py         # outlier removal + stats (Shapiro, Levene, t-test, Wilcoxon)
+│
 ├── data
-│   ├── Atlas
-│   │   ├── CC200.nii             # Craddock 200 atlas.
-│   │   └── Yeo7_1mm_reoriented.nii.gz  # Yeo 7 network atlas (downloaded manually if nilearn fails).
-│   ├── ASD               # Contains subject-specific GraphML files for ASD group.
-│   └── Control           # Contains subject-specific GraphML files for Control group.
+│   ├── ASD                             # subject GraphMLs for ASD group
+│   └── Control                         # subject GraphMLs for Control group
+│
 ├── results
-│   ├── stats                     # CSV files with statistical test results.
-│   └── plots                     # Generated figures and boxplots.
-└── requirements.txt              # List of required Python packages.
-```
+│   ├── stats                           # CSV summaries of statistical tests
+│   └── plots                           # boxplots, histograms, etc.
+│
+├── LICENSE                             # MIT License
+└── README.md                           # this file
+
+````
+
+---
 
 ## Installation
 
-Ensure you have Python 3.7 or later installed. Then install the required packages using:
+1. **Python**  
+   Make sure you have **Python 3.7+** installed.
 
-```bash
-pip install -r requirements.txt
-```
+2. **Dependencies**  
+   ```bash
+   pip install -r requirements.txt
+````
 
-*Note:* If you plan to experiment with graph neural networks, you might also install [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/).
+> *If you plan to use graph neural nets, also install [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/).*
+
+---
 
 ## Usage
 
-1. **Network Construction:**  
-   Run `python code/network_construction.py` to extract fALFF values, compute functional connectivity, and create subject-specific networks (GraphML).
+### 1. Network Creation & Null Models
 
-2. **Aggregation to Network-of-Networks:**  
-   Run `python code/network_of_networks.py` to aggregate the 200-ROI networks into 7×7 networks based on the Yeo atlas.
+```bash
+# extract fALFF, compute connectivity, save per-subject GraphMLs
+python codes/Network-Creation-Model-Validation/NetworkCreator.py
 
-3. **Null Network Generation & Statistical Analysis:**  
-   Run `python code/null_networks.py` or `python code/stats_and_visualization.py` to generate null networks (via shuffling or random rewiring), compute coevolutionary energy, handle outliers, and perform group comparisons (Shapiro–Wilk, Levene, t-test, Wilcoxon rank-sum). Results and plots will be saved in the `results` folder.
+# generate null networks and compute coevolutionary energy
+python codes/Network-Creation-Model-Validation/ModelValidation.py
+```
 
-4. **Machine Learning Classification:**  
-   Run `python code/ml_classification.py` to use logistic regression (or a GNN-based approach) for classifying ASD vs. Control based on features extracted from the 7×7 network-of-networks.
+### 2. Sub-network (Yeo) Analysis
+
+```bash
+# compute energy within each Yeo-7 subnetwork
+python Sub-network-Analysis/Regional-Energy-Analysis.py
+
+# compute connectivity-based metrics between subnetworks
+python Sub-network-Analysis/Sub-Network-Connectivity-Tool.py
+```
+
+### 3. Whole-Brain Network Analysis
+
+```bash
+# collapse ROI energies into a single brain-wide energy measure
+python Whole-Brain-Network-Analysis/NetworkEnergyComputer.py
+
+# perform outlier detection & group-level statistics
+python Whole-Brain-Network-Analysis/GroupLevelComparison.py
+```
+
+### 4. Machine-Learning Classification
+
+```bash
+# extract graph-theoretic features or use raw energy metrics
+python codes/Machine-Learning/FeatureExtraction.py
+
+# train & evaluate classifiers
+python codes/Machine-Learning/KNNClassifier.py
+python codes/Machine-Learning/SVMClassifier.py
+python codes/Machine-Learning/XGBoostClassifier.py
+```
+
+---
 
 ## Data Requirements
 
-- **fALFF Images and Time Series:** Preprocessed neuroimaging data (fALFF maps and time series) organized by subject. Ensure that each subject’s fALFF and time series files are correctly matched by subject ID.
-- **Atlases:**  
-  - Craddock 200 atlas (for ROI definition).
-  - Yeo 7 (or Yeo 17) atlas. If using Yeo and Nilearn’s fetch function fails, download manually from the official website or GitHub.
+* **Preprocessed fMRI**
+
+  * fALFF maps and time-series, organized by subject ID.
+* **Atlases**
+
+  * **Craddock 200** (CC200.nii + CC200\_ROI\_labels.csv)
+  * **Yeo 7** (if `nilearn.fetch_atlas_yeo` fails, use the provided files in `atlas/`)
+
+---
 
 ## Theoretical Background
 
-- **Coevolutionary Balance Theory:**  
-  The energy is computed using the 2-body Hamiltonian where node values (fALFF) and edge values (functional connectivity) interact. This energy measure provides insight into the balance of functional integration in the brain and how it differs between ASD and Control groups.
-  
-- **Null Network Generation:**  
-  Two approaches are implemented:
-  1. **Shuffling fALFF values:** Maintains the edge structure while randomizing node attributes.
-  2. **Random rewiring of edges:** Alters the network topology while preserving overall graph properties.
-  
-- **Outlier Handling:**  
-  Extreme energy values are detected using an IQR-based method. Outlier subjects (those with energy values beyond the 1st and 99th percentiles) are excluded from group-level comparisons to avoid undue influence.
+* **Coevolutionary Balance Theory**
 
-## Outlier Handling
+  * Energy:
 
-Outliers in energy values can skew group comparisons. The code implements an IQR-based method to identify and remove outlier subjects (from both ASD and Control groups) to ensure that the final statistical tests reflect robust group differences.
+    $$
+      E \;=\; - \sum_{(u,v)\in E} \bigl(\mathrm{fALFF}[u]\times w_{uv}\times \mathrm{fALFF}[v]\bigr)
+    $$
+  * Provides a measure of functional balance across regions or networks.
+
+* **Null Models**
+
+  1. **Shuffle fALFF:** randomize node attributes only.
+  2. **Rewire Edges:** randomize topology but preserve degree distribution.
+
+* **Statistics**
+
+  * Outliers detected via IQR (exclude below 1st or above 99th percentile).
+  * Normality (Shapiro–Wilk), variance equality (Levene), then t-test / Wilcoxon.
+
+---
 
 ## References
 
-- Zang, Y. et al. (2007). *Altered baseline brain activity in children with ADHD revealed by resting-state fMRI*. Brain Research Bulletin.
-- Zou, Q. et al. (2008). *An improved approach to detection of amplitude of low-frequency fluctuation (ALFF) for resting-state fMRI: Fractional ALFF*. Journal of Neuroscience Methods.
-- Kargaran, A., & Jafari, G. R. (2021). *Heider and coevolutionary balance: From discrete to continuous phase transition*. Physical Review E.
-- Saberi et al. (Year). *[Title]*. [Journal reference] (example reference for the null network approach).
-- Kargaran, A. & Jafari, G. R. Heider and coevolutionary balance: From discrete to continuous phase transition. Phys. Rev. E 103, 052302, DOI: https://doi.org/10.1103/PhysRevE.103.052302 (2021).
-- Di Martino, A. et al. The autism brain imaging data exchange: Towards a large-scale evaluation of the intrinsic brain architecture in autism. Mol. Psychiatry 19, 659–667, DOI: 10.1038/mp.2013.78 (2014).
-- Yeo, B. T. T. et al. The organization of the human cerebral cortex estimated by intrinsic functional connectivity. J. Neurophysiol. 106, 1125–1165, DOI: 10.1152/jn.00338.2011 (2011).
-- Craddock, C. R., James, G. A., Holtzheimer, P. E., Hu, X. P. & Mayberg, H. S. A whole brain fmri atlas generated via spatially constrained spectral clustering. Hum. Brain Mapp. 33, 1914–1928, DOI: 10.1002/hbm.21333 (2012).
-- Craddock, C. R. et al. Towards automated analysis of connectomes: The configurable pipeline for the analysis of connectomes (c-pac). Front. Neuroinformatics 7, 42, DOI: 10.3389/fninf.2013.00042 (2013).
-- Additional literature on structural and coevolutionary balance theory.
+1. Zang Y. et al. *Altered baseline brain activity in children with ADHD…* Brain Res. Bull., 2007.
+2. Zou Q. et al. *An improved ALFF approach for resting-state fMRI…* J. Neurosci. Methods, 2008.
+3. Kargaran A. & Jafari G. R. *Heider and coevolutionary balance…* Phys. Rev. E 103, 052302 (2021).
+4. Di Martino A. et al. *ABIDE: large-scale evaluation of intrinsic brain architecture in autism.* Mol. Psychiatry 19, 659–667 (2014).
+5. Yeo B. T. T. et al. *Organization of the human cerebral cortex by intrinsic functional connectivity.* J. Neurophysiol. 106, 1125–1165 (2011).
+6. Craddock C. R. et al. *A whole-brain fMRI atlas via spatially constrained spectral clustering.* Hum. Brain Mapp. 33, 1914–1928 (2012).
+7. Craddock C. R. et al. *The configurable pipeline for the analysis of connectomes (C-PAC).* Front. Neuroinformatics 7, 42 (2013).
+
+---
 
 ## Contributing
 
-Contributions, bug reports, and feature requests are welcome! Please open an issue or submit a pull request to discuss any changes.
+Bug reports, feature requests and PRs are welcome! Please open an issue or pull request.
+
+---
 
 ## License
 
-This project is licensed under the MIT License.
+This project is released under the **MIT License**.
+
+```
+```
