@@ -1,17 +1,3 @@
-**Clarifying markdown issue**
-
-It sounds like the user is having trouble copying part of the content, possibly a markdown code block. They might be referring to a section with special characters like ellipses or formatting issues with the code block itself (e.g., triple backticks). The user probably wants the entire content in a more copy-friendly format, either plain markdown or as text without the fancier formatting. I’ll need to check how to present it in a way that avoids these copying issues.
-
-**Clarifying markdown format**
-
-It seems like the user is having trouble copying part of the content, likely with a directory structure in a code block. They may be experiencing issues with special characters or non-ASCII elements being hard to copy. To make it easier, I could provide the structure as plain text in a bullet list, ensuring it’s simple ASCII without fancy symbols. Alternatively, I could drop the triple backticks and make the entire README section easier to copy, possibly breaking it into smaller parts.
-
-
-Thought for 8 seconds
-
-
-Here’s the full **README.md** in plain Markdown—no fancy characters—so you can copy the whole thing easily:
-
 # Brain Network Analysis Using Coevolutionary Balance Theory
 
 This repository contains code for constructing brain networks from preprocessed fMRI data and analyzing them using coevolutionary balance theory. In our framework, nodes represent regional fALFF values and edges represent functional connectivity (correlation) between brain regions. We employ standard neuroimaging atlases (e.g., Craddock 200 for ROIs and Yeo 7 for large-scale networks) and a consistent preprocessing pipeline (e.g., CPAC with “filt\_global” strategy) to generate subject-specific networks. Our analyses include the computation of an energy measure based on a two-body Hamiltonian derived from coevolutionary balance theory, the generation of null networks (using both shuffling and random rewiring methods), and statistical group comparisons (e.g., ASD vs. Control) with robust outlier handling.
