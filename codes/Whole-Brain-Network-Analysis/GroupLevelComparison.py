@@ -5,7 +5,6 @@ import networkx as nx
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from nilearn.datasets import fetch_atlas_yeo_2011
 from scipy.stats import shapiro, levene, ttest_ind, ranksums
 
 ###############################################################################
