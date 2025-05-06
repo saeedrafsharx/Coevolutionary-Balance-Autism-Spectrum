@@ -100,13 +100,13 @@ def parse_subject_id(fname):
 ###############################################################################
 def main():
     # (A) atlas paths
-    cc200_file = 'address-to-cc200-atlas'
-    yeo7_file  = 'address-to-yeo7-atlas'
+    cc200_file = 'directory-to-cc200-atlas'
+    yeo7_file  = 'directory-to-yeo7-atlas'
     roi_to_net = build_roi_to_network_map(cc200_file, yeo7_file)
 
     # (B) GraphML directories
-    asd_dir   = r"D:\Project_001\NETWORK_FINAL\ASDNetworks\Full"
-    ctrl_dir  = r"D:\Project_001\NETWORK_FINAL\ControlNetworks\Full"
+    asd_dir   = 'directory-to-asd-networks'
+    ctrl_dir  = 'directory-to-control-networks'
     asd_files  = glob.glob(os.path.join(asd_dir, "*.graphml"))
     ctrl_files = glob.glob(os.path.join(ctrl_dir, "*.graphml"))
 
