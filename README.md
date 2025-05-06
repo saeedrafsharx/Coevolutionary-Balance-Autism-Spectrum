@@ -6,42 +6,44 @@ This repository contains code for constructing brain networks from preprocessed 
 
 ## Repository Structure
 
+```text
+.
 ├── atlas
-│ ├── CC200.nii # Craddock 200 ROI atlas
-│ ├── CC200_ROI_labels.csv # ROI label lookup for CC200
-│ ├── Yeo2011_7Networks_MNI152_… # Yeo 7 large-scale network atlas
-│ └── Yeo7_1mm_reoriented.nii.gz # Reoriented Yeo 7 atlas for nilearn
+│   ├── CC200.nii                       # Craddock 200 ROI atlas
+│   ├── CC200_ROI_labels.csv           # ROI label lookup for CC200
+│   ├── Yeo2011_7Networks_MNI152_…     # Yeo 7 large-scale network atlas
+│   └── Yeo7_1mm_reoriented.nii.gz      # Reoriented Yeo 7 atlas for nilearn
 │
 ├── codes
-│ ├── Machine-Learning
-│ │ ├── FeatureExtraction.py # extract network-of-networks features
-│ │ ├── KNNClassifier.py
-│ │ ├── SVMClassifier.py
-│ │ └── XGBoostClassifier.py
-│ │
-│ └── Network-Creation-Model-Validation
-│ ├── NetworkCreator.py # extract fALFF, compute connectivity, save GraphML
-│ └── ModelValidation.py # null-model generation & energy computation
+│   ├── Machine-Learning
+│   │   ├── FeatureExtraction.py        # extract network-of-networks features
+│   │   ├── KNNClassifier.py
+│   │   ├── SVMClassifier.py
+│   │   └── XGBoostClassifier.py
+│   │
+│   └── Network-Creation-Model-Validation
+│       ├── NetworkCreator.py           # extract fALFF, compute connectivity, save GraphML
+│       └── ModelValidation.py          # null-model generation & energy computation
 │
 ├── Sub-network-Analysis
-│ ├── Regional-Energy-Analysis.py # compute coevolutionary energy per Yeo subnet
-│ └── Sub-Network-Connectivity-Tool.py # connectivity metrics between Yeo networks
+│   ├── Regional-Energy-Analysis.py     # compute coevolutionary energy per Yeo subnet
+│   └── Sub-Network-Connectivity-Tool.py # connectivity metrics between Yeo networks
 │
 ├── Whole-Brain-Network-Analysis
-│ ├── NetworkEnergyComputer.py # aggregate ROI energies to whole-brain measure
-│ └── GroupLevelComparison.py # outlier removal + stats (Shapiro, Levene, t-test, Wilcoxon)
+│   ├── NetworkEnergyComputer.py        # aggregate ROI energies to whole-brain measure
+│   └── GroupLevelComparison.py         # outlier removal + stats (Shapiro, Levene, t-test, Wilcoxon)
 │
 ├── data
-│ ├── ASD # subject GraphMLs for ASD group
-│ └── Control # subject GraphMLs for Control group
+│   ├── ASD                             # subject GraphMLs for ASD group
+│   └── Control                         # subject GraphMLs for Control group
 │
 ├── results
-│ ├── stats # CSV summaries of statistical tests
-│ └── plots # boxplots, histograms, etc.
+│   ├── stats                           # CSV summaries of statistical tests
+│   └── plots                           # boxplots, histograms, etc.
 │
-├── LICENSE # MIT License
-└── README.md # this file
----
+├── LICENSE                             # MIT License
+└── README.md                           # this file
+```
 
 ## Installation
 
