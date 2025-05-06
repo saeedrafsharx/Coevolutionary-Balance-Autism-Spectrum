@@ -1,69 +1,83 @@
-Thought for a couple of seconds
+**Clarifying markdown issue**
+
+It sounds like the user is having trouble copying part of the content, possibly a markdown code block. They might be referring to a section with special characters like ellipses or formatting issues with the code block itself (e.g., triple backticks). The user probably wants the entire content in a more copy-friendly format, either plain markdown or as text without the fancier formatting. I’ll need to check how to present it in a way that avoids these copying issues.
+
+**Clarifying markdown format**
+
+It seems like the user is having trouble copying part of the content, likely with a directory structure in a code block. They may be experiencing issues with special characters or non-ASCII elements being hard to copy. To make it easier, I could provide the structure as plain text in a bullet list, ensuring it’s simple ASCII without fancy symbols. Alternatively, I could drop the triple backticks and make the entire README section easier to copy, possibly breaking it into smaller parts.
 
 
-```markdown
+Thought for 8 seconds
+
+
+Here’s the full **README.md** in plain Markdown—no fancy characters—so you can copy the whole thing easily:
+
 # Brain Network Analysis Using Coevolutionary Balance Theory
 
-This repository contains code for constructing brain networks from preprocessed fMRI data and analyzing them using coevolutionary balance theory. In our framework, nodes represent regional fALFF values and edges represent functional connectivity (correlation) between brain regions. We employ standard neuroimaging atlases (e.g., Craddock 200 for ROIs and Yeo 7 for large-scale networks) and a consistent preprocessing pipeline (e.g., CPAC with “filt_global” strategy) to generate subject-specific networks. Our analyses include the computation of an energy measure based on a two-body Hamiltonian derived from coevolutionary balance theory, the generation of null networks (using both shuffling and random rewiring methods), and statistical group comparisons (e.g., ASD vs. Control) with robust outlier handling.
+This repository contains code for constructing brain networks from preprocessed fMRI data and analyzing them using coevolutionary balance theory. In our framework, nodes represent regional fALFF values and edges represent functional connectivity (correlation) between brain regions. We employ standard neuroimaging atlases (e.g., Craddock 200 for ROIs and Yeo 7 for large-scale networks) and a consistent preprocessing pipeline (e.g., CPAC with “filt\_global” strategy) to generate subject-specific networks. Our analyses include the computation of an energy measure based on a two-body Hamiltonian derived from coevolutionary balance theory, the generation of null networks (using both shuffling and random rewiring methods), and statistical group comparisons (e.g., ASD vs. Control) with robust outlier handling.
 
 ---
 
 ## Repository Structure
 
-```
+* **atlas**
 
-.
-├── atlas
-│   ├── CC200.nii                       # Craddock 200 ROI atlas
-│   ├── CC200\_ROI\_labels.csv           # ROI label lookup for CC200
-│   ├── Yeo2011\_7Networks\_MNI152\_…     # Yeo 7 large-scale network atlas
-│   └── Yeo7\_1mm\_reoriented.nii.gz      # Reoriented Yeo 7 atlas for nilearn
-│
-├── codes
-│   ├── Machine-Learning
-│   │   ├── FeatureExtraction.py        # extract network-of-networks features
-│   │   ├── KNNClassifier.py
-│   │   ├── SVMClassifier.py
-│   │   └── XGBoostClassifier.py
-│   │
-│   └── Network-Creation-Model-Validation
-│       ├── NetworkCreator.py           # extract fALFF, compute connectivity, save GraphML
-│       └── ModelValidation.py          # null-model generation & energy computation
-│
-├── Sub-network-Analysis
-│   ├── Regional-Energy-Analysis.py     # compute coevolutionary energy per Yeo subnet
-│   └── Sub-Network-Connectivity-Tool.py # connectivity metrics between Yeo networks
-│
-├── Whole-Brain-Network-Analysis
-│   ├── NetworkEnergyComputer.py        # aggregate ROI energies to whole-brain measure
-│   └── GroupLevelComparison.py         # outlier removal + stats (Shapiro, Levene, t-test, Wilcoxon)
-│
-├── data
-│   ├── ASD                             # subject GraphMLs for ASD group
-│   └── Control                         # subject GraphMLs for Control group
-│
-├── results
-│   ├── stats                           # CSV summaries of statistical tests
-│   └── plots                           # boxplots, histograms, etc.
-│
-├── LICENSE                             # MIT License
-└── README.md                           # this file
+  * `CC200.nii`
+  * `CC200_ROI_labels.csv`
+  * `Yeo2011_7Networks_MNI152_FSL.nii.gz`
+  * `Yeo7_1mm_reoriented.nii.gz`
 
-````
+* **codes**
+
+  * **Machine-Learning**
+
+    * `FeatureExtraction.py`
+    * `KNNClassifier.py`
+    * `SVMClassifier.py`
+    * `XGBoostClassifier.py`
+  * **Network-Creation-Model-Validation**
+
+    * `NetworkCreator.py`
+    * `ModelValidation.py`
+
+* **Sub-network-Analysis**
+
+  * `Regional-Energy-Analysis.py`
+  * `Sub-Network-Connectivity-Tool.py`
+
+* **Whole-Brain-Network-Analysis**
+
+  * `NetworkEnergyComputer.py`
+  * `GroupLevelComparison.py`
+
+* **data**
+
+  * **ASD**
+  * **Control**
+
+* **results**
+
+  * **stats**
+  * **plots**
+
+* `LICENSE`
+
+* `README.md`
 
 ---
 
 ## Installation
 
-1. **Python**  
+1. **Python**
    Make sure you have **Python 3.7+** installed.
 
-2. **Dependencies**  
+2. **Dependencies**
+
    ```bash
    pip install -r requirements.txt
-````
+   ```
 
-> *If you plan to use graph neural nets, also install [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/).*
+   > *If you plan to use graph neural nets, also install [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/).*
 
 ---
 
@@ -118,9 +132,10 @@ python codes/Machine-Learning/XGBoostClassifier.py
 * **Preprocessed fMRI**
 
   * fALFF maps and time-series, organized by subject ID.
+
 * **Atlases**
 
-  * **Craddock 200** (CC200.nii + CC200\_ROI\_labels.csv)
+  * **Craddock 200** (`CC200.nii` + `CC200_ROI_labels.csv`)
   * **Yeo 7** (if `nilearn.fetch_atlas_yeo` fails, use the provided files in `atlas/`)
 
 ---
@@ -132,7 +147,7 @@ python codes/Machine-Learning/XGBoostClassifier.py
   * Energy:
 
     $$
-      E \;=\; - \sum_{(u,v)\in E} \bigl(\mathrm{fALFF}[u]\times w_{uv}\times \mathrm{fALFF}[v]\bigr)
+      E = -\,\sum_{(u,v)\in E}\bigl(\mathrm{fALFF}[u]\times w_{uv}\times \mathrm{fALFF}[v]\bigr)
     $$
   * Provides a measure of functional balance across regions or networks.
 
@@ -150,25 +165,22 @@ python codes/Machine-Learning/XGBoostClassifier.py
 
 ## References
 
-1. Zang Y. et al. *Altered baseline brain activity in children with ADHD…* Brain Res. Bull., 2007.
-2. Zou Q. et al. *An improved ALFF approach for resting-state fMRI…* J. Neurosci. Methods, 2008.
-3. Kargaran A. & Jafari G. R. *Heider and coevolutionary balance…* Phys. Rev. E 103, 052302 (2021).
-4. Di Martino A. et al. *ABIDE: large-scale evaluation of intrinsic brain architecture in autism.* Mol. Psychiatry 19, 659–667 (2014).
-5. Yeo B. T. T. et al. *Organization of the human cerebral cortex by intrinsic functional connectivity.* J. Neurophysiol. 106, 1125–1165 (2011).
-6. Craddock C. R. et al. *A whole-brain fMRI atlas via spatially constrained spectral clustering.* Hum. Brain Mapp. 33, 1914–1928 (2012).
-7. Craddock C. R. et al. *The configurable pipeline for the analysis of connectomes (C-PAC).* Front. Neuroinformatics 7, 42 (2013).
+1. Zang Y. et al. *Altered baseline brain activity in children with ADHD…* Brain Res. Bull. (2007).
+2. Zou Q. et al. *An improved ALFF approach for resting-state fMRI…* J. Neurosci. Methods (2008).
+3. Kargaran A. & Jafari G.R. *Heider and coevolutionary balance…* Phys. Rev. E 103, 052302 (2021).
+4. Di Martino A. et al. *ABIDE: evaluation of intrinsic brain architecture in autism.* Mol. Psychiatry 19, 659–667 (2014).
+5. Yeo B.T.T. et al. *Organization of the human cerebral cortex by intrinsic functional connectivity.* J. Neurophysiol. 106, 1125–1165 (2011).
+6. Craddock C.R. et al. *A whole-brain fMRI atlas via spatially constrained spectral clustering.* Hum. Brain Mapp. 33, 1914–1928 (2012).
+7. Craddock C.R. et al. *The configurable pipeline for the analysis of connectomes (C-PAC).* Front. Neuroinformatics 7, 42 (2013).
 
 ---
 
 ## Contributing
 
-Bug reports, feature requests and PRs are welcome! Please open an issue or pull request.
+Bug reports, feature requests and pull requests are welcome! Please open an issue or submit a PR.
 
 ---
 
 ## License
 
 This project is released under the **MIT License**.
-
-```
-```
