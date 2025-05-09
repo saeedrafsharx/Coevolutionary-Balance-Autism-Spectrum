@@ -18,9 +18,17 @@ from FeatureExtraction import load_graphs_from_folder, extract_graph_features
 
 
 def load_and_preprocess_data(asd_dir, ctrl_dir):
+    """
+    Loads graph data, extracts features, and prepares labels.
 
+    Parameters:
+        control_path (str): Path to control group data.
+        asd_path (str): Path to ASD group data.
 
-    # Load and preprocess data
+    Returns:
+        X (pd.DataFrame): Feature matrix.
+        y (np.ndarray): Labels.
+    """
     control = load_graphs_from_folder(ctrl_dir, label=0)
     asd = load_graphs_from_folder(asd_dir, label=1)
     all_graphs = control + asd
@@ -45,7 +53,7 @@ def load_and_preprocess_data(asd_dir, ctrl_dir):
 def evaluate_svm(X, y, SEED):
 
 
-    # ======================== MODEL EVALUATION ========================
+    
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=SEED)
 
     # Baseline model
@@ -74,7 +82,7 @@ def evaluate_svm(X, y, SEED):
     fpr, tpr, _ = roc_curve(y, y_prob)
     roc_auc = auc(fpr, tpr)
 
-    # ======================== VISUALIZATION ==========================
+    # Visualization
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
 
     # Confusion Matrix
@@ -96,7 +104,7 @@ def evaluate_svm(X, y, SEED):
     plt.savefig('results.png', bbox_inches='tight')
     plt.show()
 
-    # ======================== STATISTICAL REPORT ======================
+    # Statistical Report
     print("\n=== Best Model ===")
     print(f"Parameters: {search.best_params_}")
     print(f"CV Accuracy: {search.best_score_:.3f} (±{cross_val_score(best_model, X, y, cv=cv).std():.3f})")
@@ -106,19 +114,16 @@ def evaluate_svm(X, y, SEED):
 
 
 if __name__ == "__main__":
-
     # Reproducibility Control
-
     SEED = 42
     np.random.seed(SEED)
     sns.set_theme(style="whitegrid")  # Modern Seaborn theming
     plt.rcParams['figure.dpi'] = 300
     plt.rcParams['savefig.dpi'] = 300
     plt.rcParams['font.family'] = 'Arial'
-
+  
     # Evaluation
-
-    asd_dir = r"D:\University\projects\CBTProject\CoevolutionaryBalanceTheory\Data\ASDNetworks"
-    ctrl_dir = r"D:\University\projects\CBTProject\CoevolutionaryBalanceTheory\Data\ControlNetworks"
+    asd_dir = r'directory-to-control-data'
+    ctrl_dir = r'directory-to-asd-data'
     X, y = load_and_preprocess_data(asd_dir, ctrl_dir)
     evaluate_svm(X, y, SEED)
