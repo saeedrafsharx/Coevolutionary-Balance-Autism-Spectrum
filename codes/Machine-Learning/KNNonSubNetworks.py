@@ -10,13 +10,23 @@ from sklearn.metrics import (ConfusionMatrixDisplay, RocCurveDisplay,
 import seaborn as sns
 
 
-from NetworkEnergyComputer import compute_network_energy
+from codes.NetworkEnergyComputer import compute_network_energy
 from SubNetworkFeatureExtraction import subnetwork_energy_features, compute_subnetwork_energy
 from FeatureExtraction import load_graphs_from_folder, extract_graph_features
 
 
 def load_and_preprocess_data(asd_dir, ctrl_dir):
-    # Load and preprocess data
+    """
+    Load brain graphs from folders and extract features and labels.
+
+    Parameters:
+        control_path (str): Path to control group network files.
+        asd_path (str): Path to ASD group network files.
+
+    Returns:
+        X (pd.DataFrame): Feature matrix.
+        y (np.ndarray): Corresponding labels.
+    """
     control = load_graphs_from_folder(ctrl_dir, label=0)
     asd = load_graphs_from_folder(asd_dir, label=1)
     all_graphs = control + asd
@@ -40,7 +50,7 @@ def load_and_preprocess_data(asd_dir, ctrl_dir):
 def evaluate_knn(X, y, SEED):
 
 
-    # ======================== MODEL EVALUATION ========================
+    # Model Evaluation
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=SEED)
 
     # KNN with feature scaling
@@ -68,7 +78,7 @@ def evaluate_knn(X, y, SEED):
     fpr, tpr, _ = roc_curve(y, y_prob)
     roc_auc = auc(fpr, tpr)
 
-    # ==================== VISUALIZATION ====================
+    # Visualization
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
 
     # Confusion Matrix (Normalized)
@@ -88,7 +98,7 @@ def evaluate_knn(X, y, SEED):
     plt.savefig('knn_performance.png', bbox_inches='tight', dpi=300)
     plt.show()
 
-    # ==================== STATISTICAL REPORT ====================
+    # Statistical Report
     print("\n=== Optimal KNN Model ===")
     print(f"Best Parameters: {knn_search.best_params_}")
     print(f"CV Accuracy: {knn_search.best_score_:.3f} (±{cross_val_score(best_knn, X, y, cv=cv).std():.3f})")
@@ -108,7 +118,6 @@ def evaluate_knn(X, y, SEED):
 
 if __name__ == "__main__":
     # Reproducibility Control
-
     SEED = 42
     np.random.seed(SEED)
     plt.style.use('seaborn-v0_8-whitegrid')
@@ -116,8 +125,8 @@ if __name__ == "__main__":
     plt.rcParams.update({'font.family': 'Arial', 'figure.dpi': 300})
 
     # Evaluation
-
-    asd_dir = r"D:\University\projects\CBTProject\CoevolutionaryBalanceTheory\Data\ASDNetworks"
-    ctrl_dir = r"D:\University\projects\CBTProject\CoevolutionaryBalanceTheory\Data\ControlNetworks"
+    asd_dir = r'directory-to-control-data'
+    ctrl_dir = r'directory-to-asd-data'
+  
     X, y = load_and_preprocess_data(asd_dir, ctrl_dir)
     evaluate_knn(X, y, SEED)
