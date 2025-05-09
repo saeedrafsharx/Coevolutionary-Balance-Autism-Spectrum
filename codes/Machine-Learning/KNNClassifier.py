@@ -41,17 +41,7 @@ def load_and_preprocess_data(control_path, asd_path):
 
 
 def evaluate_knn(X, y, n_neighbors=5):
-    """
-    Train and evaluate a KNN model using cross-validation and full training set.
-
-    Parameters:
-        X (pd.DataFrame): Feature matrix.
-        y (np.ndarray): Label array.
-        n_neighbors (int): Number of neighbors for KNN.
-
-    Returns:
-        None
-    """
+    # Evaluate Model
     knn_model = KNeighborsClassifier(n_neighbors=5)
 
     # Perform 5-fold cross-validation
