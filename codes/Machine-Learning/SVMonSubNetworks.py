@@ -51,9 +51,16 @@ def load_and_preprocess_data(asd_dir, ctrl_dir):
 
 
 def evaluate_svm(X, y, SEED):
+    """
+    Evaluates an SVM classifier using cross-validation and ROC.
 
+    Parameters:
+        X (pd.DataFrame): Feature matrix.
+        y (np.ndarray): Labels.
 
-    
+    Returns:
+        None
+    """
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=SEED)
 
     # Baseline model
