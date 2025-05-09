@@ -48,9 +48,16 @@ def load_and_preprocess_data(asd_dir, ctrl_dir):
 
 
 def evaluate_knn(X, y, SEED):
+    """
+    Evaluates a KNN classifier using cross-validation and ROC.
 
+    Parameters:
+        X (pd.DataFrame): Feature matrix.
+        y (np.ndarray): Labels.
 
-    # Model Evaluation
+    Returns:
+        None
+    """
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=SEED)
 
     # KNN with feature scaling
