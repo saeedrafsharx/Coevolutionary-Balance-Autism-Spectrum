@@ -121,8 +121,8 @@ def parse_subject_id(fname):
 # 5) EXTRACT SUBNETWORK ENERGY FEATURES
 ###############################################################################
 def subnetwork_energy_features(path, label):
-    cc200_file = r'D:\University\projects\CBTProject\CoevolutionaryBalanceTheory/atlas/CC200.nii'
-    yeo7_file = r'D:\University\projects\CBTProject\CoevolutionaryBalanceTheory/atlas/Yeo7_1mm_reoriented.nii.gz'
+    cc200_file = r'directory-to-cc200-atlas'
+    yeo7_file = r'directory-to-yeo7-atlas'
 
     roi_to_net = build_roi_to_network_map(cc200_file, yeo7_file)
 
