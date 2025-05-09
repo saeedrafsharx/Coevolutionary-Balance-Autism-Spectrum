@@ -76,8 +76,8 @@ def evaluate_xgboost(X, y):
 
 
 if __name__ == "__main__":
-    control_folder = 'Data/ControlNetworks'
-    asd_folder = 'Data/ASDNetworks'
+    control_folder = r'directory-to-control-data'
+    asd_folder = r'directory-to-asd-data'
 
     X, y = load_and_preprocess_data(control_folder, asd_folder)
     evaluate_xgboost(X, y)
