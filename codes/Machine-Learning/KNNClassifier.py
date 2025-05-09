@@ -72,8 +72,8 @@ def evaluate_knn(X, y, n_neighbors=5):
 
 if __name__ == "__main__":
     # Paths to the datasets
-    control_folder = 'Data/ControlNetworks'
-    asd_folder = 'Data/ASDNetworks'
+    control_folder = r'directory-to-control-data'
+    asd_folder = r'directory-to-asd-data'
 
     # Load data and run KNN classifier
     X, y = load_and_preprocess_data(control_folder, asd_folder)
