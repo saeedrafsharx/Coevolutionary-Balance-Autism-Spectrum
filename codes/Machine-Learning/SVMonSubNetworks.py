@@ -12,7 +12,8 @@ from sklearn.linear_model import LogisticRegression
 import seaborn as sns
 
 from NetworkEnergyComputer import compute_network_energy
-from SubNetworkFeatureExtraction import subnetwork_energy_features, compute_subnetwork_energy
+from SubNetworkFeatureExtraction import subnetwork_energy_features, compute_subnetwork_energy, subnetwork_interconnectivity_features
+
 from FeatureExtraction import load_graphs_from_folder, extract_graph_features
 
 
@@ -36,10 +37,12 @@ def load_and_preprocess_data(asd_dir, ctrl_dir):
 
     # Feature extraction
     features, labels = [], []
-    for fALFF, edges, label, path in all_graphs:
+        for fALFF, edges, label, path in all_graphs:
         feats = extract_graph_features(fALFF, edges)
         energies, _ = subnetwork_energy_features(path, label)
+        inter_energies_w_f, _ = subnetwork_interconnectivity_features(path, label)
         feats.update({f"energy_{i}": e for i, e in enumerate(energies)})
+        feats.update(inter_energies_w_f)
         features.append(feats)
         labels.append(label)
 
