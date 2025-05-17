@@ -147,3 +147,68 @@ def subnetwork_energy_features(path, label):
     return (energies, label)
 
 
+###############################################################################
+# 6) EXTRACT SUBNETWORK INTERCONNECTIVITY FEATURES
+###############################################################################
+def subnetwork_interconnectivity_features(path, label):
+    cc200_file = r'D:\University\projects\CBTProject\CoevolutionaryBalanceTheory\atlas\CC200.nii'
+    yeo7_file = r'D:\University\projects\CBTProject\CoevolutionaryBalanceTheory\atlas\Yeo7_1mm_reoriented.nii.gz'
+
+    roi_to_net = build_roi_to_network_map(cc200_file, yeo7_file)
+
+    network_ids = [1, 2, 3, 4, 5, 6, 7]
+    network_labels = {
+        1: "Visual",
+        2: "SomatoMotor",
+        3: "DorsalAttn",
+        4: "Salience/VentAttn",
+        5: "Limbic",
+        6: "Frontoparietal",
+        7: "Default"
+    }
+
+    G = nx.read_graphml(path)
+
+    nnet = len(network_ids)
+    SumW = np.zeros((nnet, nnet));
+    CntW = np.zeros((nnet, nnet), int)
+    SumF = np.zeros((nnet, nnet));
+    CntF = np.zeros((nnet, nnet), int)
+    E = np.zeros((nnet, nnet))
+
+    for u, v, data in G.edges(data=True):
+        ui, vi = int(u), int(v)
+        nu, nv = roi_to_net[ui], roi_to_net[vi]
+        w = data.get('weight', np.nan)
+        fu = G.nodes[u]['fALFF']
+        fv = G.nodes[v]['fALFF']
+        if np.isnan(w) or np.isnan(fu) or np.isnan(fv):
+            continue
+
+        i = network_ids.index(nu)
+        j = network_ids.index(nv)
+        SumW[i, j] += w;
+        CntW[i, j] += 1
+        SumF[i, j] += w * fu * fv;
+        CntF[i, j] += 1
+        E[i, j] += -(w * fu * fv)
+        if i != j:
+            SumW[j, i] += w;
+            CntW[j, i] += 1
+            SumF[j, i] += w * fu * fv;
+            CntF[j, i] += 1
+            E[j, i] += -(w * fu * fv)
+
+    AvgW = np.divide(SumW, CntW, out=np.full_like(SumW, np.nan), where=CntW > 0)
+    AvgF = np.divide(SumF, CntF, out=np.full_like(SumF, np.nan), where=CntF > 0)
+
+    # Record
+    inter_energies_w_f = {}
+    for i, ni in enumerate(network_ids):
+        for j, nj in enumerate(network_ids):
+            inter_energies_w_f.update({'Energy_{}_to_{}'.format(ni, nj) :  E[i, j],
+            'AvgWeight_{}_to_{}'.format(ni, nj) :  AvgW[i, j],
+            'AvgFalffW_{}_to_{}'.format(ni, nj) :  AvgF[i, j]})
+
+    return (inter_energies_w_f, label)
+
