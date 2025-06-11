@@ -1,70 +1,36 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import classification_report, accuracy_score, ConfusionMatrixDisplay
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.model_selection import cross_val_score
-from sklearn.metrics import classification_report, confusion_matrix
 
-from FeatureExtraction import load_graphs_from_folder, extract_graph_features
-
-
-def load_and_preprocess_data(control_path, asd_path):
-    """
-    Load brain graphs from folders and extract features and labels.
-
-    Parameters:
-        control_path (str): Path to control group network files.
-        asd_path (str): Path to ASD group network files.
-
-    Returns:
-        X (pd.DataFrame): Feature matrix.
-        y (np.ndarray): Corresponding labels.
-    """
-    control = load_graphs_from_folder(control_path, label=0)
-    asd = load_graphs_from_folder(asd_path, label=1)
-
-    all_graphs = control + asd
-    np.random.shuffle(all_graphs)
-
-    features = []
-    labels = []
-
-    for fALFF, edges, label in all_graphs:
-        feats = extract_graph_features(fALFF, edges)
-        features.append(feats)
-        labels.append(label)
-
-    X = pd.DataFrame(features)
-    X = X.fillna(X.mean())  # Handle missing values
-    y = np.array(labels)
-
-    return X, y
+df = pd.read_csv('graph_features_full.csv')
+y = df['label']
+X = df.drop(columns=['label'])
+# 1. Fit Random Forest to find best features
+rf = RandomForestClassifier(random_state=42)
+rf.fit(X, y)
+importances = pd.Series(rf.feature_importances_, index=X.columns)
+top_features = importances.nlargest(9).index.tolist()
+print("Top 8 features:", top_features)
+# Use only the top features for KNN
+X_top = df[top_features]
+X_top = StandardScaler().fit_transform(X_top)
+X_top_train, X_top_test, y_top_train, y_top_test = train_test_split(X_top, y, test_size=0.2, random_state=42, stratify=y)
 
 
-def evaluate_knn(X, y, n_neighbors=5):
-    # Evaluate Model
-    knn_model = KNeighborsClassifier(n_neighbors=5)
+# Fit KNN with best K
+knn_top = KNeighborsClassifier(n_neighbors=11)
+knn_top.fit(X_top_train, y_top_train)
 
-    # Perform 5-fold cross-validation
-    cv_scores_knn = cross_val_score(knn_model, X, y, cv=5, scoring='accuracy')
-
-    print("Cross-validation scores: ", cv_scores_knn)
-    print("Mean accuracy: ", cv_scores_knn.mean())
-    print("Standard deviation of accuracy: ", cv_scores_knn.std())
-
-    # Fit model on full data for final classification report
-    knn_model.fit(X, y)
-
-    y_pred_knn = knn_model.predict(X)
-
-    print("Classification Report:\n", classification_report(y, y_pred_knn))
-    print("Confusion Matrix:\n", confusion_matrix(y, y_pred_knn))
-
-
-if __name__ == "__main__":
-    # Paths to the datasets
-    control_folder = r'directory-to-control-data'
-    asd_folder = r'directory-to-asd-data'
-
-    # Load data and run KNN classifier
-    X, y = load_and_preprocess_data(control_folder, asd_folder)
-    evaluate_knn(X, y)
+# Predict and evaluate
+y_top_pred = knn_top.predict(X_top_test)
+print("Accuracy (top features):", accuracy_score(y_top_test, y_top_pred))
+print(classification_report(y_top_test, y_top_pred))
+ConfusionMatrixDisplay.from_predictions(y_top_test, y_top_pred, display_labels=['ASD', 'TD'], cmap='Purples', colorbar=False)
+plt.title("Confusion Matrix (KNN, Top Features)")
+plt.show()
