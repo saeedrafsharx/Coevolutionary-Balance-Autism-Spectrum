@@ -5,9 +5,6 @@ import numpy as np
 import networkx as nx
 from nibabel.processing import resample_from_to
 
-######################################################################
-# 1) EXTRACT fALFF PER ROI
-######################################################################
 def extract_falff_per_roi(falff_file, atlas_file):
     """
     Load the subject's fALFF 3D image and the atlas,
@@ -22,7 +19,6 @@ def extract_falff_per_roi(falff_file, atlas_file):
     atlas_data = atlas_img.get_fdata()
     print("Loaded atlas data shape:", atlas_data.shape)
     
-    # Resample atlas if shapes differ
     if falff_data.shape != atlas_data.shape:
         print("Shapes do not match. Resampling atlas to fALFF dimensions using nearest-neighbor interpolation...")
         atlas_img = resample_from_to(atlas_img, falff_img, order=0)
@@ -46,9 +42,6 @@ def extract_falff_per_roi(falff_file, atlas_file):
             print(f"ROI {int(roi)}: no voxels found")
     return roi_falff
 
-######################################################################
-# 2) COMPUTE FUNCTIONAL CONNECTIVITY (TRUNCATE TO 116 TIME POINTS)
-######################################################################
 def compute_functional_connectivity(timeseries_file):
     """
     Read the time series from a .1D (or similar) file:
@@ -58,21 +51,18 @@ def compute_functional_connectivity(timeseries_file):
     Then TRUNCATE to 116 time points if the file has more than 116 rows.
     Return (roi_labels, fc_matrix).
     """
-    # 1) Read ROI labels from the first line
     with open(timeseries_file, 'r') as f:
         header_line = f.readline().strip()
     header_tokens = header_line.split()
     roi_labels = [token.lstrip('#') for token in header_tokens]
     print("Time series ROI labels:", roi_labels)
     
-    # 2) Load numeric data
     data = np.loadtxt(timeseries_file, skiprows=1)
     if data.ndim == 1:
         data = data.reshape(1, -1)
     original_len = data.shape[0]
     print("Original time series data shape:", data.shape)
     
-    # 3) Truncate to 116 time points if needed
     TRUNC_LEN = 116
     if original_len > TRUNC_LEN:
         data = data[:TRUNC_LEN, :]
@@ -82,14 +72,10 @@ def compute_functional_connectivity(timeseries_file):
     
     print("Final time series shape (after truncation):", data.shape)
     
-    # 4) Compute correlation across ROIs (columns)
     fc_matrix = np.corrcoef(data, rowvar=False)
     print("Functional connectivity (correlation) matrix shape:", fc_matrix.shape)
     return roi_labels, fc_matrix
 
-######################################################################
-# 3) CREATE NETWORK
-######################################################################
 def create_network(roi_labels, fc_matrix, roi_falff):
     """
     Create a NetworkX graph where each node is an ROI with its fALFF value
@@ -112,14 +98,11 @@ def create_network(roi_labels, fc_matrix, roi_falff):
             roi_i = int(roi_labels[i])
             roi_j = int(roi_labels[j])
             G.add_edge(roi_i, roi_j, weight=weight)
-            # Optionally print: print(f"Edge ROI {roi_i}-{roi_j} weight={weight:.4f}")
+            #print: print(f"Edge ROI {roi_i}-{roi_j} weight={weight:.4f}") TODO: DEBUG
     return G
 
-######################################################################
-# 4) PROCESS A SINGLE SUBJECT
-######################################################################
 def process_subject(falff_file, timeseries_file, atlas_file):
-    print("\n==========================================")
+
     print(f"Processing subject with fALFF file: {falff_file}")
     
     roi_falff = extract_falff_per_roi(falff_file, atlas_file)
@@ -132,18 +115,13 @@ def process_subject(falff_file, timeseries_file, atlas_file):
     print("Network created for subject.")
     return network
 
-######################################################################
-# 5) MAIN
-######################################################################
 def main():
-    # Directories (update as needed)
     falff_dir = r"directory-to-alff-files"
     timeseries_dir = r"directory-to-timeseries-files"
     atlas_file = r"atlasfile.nii.gz"
     output_dir = r"output-directory"
     os.makedirs(output_dir, exist_ok=True)
     
-    # 1) Gather fALFF => subject_id -> falff path
     falff_files = glob.glob(os.path.join(falff_dir, "*.nii.gz"))
     falff_dict = {}
     for ff in falff_files:
@@ -151,7 +129,6 @@ def main():
         subject_id = base.split('_falff')[0]
         falff_dict[subject_id] = ff
     
-    # 2) Gather timeseries => subject_id -> timeseries path
     ts_files = glob.glob(os.path.join(timeseries_dir, "*.1D"))
     ts_dict = {}
     for tf in ts_files:
@@ -159,14 +136,12 @@ def main():
         subject_id = base.split('_rois_cc200')[0]
         ts_dict[subject_id] = tf
     
-    # 3) Intersection
     common_subjects = sorted(set(falff_dict.keys()) & set(ts_dict.keys()))
     print(f"Found {len(common_subjects)} matching subjects in falff & timeseries dirs.")
     if not common_subjects:
         print("No matching subjects found. Check your filenames.")
         return
     
-    # 4) Process each subject
     for subject_id in common_subjects:
         falff_file = falff_dict[subject_id]
         timeseries_file = ts_dict[subject_id]
@@ -174,10 +149,6 @@ def main():
         print(f"\n=== Processing subject: {subject_id} ===")
         network = process_subject(falff_file, timeseries_file, atlas_file)
         
-        # Save the network as GraphML
         network_filename = os.path.join(output_dir, f"{subject_id}_network.graphml")
         nx.write_graphml(network, network_filename)
         print(f"Network saved for subject {subject_id} at {network_filename}")
-
-if __name__ == "__main__":
-    main()

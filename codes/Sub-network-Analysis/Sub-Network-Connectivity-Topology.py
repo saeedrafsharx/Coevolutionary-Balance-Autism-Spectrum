@@ -13,9 +13,6 @@ from statsmodels.stats.multitest import multipletests
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-###############################################################################
-# IQR-BASED OUTLIER DETECTION
-###############################################################################
 def identify_outliers_iqr(values, iqr_factor=1.5):
     if len(values) < 2:
         return np.zeros(len(values), dtype=bool)
@@ -24,9 +21,6 @@ def identify_outliers_iqr(values, iqr_factor=1.5):
     lower, upper = q1 - iqr_factor * iqr, q3 + iqr_factor * iqr
     return (values < lower) | (values > upper)
 
-###############################################################################
-# BUILD ROI->NETWORK MAP (CC200 -> YEO7)
-###############################################################################
 def build_roi_to_network_map(cc200_file, yeo7_file):
     cc200 = nib.load(cc200_file)
     cc_data = cc200.get_fdata().astype(int)
@@ -57,11 +51,7 @@ def build_roi_to_network_map(cc200_file, yeo7_file):
 
     return roi_to_net
 
-###############################################################################
-# MAIN PIPELINE: CONNECTIVITY, ENERGY, ASSORTATIVITY
-###############################################################################
 def main():
-    # Paths (adjust as needed)
     cc200_file = "/kaggle/input/net-cbt/CC200.nii"
     yeo7_file  = "/kaggle/input/net-cbt/Yeo7_1mm_reoriented.nii"
     asd_dir    = "/kaggle/input/net-cbt/ASD"
@@ -77,18 +67,15 @@ def main():
 
     conn_records, energy_records, assort_records = [], [], []
 
-    # 1) Load and filter
     for group, d in [("ASD", asd_dir), ("Control", ctrl_dir)]:
         for fn in glob.glob(os.path.join(d, "*.graphml")):
             G = nx.read_graphml(fn)
             sid = os.path.basename(fn)
 
-            # Skip if no edges
             if G.number_of_edges() == 0:
                 print(f"[SKIP {sid}] no edges")
                 continue
 
-            # Skip if any node missing fALFF or unmapped ROI
             bad = False
             for n,data in G.nodes(data=True):
                 falff = data.get('fALFF', None)
@@ -109,7 +96,6 @@ def main():
             if bad:
                 continue
 
-            # 2) Compute connectivity & energy per network-pair
             nnet = len(network_ids)
             SumW = np.zeros((nnet,nnet)); CntW = np.zeros((nnet,nnet),int)
             SumF = np.zeros((nnet,nnet)); CntF = np.zeros((nnet,nnet),int)
@@ -137,7 +123,6 @@ def main():
             AvgW = np.divide(SumW, CntW, out=np.full_like(SumW,np.nan), where=CntW>0)
             AvgF = np.divide(SumF, CntF, out=np.full_like(SumF,np.nan), where=CntF>0)
 
-            # Record
             for i,ni in enumerate(network_ids):
                 for j,nj in enumerate(network_ids):
                     conn_records.append({
@@ -151,7 +136,6 @@ def main():
                         'Energy':E[i,j]
                     })
 
-            # Assortativity
             labels = { n: roi_to_net[int(n)] for n in G.nodes() }
             nx.set_node_attributes(G, labels, 'net_label')
             assort = nx.attribute_assortativity_coefficient(G, 'net_label')
@@ -159,12 +143,10 @@ def main():
                 'Subject':sid,'Group':group,'Assortativity':assort
             })
 
-    # 3) Build DataFrames
     conn_df   = pd.DataFrame(conn_records)
     energy_df = pd.DataFrame(energy_records)
     assort_df = pd.DataFrame(assort_records)
 
-    # 4) Outlier removal
     bad_subs = set()
     for df,col in [
         (conn_df,'AvgWeight'),
@@ -178,13 +160,11 @@ def main():
     energy_df = energy_df[~energy_df.Subject.isin(bad_subs)]
     assort_df = assort_df[~assort_df.Subject.isin(bad_subs)]
 
-    # --- NEW: report surviving subject counts ---
     surv_counts = assort_df.groupby('Group')['Subject'].nunique()
     print(f"\nSubjects survived after filtering: "
           f"ASD={surv_counts.get('ASD',0)}, "
           f"Control={surv_counts.get('Control',0)}")
 
-    # 5) Connectivity stats + FDR
     stats_conn = []
     for metric in ['AvgWeight','AvgFalffW']:
         for (u,v),grp in conn_df.groupby(['From','To']):
@@ -202,7 +182,6 @@ def main():
     stats_conn_df['R_p_fdr'] = multipletests(stats_conn_df['R_p'],method='fdr_bh')[1]
     sig_conn = stats_conn_df.query('T_p_fdr<0.05 or R_p_fdr<0.05')
 
-    # 6) Energy stats + FDR
     stats_energy = []
     for (u,v),grp in energy_df.groupby(['From','To']):
         a = grp[grp.Group=='ASD']['Energy'].dropna()
@@ -220,7 +199,6 @@ def main():
     sig_energy = stats_energy_df.query('T_p_fdr<0.05 or R_p_fdr<0.05')
 
 
-    # 7) Assortativity comparison with automatic test choice
     a_asd = assort_df.loc[assort_df.Group=='ASD','Assortativity'].values
     a_ctl = assort_df.loc[assort_df.Group=='Control','Assortativity'].values
     print("ASD assortativity unique values:", np.unique(a_asd))
@@ -251,7 +229,6 @@ def main():
             test_name = "Mann–Whitney U"
             _, p_assort = mannwhitneyu(a_asd,a_ctl,alternative='two-sided')
 
-    # 8) REPORT
     print("\nSignificant connectivity (FDR<0.05):")
     print(sig_conn if not sig_conn.empty else "None")
     print("\nSignificant energy (FDR<0.05):")
@@ -259,8 +236,3 @@ def main():
     print("\n--- Assortativity comparison ---")
     print(f"Using {test_name}, p={p_assort:.3g} →",
           "Significant" if p_assort<alpha else "Not significant")
-
-    # (Plotting heatmaps omitted for brevity)
-
-if __name__=='__main__':
-    main()

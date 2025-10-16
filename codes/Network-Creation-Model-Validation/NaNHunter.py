@@ -3,7 +3,6 @@ import math
 import networkx as nx
 import numpy as np
 
-# directory where your .graphml files live
 GRAPH_DIR = ''
 
 def is_invalid(w):
@@ -17,14 +16,12 @@ def interpolate_edge_weight(G, u, v):
     If no valid neighbors, return 0.0.
     """
     weights = []
-    # edges incident to u
     for nbr in G.neighbors(u):
         if nbr == v: 
             continue
         w = G[u][nbr].get('weight', None)
         if not is_invalid(w):
             weights.append(w)
-    # edges incident to v
     for nbr in G.neighbors(v):
         if nbr == u:
             continue
@@ -41,7 +38,7 @@ def fix_graph(G):
     For every edge with invalid weight, interpolate
     from its neighbors and overwrite in-place.
     """
-    # we need a list of edges to process, because we'll be mutating weights
+    # TODO: we need a list of edges to process, because we'll be mutating weights
     to_fix = [(u, v) for u, v, data in G.edges(data=True)
               if is_invalid(data.get('weight', None))]
     for u, v in to_fix:
@@ -59,10 +56,8 @@ if __name__ == "__main__":
             print(f"[ERROR] could not read {fname}: {e}")
             continue
 
-        # perform the interpolation‐based fill
         fix_graph(G)
 
-        # overwrite the original GraphML
         try:
             nx.write_graphml(G, path)
             print(f"[OK] fixed and saved: {fname}")

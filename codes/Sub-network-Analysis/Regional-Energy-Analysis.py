@@ -11,9 +11,6 @@ from nibabel.processing import resample_from_to
 from scipy.stats import ttest_ind, ranksums
 from statsmodels.stats.multitest import multipletests
 
-###############################################################################
-# 1) BUILD ROI->NETWORK MAP (CC200 -> YEO7) USING DICE COEFFICIENT
-###############################################################################
 def build_roi_to_network_map(cc200_file, yeo7_file):
     """
     For each ROI in the Craddock 200 atlas, compute the Dice coefficient
@@ -25,14 +22,12 @@ def build_roi_to_network_map(cc200_file, yeo7_file):
     yeo_img    = nib.load(yeo7_file)
     yeo_data   = yeo_img.get_fdata().astype(int)
 
-    # Resample Yeo7 to CC200 if needed
     if cc200_data.shape != yeo_data.shape:
         yeo_img    = resample_from_to(yeo_img, cc200_img, order=0)
         yeo_data   = yeo_img.get_fdata().astype(int)
 
     roi_ids = np.unique(cc200_data[cc200_data > 0])
     yeo_ids = np.unique(yeo_data[yeo_data > 0])
-    # Precompute Yeo network sizes
     net_sizes = {net: np.sum(yeo_data == net) for net in yeo_ids}
 
     roi_to_net = {}
@@ -52,9 +47,7 @@ def build_roi_to_network_map(cc200_file, yeo7_file):
 
     return roi_to_net
 
-###############################################################################
-# 2) COMPUTE SUB-NETWORK ENERGY (as before)
-###############################################################################
+
 def compute_network_energy(graph, roi_to_net, net_id):
     energy_sum = 0.0
     for u, v, data in graph.edges(data=True):
@@ -73,9 +66,7 @@ def compute_network_energy(graph, roi_to_net, net_id):
             energy_sum += falff_u * w * falff_v
     return -energy_sum
 
-###############################################################################
-# 3) IQR-BASED OUTLIER DETECTION
-###############################################################################
+
 def identify_outliers_iqr(values, iqr_factor=1.5):
     if len(values) < 2:
         return np.zeros(len(values), dtype=bool)
@@ -86,31 +77,22 @@ def identify_outliers_iqr(values, iqr_factor=1.5):
     upper = q3 + iqr_factor * iqr
     return (values < lower) | (values > upper)
 
-###############################################################################
-# 4) PARSE SUBJECT ID
-###############################################################################
 def parse_subject_id(fname):
     base = os.path.basename(fname)
     no_ext = os.path.splitext(base)[0]
     parts = no_ext.split('_')
     return parts[1] if len(parts) >= 2 else no_ext
 
-###############################################################################
-# 5) MAIN
-###############################################################################
 def main():
-    # (A) atlas paths
     cc200_file = 'directory-to-cc200-atlas'
     yeo7_file  = 'directory-to-yeo7-atlas'
     roi_to_net = build_roi_to_network_map(cc200_file, yeo7_file)
 
-    # (B) GraphML directories
     asd_dir   = 'directory-to-asd-networks'
     ctrl_dir  = 'directory-to-control-networks'
     asd_files  = glob.glob(os.path.join(asd_dir, "*.graphml"))
     ctrl_files = glob.glob(os.path.join(ctrl_dir, "*.graphml"))
 
-    # (C) Prepare containers
     network_ids    = [1,2,3,4,5,6,7]
     network_names  = {
         1: "Visual", 2: "SomatoMotor", 3: "DorsalAttn",
@@ -120,7 +102,6 @@ def main():
     net_asd = {n: [] for n in network_ids}
     net_ctl = {n: [] for n in network_ids}
 
-    # Compute energies
     for fn in asd_files:
         G = nx.read_graphml(fn)
         sid = parse_subject_id(fn)
@@ -137,7 +118,6 @@ def main():
             if not np.isnan(e):
                 net_ctl[n].append((sid, e))
 
-    # Outlier removal
     outliers = set()
     for n in network_ids:
         combined = net_asd[n] + net_ctl[n]
@@ -181,10 +161,8 @@ def main():
         for v in ctl_vals:
             all_data.append({"Group":"Control", "Network":name, "Energy":v})
 
-    # Build DataFrame
     results_df = pd.DataFrame(results)
 
-    # --- MULTIPLE-COMPARISON ADJUSTMENT (FDR) ---
     p_t = results_df["TTest_p"].values
     p_r = results_df["RankSum_p"].values
     _, p_t_fdr, _, _ = multipletests(p_t, alpha=0.05, method='fdr_bh')
@@ -193,13 +171,9 @@ def main():
     results_df["RankSum_p_fdr"] = p_r_fdr
     results_df["TTest_sig_fdr"]   = results_df["TTest_p_fdr"] < 0.05
     results_df["RankSum_sig_fdr"] = results_df["RankSum_p_fdr"] < 0.05
-    # -------------------------------------------
 
-    # Output
-    print("\n=== Network-level comparison (with FDR) ===")
     print(results_df)
-
-    # Plot
+ 
     if all_data:
         df_all = pd.DataFrame(all_data)
         plt.figure(figsize=(10,6))
@@ -215,5 +189,3 @@ def main():
         plt.tight_layout()
         plt.show()
 
-if __name__ == "__main__":
-    main()
