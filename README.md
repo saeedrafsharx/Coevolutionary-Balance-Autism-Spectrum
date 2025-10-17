@@ -2,7 +2,9 @@
 
 This repository contains code for constructing brain networks from preprocessed fMRI data and analyzing them using coevolutionary balance theory. In our framework, nodes represent regional fALFF values and edges represent functional connectivity (correlation) between brain regions. We employ standard neuroimaging atlases (e.g., Craddock 200 for ROIs and Yeo 7 for large-scale networks) and a consistent preprocessing pipeline (e.g., CPAC with “filt\_global” strategy) to generate subject-specific networks. Our analyses include the computation of an energy measure based on a two-body Hamiltonian derived from coevolutionary balance theory, the generation of null networks (using both shuffling and random rewiring methods), and statistical group comparisons (e.g., ASD vs. Control) with robust outlier handling.
 
-In order to access the brain networks created from the derivatives of the ABIDE fMRI opensource dataset, for each patient of the study groups, email me and we can discuss it. saeedrafsharx@gmail.com
+You can access the brain networks created in this project here: https://kaggle.com/datasets/61b6171693989dca5d022caeb9a57b57ed338d55f86654694a1e8dd104474857
+
+Also If you'd be interested in the features extracted from the dataset, you can email me and we can discuss it: saeedrafsharx@gmail.com
 
 ---
 
