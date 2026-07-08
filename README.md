@@ -1,5 +1,7 @@
 # Coevolutionary Balance of Resting-State Brain Networks in Autism
 
+> **Paper:** Rezaei Afshar & Jafari, "Coevolutionary balance of resting-state brain networks in autism," arXiv:[2507.09045](https://arxiv.org/abs/2507.09045) (2026).
+>
 > **Dataset:** the full GSR / no-GSR derived feature set and results from this repository's pipelines are publicly available on Kaggle, along with an example notebook: [saeedrezaeiafshar/gsr-nogsr-abide-cbt-results](https://www.kaggle.com/datasets/saeedrezaeiafshar/gsr-nogsr-abide-cbt-results/data)
 
 This repository contains code and data for analyzing coevolutionary balance in resting-state functional brain networks in autism spectrum disorder (ASD).
@@ -112,7 +114,7 @@ python src/combat_harmonize.py \
 
 The Hamiltonian is defined as:
 
-$$H(G) = -\sum_{i<j} s_i \cdot w_{ij} \cdot s_j$$
+$$H(G) = -\sum_{i \lt j} s_i \cdot w_{ij} \cdot s_j$$
 
 Where:
 - $s_i \in \{-1, +1\}$ = binarized fALFF (high/low activity)
@@ -203,12 +205,17 @@ xgboost>=1.5.0  # optional
 
 ## Citation
 
+Preprint: [arXiv:2507.09045](https://arxiv.org/abs/2507.09045)
+
 ```bibtex
-@article{rezaeiafshar2025coevolutionary,
-  title={Coevolutionary balance of resting-state brain networks in autism},
-  author={Rezaei Afshar, S. and Pouretemad, H. and Jafari, G.R.},
-  journal={},
-  year={2025}
+@misc{afshar2026coevolutionarybalancerestingstatebrain,
+      title={Coevolutionary balance of resting-state brain networks in autism},
+      author={S. Rezaei Afshar and G. Reza Jafari},
+      year={2026},
+      eprint={2507.09045},
+      archivePrefix={arXiv},
+      primaryClass={q-bio.NC},
+      url={https://arxiv.org/abs/2507.09045},
 }
 ```
 
