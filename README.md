@@ -1,5 +1,7 @@
 # Coevolutionary Balance of Resting-State Brain Networks in Autism
 
+> **Dataset:** the full GSR / no-GSR derived feature set and results from this repository's pipelines are publicly available on Kaggle, along with an example notebook: [saeedrezaeiafshar/gsr-nogsr-abide-cbt-results](https://www.kaggle.com/datasets/saeedrezaeiafshar/gsr-nogsr-abide-cbt-results/data)
+
 This repository contains code and data for analyzing coevolutionary balance in resting-state functional brain networks in autism spectrum disorder (ASD).
 
 ## Overview
@@ -26,9 +28,12 @@ We apply a coevolutionary balance framework to resting-state fMRI data from the 
 │   └── net_cbt_all_features_3levels_with_center_iq.csv
 ├── results/
 │   ├── figures/                  # Plots and visualizations
+│   │   └── noGSR/                 # GSR-vs-no-GSR harmonization re-analysis figures
 │   └── tables/                   # Statistical results
 ├── notebooks/
-│   └── MachineLearningClassification.ipynb     # Interactive analysis
+│   ├── MachineLearningClassification.ipynb     # Interactive analysis
+│   ├── GSR_Harmonization_Fix.ipynb             # ComBat harmonization bug fix + re-statistics
+│   └── ML_GSR_noGSR_Classification.ipynb       # ML classification on the fixed, harmonized features
 ├── requirements.txt
 └── README.md
 ```
@@ -87,12 +92,19 @@ python src/combat_harmonize.py \
     --output data/features_harmonized.csv
 ```
 
+### Notebooks
+
+- `notebooks/MachineLearningClassification.ipynb` — interactive walkthrough of the main classification pipeline.
+- `notebooks/GSR_Harmonization_Fix.ipynb` — fixes a ComBat harmonization bug (see below) and recomputes whole/intra/inter statistics, behavioral correlations, PLSR/PLSC, and signed-modularity analyses on genuinely harmonized features. Runs in ~1 minute from saved raw feature CSVs (no re-extraction needed).
+- `notebooks/ML_GSR_noGSR_Classification.ipynb` — reruns the five-classifier, leakage-safe ML comparison (GaussianNB, SVM, LogReg, KNN, XGBoost) on the harmonized outputs of the fix notebook, for both the GSR and no-GSR pipelines, and regenerates the results table, ROC curves, permutation feature importance, PCA scatter, and top-feature strip plots as PDFs.
+
 ## Data
 
 - **Source**: ABIDE I (http://fcon_1000.projects.nitrc.org/indi/abide/)
 - **Sample**: 93 ASD and 93 TD adult males (18-30 years, IQ > 80)
 - **Preprocessing**: CPAC pipeline
 - **Parcellation**: CC200 atlas (200 ROIs) mapped to Yeo 7-network
+- **GSR / no-GSR derived features**: published on Kaggle at [gsr-nogsr-abide-cbt-results](https://www.kaggle.com/datasets/saeedrezaeiafshar/gsr-nogsr-abide-cbt-results/data), including an example notebook — this is the input used by `GSR_Harmonization_Fix.ipynb` and `ML_GSR_noGSR_Classification.ipynb`
 
 ## Methods
 
@@ -134,6 +146,44 @@ Where:
 | KNN | 0.694 | - |
 | XGBoost | 0.611 | - |
 | Logistic Regression | 0.583 | - |
+
+*Computed on the main, pre-harmonized feature matrix shipped in `data/`. See the next section for the GSR-vs-no-GSR harmonization fix and the corrected numbers it produces on that separate pipeline.*
+
+## Harmonization Fix: GSR vs. no-GSR Re-Analysis
+
+An audit of the GSR/no-GSR comparison pipeline found that ComBat harmonization was silently
+failing: one ABIDE site (`CMU`) had only a single subject, which makes `neuroCombat` return an
+all-NaN matrix, and the pipeline was falling back to **raw, un-harmonized** features without
+raising an error. `notebooks/GSR_Harmonization_Fix.ipynb` fixes this by dropping under-populated
+sites before harmonization and making ComBat **fail loudly** (raise an exception) instead of
+silently degrading, so this class of bug can no longer hide in the results. It recomputes the
+whole/intra/inter-network statistics, behavioral correlations, PLSR/PLSC, and signed-modularity
+analyses on the genuinely harmonized data. `notebooks/ML_GSR_noGSR_Classification.ipynb` then
+reruns the leakage-safe, five-classifier comparison on the corrected features.
+
+**Example outputs (no-GSR pipeline, n=168, ASD=80, TD=88):**
+
+<p align="center">
+  <img src="results/figures/noGSR/noGSR_results_table.png" alt="no-GSR classifier comparison table" width="640"><br>
+  <sub>Classifier comparison after the harmonization fix — <a href="results/figures/noGSR/noGSR_results_table.pdf">PDF</a></sub>
+</p>
+
+<p align="center">
+  <img src="results/figures/noGSR/noGSR_roc.png" alt="no-GSR ROC curves" width="480"><br>
+  <sub>ROC curves on the held-out test set — <a href="results/figures/noGSR/noGSR_roc.pdf">PDF</a></sub>
+</p>
+
+<p align="center">
+  <img src="results/figures/noGSR/noGSR_top_features.png" alt="no-GSR top discriminative features" width="640"><br>
+  <sub>Top discriminative features by group — <a href="results/figures/noGSR/noGSR_top_features.pdf">PDF</a></sub>
+</p>
+
+With harmonization applied correctly, the no-GSR classifiers perform **close to chance**
+(CV-best GaussianNB: test accuracy = 0.588, AUC = 0.531) — markedly lower than figures produced
+by the un-harmonized fallback. This is an important negative/corrective result: it indicates the
+site batch effect, not a genuine ASD-vs-TD signal, was likely driving inflated accuracy in
+earlier, un-harmonized runs of this comparison pipeline. Re-run `ML_GSR_noGSR_Classification.ipynb`
+on the GSR pipeline's fixed features to obtain the matching GSR-side numbers.
 
 ## Requirements
 
