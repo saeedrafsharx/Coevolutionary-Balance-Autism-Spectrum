@@ -1,5 +1,7 @@
 # Coevolutionary Balance of Resting-State Brain Networks in Autism
 
+> **Dataset:** the full GSR / no-GSR derived feature set and results from this repository's pipelines are publicly available on Kaggle, along with an example notebook: [saeedrezaeiafshar/gsr-nogsr-abide-cbt-results](https://www.kaggle.com/datasets/saeedrezaeiafshar/gsr-nogsr-abide-cbt-results/data)
+
 This repository contains code and data for analyzing coevolutionary balance in resting-state functional brain networks in autism spectrum disorder (ASD).
 
 ## Overview
@@ -102,6 +104,7 @@ python src/combat_harmonize.py \
 - **Sample**: 93 ASD and 93 TD adult males (18-30 years, IQ > 80)
 - **Preprocessing**: CPAC pipeline
 - **Parcellation**: CC200 atlas (200 ROIs) mapped to Yeo 7-network
+- **GSR / no-GSR derived features**: published on Kaggle at [gsr-nogsr-abide-cbt-results](https://www.kaggle.com/datasets/saeedrezaeiafshar/gsr-nogsr-abide-cbt-results/data), including an example notebook — this is the input used by `GSR_Harmonization_Fix.ipynb` and `ML_GSR_noGSR_Classification.ipynb`
 
 ## Methods
 
