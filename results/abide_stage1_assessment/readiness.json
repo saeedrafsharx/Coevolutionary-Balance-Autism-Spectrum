@@ -1,0 +1,12 @@
+{
+  "statistical_analysis_ready": false,
+  "technical_complete_participants": 168,
+  "remaining_issues": [
+    "Stage 1B located constant/zero-support ROIs; select explicit availability policy",
+    "Sparse ROI coverage among technically complete participants",
+    "Primary cohort/handedness definition",
+    "Upstream fALFF computation provenance",
+    "Tiny cortical intersections assign some parcels to named networks; refine anatomical eligibility"
+  ],
+  "group_tests_run_during_review": false
+}

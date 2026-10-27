@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering\small
+\caption{\textbf{Complete site-held-out classification results.}}\label{tab:classification}
+\begin{tabular}{llrrlrr}
+\toprule
+Pipeline & Model & Accuracy & BA & BA 95\% CI & F1 & AUC \\
+\midrule
+GSR & GNB & 0.500 & 0.498 & 0.428, 0.583 & 0.435 & 0.513 \\
+GSR & KNN & 0.521 & 0.518 & 0.455, 0.581 & 0.385 & 0.505 \\
+GSR & LR & 0.536 & 0.534 & 0.469, 0.613 & 0.488 & 0.535 \\
+GSR & SVM & 0.557 & 0.558 & 0.464, 0.653 & 0.569 & 0.573 \\
+GSR & XGB & 0.457 & 0.457 & 0.390, 0.531 & 0.441 & 0.485 \\
+noGSR & GNB & 0.514 & 0.515 & 0.401, 0.633 & 0.528 & 0.499 \\
+noGSR & KNN & 0.543 & 0.542 & 0.470, 0.627 & 0.522 & 0.518 \\
+noGSR & LR & 0.486 & 0.485 & 0.428, 0.559 & 0.463 & 0.451 \\
+noGSR & SVM & 0.486 & 0.485 & 0.385, 0.591 & 0.471 & 0.512 \\
+noGSR & XGB & 0.507 & 0.507 & 0.439, 0.615 & 0.481 & 0.536 \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}\footnotesize
+Every row uses 140 OOF predictions (69 ASD/71 controls). BA: balanced accuracy; F1 treats ASD as positive. Intervals bootstrap sites conditional on fixed predictions and omit part of training uncertainty. LR: logistic regression; SVM: radial-basis support vector machine; GNB: Gaussian naive Bayes; KNN: k-nearest neighbors; XGB: XGBoost. All models are reported without an outer-test winner.
+\end{flushleft}
+\end{table}

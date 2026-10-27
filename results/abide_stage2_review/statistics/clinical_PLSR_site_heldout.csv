@@ -1,0 +1,11 @@
+pipeline,score,n,n_sites,OOF_R2,OOF_MSE,training_mean_baseline_MSE,validation
+GSR,ADI_R_Social,30,6,-0.416355898144398,37.89538891924123,27.873734185840778,nested GroupKFold by site; all fitted steps within folds
+GSR,ADI_R_Verbal,30,6,-0.13003649621315416,25.89541410877787,23.571863944744408,nested GroupKFold by site; all fitted steps within folds
+GSR,ADI_R_Onset,28,5,-0.9280423151398536,3.511791359719019,2.016796591911,nested GroupKFold by site; all fitted steps within folds
+GSR,ADOS_Total,50,7,-0.029324224668365373,10.838372356068021,10.722826369174532,nested GroupKFold by site; all fitted steps within folds
+GSR,ADOS_Communication,43,6,-0.04688189863932579,1.4086761296996446,1.3919787097689738,nested GroupKFold by site; all fitted steps within folds
+noGSR,ADI_R_Social,30,6,-0.3806097028321127,36.938979604663636,27.873734185840778,nested GroupKFold by site; all fitted steps within folds
+noGSR,ADI_R_Verbal,30,6,-0.3696941484793128,31.387302353597043,23.571863944744408,nested GroupKFold by site; all fitted steps within folds
+noGSR,ADI_R_Onset,28,5,-0.34797614683327716,2.455242267446326,2.016796591911,nested GroupKFold by site; all fitted steps within folds
+noGSR,ADOS_Total,50,7,-0.10478451479109663,11.632939026944332,10.722826369174532,nested GroupKFold by site; all fitted steps within folds
+noGSR,ADOS_Communication,43,6,-0.3052500429798404,1.7563342925548098,1.3919787097689738,nested GroupKFold by site; all fitted steps within folds

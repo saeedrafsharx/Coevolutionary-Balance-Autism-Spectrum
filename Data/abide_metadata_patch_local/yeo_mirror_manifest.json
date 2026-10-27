@@ -1,0 +1,52 @@
+[
+  {
+    "resource": "Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.nii.gz",
+    "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.nii.gz",
+    "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.nii.gz",
+    "status": "failed",
+    "error": "ValueError: Invalid NIfTI bit depth or voxel offset",
+    "checked_utc": "2026-10-24T20:15:04.396699+00:00"
+  },
+  {
+    "resource": "Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.nii.gz",
+    "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.nii.gz",
+    "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.nii.gz",
+    "status": "failed",
+    "error": "ValueError: Invalid NIfTI bit depth or voxel offset",
+    "checked_utc": "2026-10-24T20:15:09.914008+00:00"
+  },
+  {
+    "resource": "Yeo2011_7Networks_ColorLUT.txt",
+    "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo2011_7Networks_ColorLUT.txt",
+    "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/atlases/Yeo7_mirror/Yeo2011_7Networks_ColorLUT.txt",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T20:15:14.197222+00:00",
+    "sha256": "f6e68af76dffac569c4e6b5d7cfe13036e5ce0a702192a3774ddae48af985e26",
+    "size_bytes": 288,
+    "headers": {
+      "ETag": "\"5cd8c972ed15d67255c60b634c8094d70b24cad8b358e974275458c964c75202\"",
+      "Last-Modified": null,
+      "Content-Length": "288"
+    },
+    "details": {},
+    "downloaded_utc": "2026-10-24T20:15:15.182046+00:00"
+  },
+  {
+    "resource": "Yeo_JNeurophysiol11_MNI152_README",
+    "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo_JNeurophysiol11_MNI152_README",
+    "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/atlases/Yeo7_mirror/Yeo_JNeurophysiol11_MNI152_README",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T20:15:15.182379+00:00",
+    "sha256": "839f1990d7c4b058565d7f9beeaf00fabef4bd49510da366586856f730848086",
+    "size_bytes": 6122,
+    "headers": {
+      "ETag": "\"feaf94389be83716bf1659f285b9d715aa45e258bf20dabf361271404d19db46\"",
+      "Last-Modified": null,
+      "Content-Length": "6122"
+    },
+    "details": {},
+    "downloaded_utc": "2026-10-24T20:15:16.820735+00:00"
+  }
+]

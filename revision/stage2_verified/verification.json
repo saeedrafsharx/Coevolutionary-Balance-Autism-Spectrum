@@ -1,0 +1,9 @@
+{
+  "source": "results/abide_stage2_repaired",
+  "classification_source": "results/abide_stage2_classification_extension/statistics",
+  "feature_sha256": "25178d5b3f5b87ad10c4b2f60f0574fb5fe51b26d042ddac7255f9030894848b",
+  "ComBat_successful_design_pipeline_pairs": 6,
+  "complete_classifier_pairs": 10,
+  "OOF_subjects_per_pair": 140,
+  "group_model_n": 136
+}

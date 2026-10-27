@@ -1,0 +1,11 @@
+{
+  "OOF_subjects_per_pair": 140,
+  "baseline_outputs_preserved": true,
+  "classifier_pipeline_pairs": 10,
+  "complete": true,
+  "exploratory_post_baseline_review": true,
+  "feature_sha256": "25178d5b3f5b87ad10c4b2f60f0574fb5fe51b26d042ddac7255f9030894848b",
+  "finished_utc": "2026-10-27T06:18:57.639345+00:00",
+  "imaging_recalculation": false,
+  "ready_for_submission": false
+}

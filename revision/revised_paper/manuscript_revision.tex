@@ -1,0 +1,861 @@
+% ======================================================================
+% PLOS ONE submission -- prepared from the official PLOS LaTeX template
+% (Version 3.8, April 2026). Bibliography style: plos2025.bst
+% ======================================================================
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.85in,left=2.75in,footskip=0.75in]{geometry}
+\usepackage{tabularx}
+\usepackage{seqsplit}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage{changepage}
+\usepackage{textcomp,marvosym}
+\usepackage{cite}
+\usepackage{nameref,hyperref}
+\usepackage[right]{lineno}
+\usepackage[nopatch=eqnum]{microtype}
+\microtypesetup{expansion=false}
+\DisableLigatures[f]{encoding = *, family = * }
+\usepackage[table]{xcolor}
+\usepackage{array}
+
+% --- packages required by this manuscript's tables/figures ---
+\usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{booktabs}
+
+% create "+" rule type for thick vertical lines
+\newcolumntype{+}{!{\vrule width 2pt}}
+\newlength\savedwidth
+\newcommand\thickcline[1]{%
+  \noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+  \cline{#1}%
+  \noalign{\vskip\arrayrulewidth}%
+  \noalign{\global\arrayrulewidth\savedwidth}%
+}
+\newcommand\thickhline{\noalign{\global\savedwidth\arrayrulewidth\global\arrayrulewidth 2pt}%
+\hline
+\noalign{\global\arrayrulewidth\savedwidth}}
+
+% Remove comment for double spacing
+\usepackage{setspace}
+\doublespacing
+
+% Text layout
+\raggedright
+\setlength{\parindent}{0.5cm}
+\textwidth 5.25in
+\textheight 8.75in
+
+% Bold 'Fig #' in caption, period separator, left justified
+\usepackage[aboveskip=1pt,labelfont=bf,labelsep=period,justification=raggedright,singlelinecheck=off]{caption}
+\renewcommand{\figurename}{Fig}
+
+% Please use the included `plos2025.bst` as the BibTeX style
+\bibliographystyle{../../plos2025}
+
+% Remove brackets from numbering in List of References
+\makeatletter
+\renewcommand{\@biblabel}[1]{\quad#1.}
+\makeatother
+
+% Header and Footer with logo
+\usepackage{lastpage,fancyhdr,graphicx}
+\usepackage{epstopdf}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage/\pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrule}{\hrule height 2pt \vspace{2mm}}
+\fancyheadoffset[L]{2.25in}
+\fancyfootoffset[L]{2.25in}
+\lfoot{\today}
+
+\begin{document}
+\vspace*{0.2in}
+
+% Title must be 250 characters or less.
+\begin{flushleft}
+{\Large
+\textbf{Coevolutionary balance of resting-state brain networks in autism}
+}
+\newline
+\\
+S. Rezaei Afshar\textsuperscript{1},
+G. R. Jafari\textsuperscript{2,*}
+\\
+\bigskip
+\textbf{1} Institute for Cognitive and Brain Sciences, Shahid Beheshti University, Evin, Tehran, Iran
+\\
+\textbf{2} Department of Physics, Shahid Beheshti University, Evin, Tehran, Iran
+\\
+\bigskip
+
+* Corresponding author: gjafari@gmail.com
+
+\end{flushleft}
+
+\noindent\textbf{Working revision draft: author review required.}
+This document replaces the submitted analysis with the verified revision outputs.
+Historical fALFF provenance and the public archive identifier remain unresolved
+and are explicitly marked below.
+
+\section*{Abstract}
+Signed functional connectivity and regional low-frequency BOLD fluctuations offer
+complementary descriptions of resting-state organization. We examined their joint
+alignment using a static Hamiltonian inspired by coevolutionary balance in a
+male-only adult sample from ABIDE I. Downloaded preprocessed regional time series
+and fALFF maps were analyzed with and without global signal regression (GSR).
+Age and IQ eligibility yielded 140 participants (69 autistic participants and
+71 controls). Measurement coverage defined a fixed common set of 106 regions;
+site-adjusted group models included 136 participants. In a separate male-control
+baseline, mean empirical Hamiltonian values were lower than their null expectations
+under unrestricted and network/hemisphere-blocked state permutations. Hamiltonian values did not
+show a detectable diagnosis effect after adjustment for site, age, full-scale IQ,
+and mean framewise displacement (GSR: coefficient 1.43, 95\% CI $-17.17$ to 20.04;
+no-GSR: 2.06, 95\% CI $-12.39$ to 16.50; both Holm-adjusted $p=1.00$).
+ComBat, pooled energy-trimming, and larger-node-set sensitivities did not identify
+a corrected diagnosis effect. Equivalence tests were inconclusive. Exploratory
+site-held-out classification yielded balanced accuracies of 0.457--0.558, with
+all conditional confidence intervals including 0.5.
+A broader exploratory selection-method search did not establish a reliable performance gain. Clinical analyses and
+motion- and mean-connectivity-adjusted efficiency analyses provided no corrected
+evidence of an association. These results do not establish group equivalence,
+diagnostic utility, or an autism-specific energy--efficiency relationship.
+Interpretation is restricted to the selected adult males, the coverage-limited
+network, and the downloaded derivatives; historical fALFF processing provenance
+must be resolved before final submission.
+
+\clearpage
+\newgeometry{top=0.85in,left=1in,right=1in,footskip=0.75in}
+\linenumbers
+
+\section*{Introduction}
+Resting-state functional MRI provides several descriptions of brain organization.
+Functional connectivity (FC) measures statistical dependence between regional
+BOLD time series, whereas fractional amplitude of low-frequency fluctuations
+(fALFF) describes the relative contribution of low-frequency fluctuations to the
+sampled spectrum \cite{Zou:2008fa}. Neither quantity directly measures neuronal
+firing rate. Regional fALFF differences have been reported in adult autism
+\cite{Itahashi2015revision}, but such regional effects need not produce a difference
+in a scalar summary combining fALFF ranks and FC.
+
+Signed networks retain positive and negative associations, whose treatment can
+materially affect network summaries \cite{RubinovSporns2011}. Structural balance
+theory describes consistency among signed relationships \cite{Heider:1946ac,cartwright1956}.
+Coevolutionary models introduce nodal states as well as signed interactions
+\cite{Kargaran:2021he,GhanbarzadehNoudehi2022}. Here, these ideas motivate a static
+alignment statistic. We do not estimate a dynamical coevolutionary process,
+metabolic energy, or excitation--inhibition balance from BOLD data.
+
+Our earlier ABIDE structural-balance analysis studied triadic relationships in
+children and adolescents aged 6--18 without GSR \cite{Moradimanesh2021}. Its
+statistic and developmental population differ from the present adult nodal-state
+Hamiltonian. Likewise, energy-landscape analyses of autism model time-varying
+state occupancy and transitions \cite{Watanabe2017revision}; a static alignment
+statistic cannot reproduce or refute a finding about those transitions.
+
+Multisite FC studies show substantial heterogeneity and limited generalization
+across acquisition sites \cite{King2019revision}. Site adjustment and harmonization
+therefore require explicit treatment, particularly when diagnosis and site are
+unbalanced. Protecting diagnosis in a harmonization model does not guarantee
+unbiased downstream inference \cite{Nygaard2016revision}. We use raw adjusted
+features for primary inference and treat ComBat as a sensitivity analysis.
+
+This revision asks whether a coverage-defined alignment statistic differs by
+diagnosis in adult males with observed full-scale IQ (FIQ) above 80. We compare
+GSR and no-GSR derivatives, quantify uncertainty, examine the role of mean FC and
+motion in efficiency associations, and assess exploratory site-held-out prediction.
+The revised node and participant definitions were fixed using demographic criteria
+and measurement QC before corrected group-effect testing; they are revision-stage
+choices, not an original preregistration.
+
+\section*{Results}
+\subsection*{Participant and measurement scope}
+Figure~\ref{fig:flow} separates demographic eligibility, feature availability, and
+site-adjusted inference. Table~\ref{tab:demographics} reports the 136 modeled
+participants. The nine-site model includes an ASD-only site, CALTECH ($n=9$);
+its diagnosis effect is identified through the remaining mixed-diagnosis sites,
+under the common-effect regression assumption. Broader-181 and full-200 designs
+have 101 (47/54) and 64 (30/34) adjusted-model participants, respectively.
+
+\input{tables/demographics.tex}
+
+\subsection*{Null-model comparisons of coevolutionary alignment}
+\paragraph*{Male-control baseline.}
+We first examined the 71 eligible male controls as a separate non-autistic
+baseline, rather than pooling them with ASD. Each control contributes 1,000
+state permutations per pipeline and null scheme. Mean empirical $H$ is $-91.39$
+with GSR and $-66.62$ without GSR. The corresponding unrestricted null means
+are 1.49 and 17.11; mean empirical-minus-null differences are $-92.88$ and
+$-83.73$, with descriptive site-bootstrap 95\% intervals of $-103.90$ to
+$-79.89$ and $-89.79$ to $-77.66$, respectively.
+
+With network/hemisphere-constrained states, the null means are $-41.35$ and
+$-18.85$, and the empirical-minus-null differences are $-50.04$ (95\% interval
+$-54.14$ to $-44.03$) and $-47.76$ ($-53.11$ to $-42.16$).
+Table~\ref{tab:controlnull} and Fig.~\ref{fig:controlnull} show these comparisons;
+individual null $z$-scores are plotted in S1 Supporting Information.
+All 71 controls in each pipeline have empirical $H$ below their unrestricted
+null mean. Under the blocked null, this holds for 69/71 with GSR and 67/71
+without GSR. After exploratory BH correction over all 284 individual control
+comparisons, the numbers with lower-tail $q<.05$ are 61/71 and 64/71 for the
+unrestricted null and 36/71 and 50/71 for the blocked null (GSR/no-GSR).
+
+Thus empirical control state assignments tend to align with their own FC more
+strongly than the randomized assignments under both specified nulls, with
+substantial dependence on the constraints. This is evidence about the chosen
+alignment statistic and randomizations, not proof of dynamical equilibrium,
+a comparison with topology-rewired graphs, or an autism-specific effect.
+
+\input{tables/control_null_summary.tex}
+
+\paragraph*{ASD and across-diagnosis summaries.}
+All 140 participants per pipeline have finite null scores under both randomizations.
+Within ASD alone ($n=69$), mean unrestricted $z$ is $-4.705$/$-4.917$
+(GSR/no-GSR), and blocked mean $z$ is $-2.331$/$-2.591$. With exploratory
+BH across all 560 participant/pipeline/null comparisons, the ASD lower-tail
+$q<.05$ counts are 61/69 and 60/69 for unrestricted states, and 40/69 and
+46/69 for blocked states. These complements retain the original ASD as well
+as control null question and do not test diagnosis differences.
+The corresponding across-diagnosis summaries are retained for completeness.
+Mean unrestricted $z$ is $-4.70$/$-5.04$ (GSR/no-GSR), compared with
+$-2.32$/$-2.68$ under network/hemisphere blocks. These values show dependence on
+the randomization scheme, not diagnosis discrimination or preservation of full
+spatial structure. Individual scores and probabilities are in S2 Supporting Information.
+
+
+
+\subsection*{Whole-network coevolutionary energy and motif composition}
+Primary adjusted coefficients are 1.432 with GSR (95\% CI $-17.173$ to 20.038,
+$p=.879$) and 2.056 without GSR (95\% CI $-12.387$ to 16.499, $p=.779$);
+both Holm-adjusted $p=1.000$ (Table~\ref{tab:primary}, Fig.~\ref{fig:primary}).
+No valid secondary group test survives its specified correction in any raw or
+ComBat design. The trimming sensitivities likewise do not identify a corrected
+$H$ difference. Larger-node results are in S1 Supporting Information.
+
+\input{tables/primary_H.tex}
+
+Figure~\ref{fig:globalfeatures} displays all seven valid global quantities for
+the untrimmed 140-person feature cohort. Corrected within- and between-network
+effect heatmaps in S1 show all prespecified cortical blocks rather than selecting
+nominally significant examples.
+
+All six ComBat design/pipeline pairs complete with finite, changed feature values.
+Primary descriptive site partial $R^2$ decreases from .056 to .004 with GSR and
+from .047 to .005 without GSR. Maximum primary leverage is .352; maximum Cook's
+distance is .080 or smaller across these four raw/ComBat fits. These checks do
+not establish perfect harmonization or independence of participants within sites.
+Excluding CALTECH yields 127 participants (58 ASD, 69 controls) at eight sites;
+raw adjusted coefficients remain imprecise (GSR: 1.115, 95\% CI $-17.531$ to
+19.762; no-GSR: 1.660, 95\% CI $-12.775$ to 16.096; both Holm $p=1.000$).
+
+Primary unadjusted Hedges' $g$ is $-.024$ (bootstrap 95\% CI $-.384$ to .315)
+with GSR and .072 ($-.268$ to .412) without GSR. Approximate two-sample 80\%-power
+minimum detectable $d$ is .484 at $\alpha=.05$, or .534 at $\alpha=.025$.
+Equivalence tests are inconclusive ($p=.193$ and .223). Nonsignificant contrasts
+therefore do not demonstrate absence of a meaningful diagnosis effect.
+
+\subsection*{Network-specific coevolutionary metrics}
+We retain the original within-network question: whether ASD and control
+participants differ in mean FC (AvgWeight), mean state-weighted FC (AvgFalffW),
+or block Hamiltonian contribution (EnergyBlock) within each of the seven Yeo
+systems. The primary graph permits 18 tests per pipeline; three within-limbic
+quantities are unavailable because only one limbic node remains. All available
+blocks are shown in Fig.~\ref{fig:intraeffects}, with complete estimates in S2.
+No comparison survives BH across the 36 pipeline/within-network tests. In GSR,
+the smallest raw probability is .073. Without GSR, somatomotor mean FC is
+nominally lower in ASD (coefficient $-.0683$, $p=.0371$), as is default-network
+mean FC ($-.0519$, $p=.0432$); both become $q=.392$ and are not corrected findings.
+
+\subsection*{Inter-network connectivity and energy}
+We also retain all 21 unordered network pairs and all three original measures,
+yielding 63 tests per pipeline. Fig.~\ref{fig:intereffects} shows every block,
+including nonsignificant ones. No comparison survives BH across the 126
+pipeline/inter-network tests. GSR salience/ventral-attention--limbic state-weighted
+FC and its corresponding block energy are nominally different ($p=.0315$,
+$q=.756$). They are proportional descriptions of the same block, not two
+independent effects. No no-GSR inter-network test reaches $p<.05$; its smallest
+raw probability is .0508. These results address spatially specific diagnosis
+effects separately from the global Hamiltonian and the within-group associations.
+
+\subsection*{Relationships between H and other network metrics}
+To preserve the original descriptive analysis, we correlate $H$ with all 87 other
+available nonlegacy features within ASD and controls separately, in both pipelines.
+All eligible participants are included (69 ASD/71 controls). Under the original
+per-group Pearson BH convention, 26 GSR-ASD, 21 GSR-control, and 12 no-GSR-ASD
+associations survive $q<.05$; none survives in no-GSR controls
+(Table~\ref{tab:Hcorrelations}). Figure~\ref{fig:Hcorrelates} restores the
+original top-20 presentation, while S2 contains every test, not just ranked results.
+
+Examples include GSR-ASD $H$ versus somatomotor--default block energy
+($r=.434$, $q=.00472$) and no-GSR-ASD $H$ versus frontoparietal--default block
+energy ($r=.473$, $q=.000890$). EnergyBlock and AvgFalffW are proportional within
+a fixed block, and both share the state-weighted terms entering $H$; these
+associations are therefore not independent validation. Among mean-FC features,
+GSR controls show an association with somatomotor--default AvgWeight
+($r=-.315$, $q=.0346$), still derived from the same FC matrix. Significance in
+one group alone does not establish a group difference in correlation.
+
+The descriptive raw $H$--global-efficiency correlations are .022 in GSR-ASD and
+.109 in no-GSR-ASD, neither significant; corresponding control correlations are
+.100 and .140. The adjusted analysis below addresses the additional question of
+association conditional on mean FC, motion, age, IQ, and site. Matched-participant
+raw/ComBat comparisons and alternative pooled corrections are retained in S2,
+without selecting the version with the most significant associations.
+
+\input{tables/H_correlation_counts.tex}
+
+\subsection*{H--efficiency relationships after nuisance adjustment}
+
+ASD partial $H$--global-efficiency correlations are .017 with GSR and .077 without
+GSR ($n=66$); neither is significant after correction. Diagnosis-by-efficiency
+interactions are also nonsignificant (Holm $p=.635$ and .940), providing no
+support for an ASD-specific trade-off. Residualized efficiency scatter plots and
+complete clinical validation plots are provided in S1 Supporting Information.
+
+\subsection*{Correlation analysis of network metrics with behavioral scores}
+All five original ADI-R/ADOS outcomes are retained with score-specific missingness
+and a common 88-feature schema across pipelines. Pearson and Spearman analyses
+are both reported. No clinical feature correlation survives
+FDR; adjusted ADOS-total correlations with $H$ are .008 and .061 ($n=50$).
+
+\paragraph*{Multivariate analysis: Partial Least Squares.}
+PLSR and PLSC remain distinct complements, as in the original paper.
+Score-specific PLSR samples range from 28 to 50; every OOF $R^2$ is negative and
+every MSE exceeds its training-mean baseline. No PLSC test survives BH correction;
+a nominal no-GSR five-score LV3 probability of .007 becomes $q=.098$ and is not
+presented as a confirmed latent association.
+
+\subsection*{Machine learning classification of ASD versus controls}
+% CLASSIFICATION_RESULTS_BEGIN
+The 10 completed classifier/pipeline pairs have 140 unique OOF predictions
+each, using the same frozen site-disjoint splits. Completed algorithms are
+logistic regression, RBF SVM, Gaussian naive Bayes, KNN, XGBoost. Balanced accuracy ranges from
+0.457 to 0.558 (Table~\ref{tab:classification}, Fig.~\ref{fig:primary}).
+Every conditional interval includes .5. No final classifier is selected from outer-fold performance.
+The conditional intervals do not include all training or QC-selection uncertainty.
+% CLASSIFICATION_RESULTS_END
+
+\input{tables/classification.tex}
+
+% ML_SELECTION_RESULTS_BEGIN
+\paragraph*{Feature-selection audit and exploratory extension.}
+Feature selection was already nested in the five-model analysis above. Reconstructing
+all 50 outer-training fits reproduces every saved prediction: ANOVA retained 22
+features in 11 fits, 44 in 17, and all 88 in 22. We subsequently compared broader
+selection methods in a separate exploratory analysis, retaining the same known
+outer site folds rather than treating them as a fresh independent test.
+Training-fold near-exact redundancy pruning left 59 distinct columns, and inner
+CV chose all 59 in seven fits, ANOVA top-K in 16, mutual-information top-K in 17,
+and L1-ranked top-K in ten. Additional selection retained 5, 10 or 20 features.
+
+Four of the ten model/pipeline point estimates increased and six decreased
+(Table~\ref{tab:FScomparison}). No-GSR logistic regression changed from .485 to
+.544, no-GSR SVM from .485 to .536, and no-GSR KNN from .542 to .557. GSR XGBoost
+changed from .457 to .492. Every paired conditional interval for change includes
+zero, and all follow-up balanced-accuracy intervals include .5. The follow-up
+therefore does not establish a reliable performance gain or justify selecting a
+new final classifier from the outer results. Full ROC, confusion, performance
+and selected-feature frequency heatmaps are in S1 Supporting Information; all
+feature names, inner candidates, and test predictions are in S2.
+
+\input{tables/feature_selection_comparison.tex}
+% ML_SELECTION_RESULTS_END
+
+\subsection*{Sensitivity analysis: results without global signal regression}
+The original no-GSR sensitivity remains explicit at each scale: global quantities,
+within-network and between-network group contrasts, H--metric associations,
+clinical analyses, PLS, and classification. Primary participant and node sets are
+identical across pipelines. GSR/no-GSR Hamiltonian diagnosis estimates are both
+imprecise; ComBat and pooled trimming do not yield a corrected group difference.
+Larger-node sensitivity designs change participants as well as nodes.
+The original spectral-bipolarity descriptor is now reported separately as an
+exploratory raw adjusted comparison: coefficients are .00040 with GSR and .01055
+without GSR, with Holm $p=.916$ for both. It remains outside the frozen feature
+families and does not alter the common clinical/predictive schema.
+
+% CLASSIFICATION_CONTINUITY_BEGIN
+The revised site-held-out analysis now restores 5 of the five original
+algorithm types, using the same revision participants, features, folds and scoring.
+All five original algorithm types have complete OOF predictions in both pipelines.
+Matching the algorithm types does not restore identical original inputs or validation:
+site-held-out evaluation replaces the original random train/test procedure.
+% CLASSIFICATION_CONTINUITY_END
+
+
+\section*{Discussion}
+The revised analysis does not detect a corrected diagnosis effect in the
+coverage-defined adult male sample. Raw covariate-adjusted models, explicit
+ComBat sensitivities, pooled trimming, and mixed-diagnosis-site restriction are
+consistent in this limited sense. The separate male-control null comparison supports alignment relative to the
+specified state randomizations, while the diagnosis comparison asks a different
+question. Alignment in controls can coexist with no detectable diagnosis contrast.
+Their uncertainty remains substantial, and
+inconclusive equivalence tests preclude a universal adult-null interpretation.
+The multisite generalization difficulties reported for FC more broadly
+\cite{King2019revision} reinforce the need for larger independent tests.
+
+This result concerns a relative fALFF--FC alignment statistic. Median states do
+not distinguish globally elevated from globally reduced fALFF distributions,
+and identical values can receive different labels across participants. It is
+therefore inappropriate to equate $+1$ with high neuronal firing or to interpret
+$H$ as metabolic cost. Construction also links the statistic to global weights;
+the original descriptive H--metric question still produces corrected
+within-group associations, whereas the controlled efficiency analyses do not
+retain the submitted ASD-specific trade-off interpretation. An association between two summaries of the same FC matrix would
+not independently validate a biological mechanism even if statistically detected.
+
+The result differs in scope from our earlier developmental triadic-balance work
+\cite{Moradimanesh2021} and from temporal energy-landscape studies
+\cite{Watanabe2017revision}. Different ages, state definitions, parcellations, and
+statistics can test different hypotheses. Regional adult fALFF findings
+\cite{Itahashi2015revision} can coexist with a null global rank-based summary.
+We cannot infer developmental normalization or disagreement with dynamic-state
+findings from this adult cross-sectional analysis.
+
+\subsection*{Sex and generalizability}
+The male-only design restricts both the population represented and the questions
+that can be answered. The selected ABIDE pool does not support an inference about
+autistic women, girls, nonbinary people, or people with intellectual disability.
+The practical scarcity of eligible female participants in a dataset does not
+justify extending male estimates to all autistic people. Repeated male-only
+sampling can leave diagnostic frameworks and candidate biomarkers poorly tested
+in underrepresented groups and may contribute to their under-recognition.
+
+Sex-dependent diagnostic FC patterns have been reported \cite{Alaerts2016revision}.
+Sex-related variation in either FC or fALFF could affect their joint alignment,
+even when within-person median splitting removes absolute fALFF scaling.
+Consequently, neither this group-null result nor the absence of a corrected
+efficiency association can be assumed to generalize to autistic females.
+Recorded binary sex metadata also do not capture gender identity or the social
+and clinical pathways influencing ascertainment. An inclusive test should recruit
+sufficient participants across sexes, ages, cognitive abilities, and presentation
+profiles; prespecify sex-by-diagnosis analyses and measurement-QC comparisons;
+and validate calibration and performance in each group. A small female subgroup
+added only for an underpowered post hoc comparison would not resolve this gap.
+
+\subsection*{Other limitations and revision transparency}
+Coverage selection removes 94 CC200 nodes from the primary graph and leaves only
+one limbic node; the result is not a complete whole-brain or limbic test. The
+50\% support rule can still permit heterogeneous spatial sampling within a parcel.
+Larger-node designs trade coverage for participant retention and do not isolate
+a node-count effect. Signed associations depend on nuisance processing, and
+unmodeled site/acquisition effects may remain. HC3 addresses leverage and
+heteroscedasticity at participant level; it is not site-clustered uncertainty.
+Clinical samples are small, permutation assumptions are approximate, and coarse
+block nulls do not preserve full spatial autocorrelation
+\cite{Markello2021revision}. Prediction is conditional on cohort-wide QC.
+
+The original within-ASD no-GSR H--efficiency association can be reproduced from
+the supplied original feature exports ($r=-.324$, $q=.00592$, $n=80$). Its absence
+in the revision's 106-node definition does not by itself establish that the
+original association was false: the participants, nodes, fALFF inputs and model
+assumptions differ. Nor does reproduction of that association establish a
+between-diagnosis interaction or independent biological mechanism. We preserve
+both the original record and the revised analyses, stating their different scopes.
+
+The original-code audit identified discrepancies in cohort flow, ordinal cortical
+assignments, a fixed-TR spectral ratio calculated from filtered ROI series, and
+exports labeled ComBat that equaled raw values after a failed harmonization path.
+The revised analysis uses downloaded fALFF maps, explicit anatomical assignments,
+and checked harmonization. Multiple elements changed together, so we cannot
+attribute changed results solely to correction of site effects.
+Historical PCP fALFF input/band provenance remains a submission blocker; this
+working draft does not establish that preprocessing concern has been resolved.
+
+\paragraph*{Conclusions.}
+Within the specified coverage-limited network of adult males, the revised analyses
+provide no corrected evidence of diagnosis differences or clinical/predictive
+utility. Male controls show alignment relative to the specified state-permutation
+nulls, a baseline property distinct from diagnosis discrimination. These analyses
+do not establish group equivalence, a universal autism null, or
+an ASD-specific energy--efficiency mechanism. Independent, inclusive validation
+and verified derivative provenance are necessary for stronger conclusions.
+
+\section*{Methods}
+\subsection*{Data source, eligibility, and ethics}
+The source pool comprises 182 previously selected ABIDE I participants (90 ASD,
+92 controls) with requested PCP derivatives \cite{DiMartino:2014abide,PCPdocumentationRevision}.
+We did not reconstruct an initial random or matched 200-person sample. Eligibility
+for the revision required age 18--30 inclusive and observed FIQ $>80$, without IQ
+imputation, yielding 140 participants (69 ASD, 71 controls) at 12 sites. All were
+recorded male. We did not impose a right-handedness restriction: 71 were recorded
+right-handed, six left-handed, three ambidextrous, and 60 missing or sentinel-coded.
+Existing diagnoses were taken from ABIDE metadata; we do not retrospectively assign
+DSM-5 ascertainment to all contributing sites. Clinical missingness was handled
+per outcome rather than excluding everyone missing any clinical score.
+
+The sample flow is shown in Fig.~\ref{fig:flow}. Model-specific counts and
+covariates are given in Table~\ref{tab:demographics}; site counts and participant
+ledgers are supplied separately in S1 and S2 Supporting Information.
+
+The original ABIDE studies were approved by the contributing sites' institutional
+review boards, with written informed consent and/or assent obtained under their
+respective protocols \cite{DiMartino:2014abide}. The present study exclusively
+reanalyzed publicly available, deidentified ABIDE data. No new participants were
+recruited, no identifying information was accessed, and there was no participant
+contact or new data collection. No additional ethics approval or consent was
+obtained for this secondary analysis because it used only those public,
+deidentified records.
+
+\subsection*{Downloaded derivatives and upstream processing}
+Regional CC200 time series, fALFF maps, and functional masks were downloaded from
+the PCP C-PAC outputs. MRI preprocessing, time-series extraction, and voxelwise
+fALFF computation were performed upstream, not locally for this revision.
+The PCP documentation describes slice-time correction, motion correction,
+intensity normalization, and nuisance regression using six motion parameters,
+their one-time-point lags, the squares of those 12 terms, five white-matter/CSF
+principal components, and linear and quadratic trends. The global signal is
+included only in the GSR strategies \cite{PCPdocumentationRevision}.
+We use filtered ROI time series from \texttt{filt\_global} and
+\texttt{filt\_noglobal} for FC, and maps and masks from the corresponding
+\texttt{nofilt} strategy for fALFF aggregation. The documented FC filtering band
+is 0.01--0.1 Hz; no additional local temporal filter or fixed-length truncation
+was applied. Primary time-series lengths range from 116 to 296 volumes.
+
+TR was recovered from inherited site acquisition metadata, including a
+FILE\_ID-specific site-variant resolution where necessary. Among the 140 eligible
+participants, TR is 1.5 s ($n=19$), 1.667 s ($n=16$), 2.0 s ($n=87$), 2.2 s
+($n=1$), or 3.0 s ($n=17$). Consequently, a universal 0.25-Hz Nyquist limit is
+inappropriate. Mean FD comes from PCP summary metadata; per-volume censoring
+histories are not reconstructed from those summaries.
+
+\textbf{Unresolved provenance:} strategy names do not establish the input branch
+that generated the historical fALFF maps. The archived configuration specifies
+0.01--0.1 Hz fALFF bounds \cite{PCPconfigRevision}, whereas the submitted text described 0.01--0.08 Hz.
+The output mapping identifies a smoothed standard-space fALFF derivative.
+The historical implementation, amplitude-versus-power definition, denominator,
+filtering order, and smoothing kernel must be verified before this paragraph can be finalized.
+We do not infer these facts from a current C-PAC release or from equal maps
+across filtered/unfiltered strategy folders.
+
+\subsection*{Coverage-defined nodes and cortical assignments}
+CC200 parcel labels were resampled by nearest-neighbor interpolation to each
+fALFF map grid. Regional fALFF is the arithmetic mean of finite map values within
+the parcel and the downloaded functional mask; coverage is the fraction of parcel
+voxels meeting these criteria. A retained node must have a nonconstant downloaded
+time series and at least 50\% finite in-mask support in both pipelines.
+The primary set contains the 106 nodes satisfying this rule in every eligible
+participant. All 140 participants therefore have the same primary nodes.
+This is a coverage-limited network rather than an unchanged whole-brain CC200 graph.
+The threshold is a methodological choice, not a universal validity standard.
+
+Two exploratory designs assess scope: 181 nodes qualifying in at least 95\% of
+eligible participants, followed by requiring every selected node to qualify in
+each retained participant (104 participants, 48 ASD/56 controls); and all 200 nodes
+with the same participant-level rule (69 participants, 31/38). Medians and all
+features are recomputed within each node set. These designs change both nodes and
+participants, precluding attribution of between-design differences to anatomy alone.
+
+Cortical network labels use the liberal Yeo seven-network atlas \cite{Yeo2011}.
+Parcels require at least 50\% Yeo cortical support and are then assigned by maximum
+Dice overlap. Other nodes are unassigned for cortical blocks but retained globally.
+The 106-node set includes 91 assigned and 15 unassigned nodes. Only one assigned
+node is limbic; within-limbic summaries are structurally unavailable, not null tests.
+The atlas mirror's inconsistent float32 bit-depth header was normalized after
+payload and label validation; voxel values and spatial transforms were preserved.
+
+\subsection*{Hamiltonian and complementary features}
+For participant $k$, let $a_{ik}$ be the regional downloaded fALFF mean and
+$m_k$ the median over the selected nodes. We define
+\begin{equation}
+s_{ik}=\begin{cases}+1,&a_{ik}\geq m_k,\\-1,&a_{ik}<m_k.\end{cases}
+\end{equation}
+These are relative mathematical labels: the same fALFF value can receive opposite
+labels in two participants. An above-median label does not imply a higher mean
+neuronal firing rate. The median split also removes absolute between-person
+fALFF scaling from the state definition.
+
+Pearson correlations of the downloaded filtered regional series are clipped to
+$[-0.9999,0.9999]$, Fisher transformed, and assigned zero diagonal. With these
+weights $z_{ij,k}$, the primary statistic is
+\begin{equation}
+H_k=-\sum_{i<j}z_{ij,k}s_{ik}s_{jk}.\label{eq:H}
+\end{equation}
+In Eq.~\ref{eq:H}, lower values indicate greater alignment under this definition,
+not lower biological
+energy or demonstrated dynamical stability. The four pairwise sign/state classes
+are illustrated in Fig.~\ref{fig:configuration}. Negative FC is a statistical association,
+not a direct inhibitory synapse. We retain GSR and no-GSR as paired analyses because
+GSR affects signed associations; GSR is not treated as biologically definitive.
+
+Complementary features include four proportions partitioning nonzero edges by
+weight sign and nodal-state agreement, and global/local efficiency of the absolute
+Fisher-weight graph \cite{latora2001}. Edge lengths are $1/|z_{ij}|$, with zero
+weights treated as absent; local efficiency averages the induced-neighborhood
+global efficiencies. For each of seven within-network and 21 between-network
+blocks we compute mean weight, mean state-weighted weight, and their negative sum.
+Edges involving unassigned nodes remain in $H$ but not cortical block sums.
+The previous second-eigenvector ``bipolarity'' descriptor is exported only as a
+legacy descriptor and is excluded from inference.
+
+\subsection*{Group inference and harmonization}
+Primary inference uses untrimmed raw $H$ in ordinary least squares with diagnosis,
+site indicators, age, FIQ, and mean FD. We use HC3 standard errors and
+$t$-referenced 95\% confidence intervals. Each design excludes sites with fewer
+than three retained participants to avoid singleton leverage; the primary model
+includes 136 participants (67/69) at nine sites. Design rank is checked.
+Holm correction covers the two pipeline diagnosis tests. Secondary whole-network,
+within-network, and between-network families use Benjamini--Hochberg correction
+across both pipelines within each design/model, excluding unavailable tests and
+primary $H$. There are respectively 12, 36, and 126 valid secondary tests in the
+primary design. Sensitivity analyses are exploratory rather than further
+confirmatory primary families.
+
+ComBat adjusts the valid feature matrix with site as batch, explicit categorical
+diagnosis protection, and continuous age, FIQ, and FD protection
+\cite{Johnson2007,Fortin:2018neurocomBat}. The same adjusted regression is then fitted.
+Failures cannot silently substitute raw values. Uncertainty does not integrate
+estimated harmonization parameters. Pooled 1.5-IQR trimming of raw $H$, before
+reapplying the site-size rule, is a separate sensitivity; no diagnosis-specific
+trimming defines the primary analysis or prediction sample.
+
+Additional reviewer diagnostics summarize site/group $H$, leverage and Cook's
+distance, and site partial $R^2$ conditional on biological covariates. Residual
+variance comparisons and post-ComBat site summaries are descriptive because the
+same sample estimates harmonization. An exploratory raw adjusted analysis excludes
+sites with only one diagnosis, with Holm correction over pipelines per design.
+No participant is removed on the basis of influence diagnostics.
+
+We report unadjusted Hedges' $g$ with 2,000 within-group participant bootstrap
+replicates (seed 101). These intervals are descriptive and do not resample sites.
+Sensitivity power uses a two-sample approximation at 80\% power, not a
+site/covariate-adjusted power calculation. Exploratory two-one-sided equivalence
+tests use bounds of $\pm0.2$ observed pooled SD for the adjusted coefficient;
+these are conventional bounds, not a validated clinically negligible effect.
+
+\subsection*{Efficiency associations and randomization checks}
+Within-group partial correlations adjust for mean Fisher FC, FD, age, IQ, and site.
+Sites becoming singletons within a group are excluded from that group's residual
+analysis. Eight tests (two efficiency summaries, two groups, two pipelines) receive
+BH correction. Group specificity is tested directly by diagnosis-by-standardized-
+global-efficiency interaction with the same controls, Holm corrected over pipelines.
+A uniform edge shift $c$ changes $H$ by
+\begin{equation}
+\Delta H=\frac{n-(\sum_i s_i)^2}{2}c.
+\end{equation}
+For exactly balanced 106-node states this is $53c$, demonstrating a mathematical
+route for global-weight shifts to affect $H$ independently of a diagnostic mechanism.
+
+For each participant and pipeline, 1,000 state permutations hold FC and total state
+counts fixed. Unrestricted permutations are compared with permutations within
+network/hemisphere blocks (hemisphere defined by parcel-centroid $x<0$ versus
+$x\geq0$). We compute participant $z$-scores and lower-tail Monte Carlo probabilities
+with a plus-one correction; zero null variance is unavailable. Seeds are
+$10000+\mathrm{SUB\_ID}+1$ for GSR and $10000+\mathrm{SUB\_ID}$ for no-GSR.
+Block permutations preserve coarse organization, not full spatial autocorrelation
+\cite{Markello2021revision}; they are alignment checks rather than independent
+validation or diagnosis tests.
+
+To report a non-autistic baseline separately, we summarize these existing null
+outputs for all 71 eligible male controls, without energy trimming or the
+regression-specific small-site exclusion. Individual lower-tail probabilities
+receive an additional exploratory BH correction over all 284 control/pipeline/null
+comparisons. Mean energy differences and mean null $z$-scores have descriptive
+95\% percentile intervals from 5,000 site-cluster bootstrap replicates
+(seed 20261026), conditional on the saved null summaries. These intervals are
+not pooled randomization tests and omit Monte Carlo estimation uncertainty.
+The signed weighted FC matrix is fixed in these nulls; no edge/weight rewiring
+or independent edge-sign reassignment is performed.
+
+\subsection*{Descriptive H--metric complement and original spectral descriptor}
+The original descriptive H-versus-feature question is retained as an additional
+revision complement. Pearson and Spearman correlations cover all 87 available
+nonlegacy features other than H, within each diagnosis and pipeline. BH is
+computed separately over 87 tests per group/pipeline/estimator, matching the
+original Pearson family convention. An alternative pooled BH over 348 tests per
+estimator/version is supplied separately; pooling families is not uniformly more
+conservative in every subgroup. Raw eligible samples, raw adjusted-model subsets,
+and saved ComBat features on the same model subsets are reported as distinct
+versions. These analyses do not change frozen group-inference families.
+The spectral bipolarity value from the original second-eigenvector construction
+is additionally compared by raw HC3-adjusted diagnosis models with Holm over
+two pipeline tests, separately from frozen families. It is an operational
+spectral descriptor, not an asserted optimal signed-balance partition.
+
+\subsection*{Clinical and predictive analyses}
+The primary design supplies the same 88 available, nonlegacy features to both
+pipelines and all clinical/predictive feature analyses, including both efficiencies.
+Five ASD outcomes are considered: ADI-R social, verbal, and onset scores, ADOS
+total, and ADOS communication. Missing/sentinel scores are excluded per outcome.
+Pearson and Spearman feature correlations receive separate BH corrections across
+all feature/score/pipeline tests. Adjusted $H$ correlations control age, IQ, FD,
+and site, with BH across available score/pipeline tests.
+
+PLS regression uses nested site-disjoint GroupKFold (up to five outer and three
+inner folds), selecting one to three components by inner-fold MSE. Imputation,
+variance filtering, and PLS scaling are fitted inside training folds. Complete
+OOF predictions are compared with each outer training sample's mean outcome.
+Exploratory PLSC uses nuisance-residualized and standardized features/outcomes for
+ADOS and five-score complete-case blocks, with 1,000 within-site residual
+permutations (seed 101), rank-wise singular-value tests, and BH over all reported
+latent-variable tests. Its residual exchangeability assumptions and small complete
+cases limit interpretation \cite{Krishnan2011}.
+
+% CLASSIFICATION_METHODS_BEGIN
+Classification compares logistic regression, RBF SVM, Gaussian naive Bayes, KNN, XGBoost on all 140 primary
+participants without ComBat. Deterministic size-balanced site-disjoint folds use
+five outer and three inner splits, each required to contain both classes.
+Median imputation, variance filtering, standardization, ANOVA feature selection
+(25/50/100 percent), and hyperparameter tuning are nested. Logistic and SVM
+class weights are balanced. Logistic $C$ values are 0.01/0.1/1/10; SVM $C$ values
+are 0.1/1/10 with scale-based gamma. Gaussian naive Bayes uses its default
+variance smoothing and training-estimated priors, with feature-selection percentile
+tuned inside folds. KNN evaluates 3/5/7/9/11 neighbors and uniform/distance
+weights. Positive-class probabilities supply ROC scores for these added models;
+logistic/SVM decision-function scores and predictions are reused unchanged.
+XGBoost uses CPU histogram trees, seed 42, one thread, log-loss evaluation,
+max depth 2/3/4, 100/200/300 estimators, and learning rates .05/.1. The same
+nested feature-selection percentiles apply; default scale-pos-weight is retained.
+Inner scoring uses balanced accuracy. No model is selected by outer-test accuracy.
+Pooled OOF balanced accuracy is accompanied by a 1,000-replicate site bootstrap
+conditional on fixed predictions, using the same seed 303 and site order as the
+completed Stage 2 models. This omits some training uncertainty. The node mask and
+available feature schema use cohort-wide QC, so prediction is exploratory
+conditional on this mask, not prospective validation of the entire workflow.
+% CLASSIFICATION_METHODS_END
+
+% ML_SELECTION_METHODS_BEGIN
+\paragraph*{Exploratory comparison of feature-selection methods.}
+After inspecting the baseline outer results, we specified a separate follow-up
+using the same 88-feature inputs, participants, and five/three outer/inner site
+folds. Imputation, variance filtering, redundancy pruning, scaling, selection,
+and classifier fitting are estimated only from the corresponding training data
+\cite{scikit-learn}. Redundancy pruning retains the first feature in fixed schema
+order when absolute training correlation is at least $1-10^{-10}$; proportional
+EnergyBlock/AvgFalffW terms and complementary proportions motivate this step.
+The graph, participants and primary group tests are unchanged.
+
+Inner CV jointly chooses all remaining features, or ANOVA, mutual information,
+or L1-logistic coefficient-ranked top 5/10/20 features, with K capped at the
+available count. Mutual information uses three neighbors and seed 101. The L1
+ranker uses balanced liblinear logistic regression, C=1 and seed 101; coefficient
+ties are broken by training ANOVA rank and fixed feature order. Zero-coefficient
+selections are explicitly recorded; none occurred in the final outer fits.
+Non-XGBoost classifier grids match the baseline. The compact follow-up XGBoost
+grid uses depth 2/3, estimators 100/200 and learning rates .05/.1, with the same
+fixed CPU histogram settings. Thus changes cannot be attributed to selector type
+alone. All candidates are selected by inner balanced accuracy, and all ten
+model/pipeline results are reported without choosing an outer-test winner.
+
+Paired 1,000-replicate site bootstrap (seed 303) estimates conditional intervals
+for the balanced-accuracy change on aligned OOF predictions. These intervals
+omit full training uncertainty and do not adjust for repeated exploration.
+Because baseline outer results had already been inspected, this follow-up is
+exploratory rather than independent confirmation of improved generalization.
+External evaluation would be needed to substantiate a predictive gain.
+% ML_SELECTION_METHODS_END
+
+\section*{Data and code availability}
+ABIDE I and PCP derivatives are publicly available from their source repositories.
+The analysis includes frozen participant/ROI manifests, input hashes, derivative
+provenance records, and executable revision scripts.
+\textbf{Author action required:} insert the verified public archive/repository
+identifier for the exact revision release and its permitted underlying data.
+Existing Kaggle datasets supply inputs but do not by themselves identify the
+complete final code/results release.
+
+\section*{Acknowledgments}
+We thank ABIDE, its contributing sites and participants, and the Preprocessed
+Connectomes Project for making these data and derivatives available.
+
+\nolinenumbers
+\bibliography{Bibliography_revision}
+
+\section*{Figure legends}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.85\textwidth]{figures/participant_flow.pdf}
+  \caption{Participant flow for the revised primary analysis. Demographic eligibility
+  precedes selection of a common coverage-defined node set. Four participants are
+  excluded only from adjusted group models by the minimum-site-size rule;
+  classification retains all 140 eligible participants.}\label{fig:flow}
+\end{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.96\textwidth]{figures/control_null_empirical.pdf}
+  \caption{Male-control empirical energy against each participant's own null mean.
+  Columns show GSR/no-GSR; rows show unrestricted and network/hemisphere-blocked
+  state permutations. Every panel contains the same 71 eligible male controls.
+  Lines connect each control's empirical $H$ with the mean of 1,000 null
+  configurations; black diamonds indicate across-control means. The complete
+  signed weighted FC matrix is fixed and states are reassigned. These are not
+  edge-rewired networks or full spatial-autocorrelation nulls.}
+  \label{fig:controlnull}
+\end{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/primary_results.pdf}
+  \caption{Primary group coefficients and exploratory classification. Left: raw
+  adjusted diagnosis coefficients with HC3 95\% intervals ($n=136$). Right:
+  pooled site-held-out balanced accuracy ($n=140$), with conditional site-bootstrap
+  95\% intervals. The vertical references are zero and chance accuracy, respectively.
+  Prediction intervals omit some model-training uncertainty.}\label{fig:primary}
+\end{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/global_feature_distributions.pdf}
+  \caption{All seven nonlegacy global features in the untrimmed 106-node feature
+  cohort: $H$, two absolute-weight graph efficiencies, and four pairwise
+  configuration proportions. Points show 69 ASD and 71 control participants per
+  pipeline; boxes show quartiles and medians. These are raw descriptive
+  distributions; adjusted group inference uses 136 participants and is reported
+  in the corresponding model table. No feature is selected by its $p$-value.}
+  \label{fig:globalfeatures}
+\end{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/intra_network_effects.pdf}
+  \caption{Within-network ASD--control comparisons for all seven named cortical
+  systems and all three original block measures in both pipelines. Colors show
+  diagnosis coefficient divided by HC3 SE. Gray limbic cells are unavailable,
+  not nonsignificant tests. No valid test survives its specified BH correction.}
+  \label{fig:intraeffects}
+\end{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=.93\textwidth,height=.68\textheight,keepaspectratio]{figures/inter_network_effects.pdf}
+  \caption{Between-network ASD--control comparisons for all 21 network pairs
+  and all three original block measures. Colors show HC3 t statistics, not
+  corrected significance. Complete estimates and correction scopes accompany
+  the figure in S2. No comparison survives the frozen family correction.}
+  \label{fig:intereffects}
+\end{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth,height=.68\textheight,keepaspectratio]{figures/H_correlates_raw.pdf}
+  \caption{Top 20 descriptive correlates of H within each diagnosis/pipeline,
+  restoring the original within-group analysis. Ranking is by absolute Pearson
+  correlation among all 87 available other features. Asterisks indicate BH
+  q$<.05$ over those 87 tests per panel. Red/blue bars indicate positive/negative
+  correlations. Abbreviations: VIS, visual; SM, somatomotor; DA, dorsal attention;
+  SV, salience/ventral attention; LIM, limbic; FP, frontoparietal; DMN, default;
+  W, mean FC; F, state-weighted FC; E, block energy. Shared terms and proportional
+  F/E pairs make many associations mathematically dependent. All tests and
+  matched raw/ComBat versions are in S2; these are not ASD--control contrasts.}
+  \label{fig:Hcorrelates}
+\end{figure}
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{figures/pair_configurations.png}
+  \caption{Pairwise configurations of relative nodal states and FC signs. Magenta
+  and teal nodes denote $+1$ and $-1$ mathematical states, respectively; green and
+  magenta links denote positive and negative FC. Same-state positive edges
+  (agreement) and opposite-state negative edges (disagreement) both lower $H$;
+  the other two configurations raise it. Nodes do not denote neuronal firing
+  states. This conceptual illustration is retained from the submitted article.}
+  \label{fig:configuration}
+\end{figure}
+
+\section*{Supporting information legends}
+\paragraph{S1 Supporting Information.} Additional methods, cohort/site summaries,
+model diagnostics, node-set sensitivities, H--metric complements, control-only null
+comparisons, adjusted efficiency plots, clinical validation, and complete OOF
+ROC/confusion plots, provided as a separate PDF.
+\paragraph{S2 Supporting Information.} Machine-readable supporting tables and
+manifests with a file index and provenance hashes, provided as a separate ZIP.
+This local draft archive requires author review of sharing terms before deposit.
+
+\end{document}

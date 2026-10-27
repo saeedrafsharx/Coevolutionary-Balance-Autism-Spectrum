@@ -1,0 +1,10 @@
+minimum_coverage,fraction_of_eligible_people_required_to_qualify_ROI,n_fixed_ROIs,participants_after_requiring_all_selected_ROIs_valid,ASD,Control,applied
+0.2,0.9,199,106,45,61,False
+0.2,0.95,195,117,52,65,False
+0.2,1.0,138,140,69,71,False
+0.5,0.9,195,88,43,45,False
+0.5,0.95,181,104,48,56,False
+0.5,1.0,106,140,69,71,False
+0.8,0.9,156,69,32,37,False
+0.8,0.95,133,101,44,57,False
+0.8,1.0,61,140,69,71,False

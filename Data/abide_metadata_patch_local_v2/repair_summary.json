@@ -1,0 +1,16 @@
+{
+  "finished_utc": "2026-10-24T20:21:20.313101+00:00",
+  "participant_derivatives_redownloaded": 0,
+  "subjects_requested": 182,
+  "subjects_with_TR": 182,
+  "original_reference_archive_complete": false,
+  "required_reference_resources_complete": true,
+  "reference_files_available_with_documented_mirror": true,
+  "TR_source_scope_counts": {
+    "site_inherited": 182
+  },
+  "metadata_repair_complete": true,
+  "scientific_eligibility_confirmed": false,
+  "offline_run": true,
+  "notes": "This supplements the original dataset; it does not replace its derivative manifests."
+}

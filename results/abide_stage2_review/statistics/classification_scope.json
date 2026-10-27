@@ -1,0 +1,6 @@
+{
+  "training_steps": "imputation, scaling, feature selection, and tuning nested within site-held-out folds",
+  "upstream_QC_mask": "106-node mask selected using QC from the whole eligible cohort before CV",
+  "interpretation": "exploratory prediction conditional on the fixed cohort-wide QC mask; not a fully prospective validation of the entire acquisition/QC workflow",
+  "ComBat_used_for_prediction": false
+}

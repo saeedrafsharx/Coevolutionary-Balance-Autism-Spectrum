@@ -1,0 +1,38 @@
+{
+  "finished_utc": "2026-10-26T13:22:29.480930+00:00",
+  "primary_demographic_n": 140,
+  "rebuilt_feature_rows": 626,
+  "analysis_jobs": [
+    {
+      "analysis": "group_models",
+      "status": "failed_no_fallback",
+      "error": "The function value at x=5.0 is NaN; solver cannot continue.",
+      "traceback": "Traceback (most recent call last):\n  File \"/tmp/ipykernel_16/732503501.py\", line 47, in run_stage2\n    job()\n    ~~~^^\n  File \"/tmp/ipykernel_16/732503501.py\", line 37, in <lambda>\n    jobs = [('group_models', lambda: group_models(rows, metadata, out / 'statistics', run_combat=run_combat)),\n                                     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_16/625568314.py\", line 158, in group_models\n    **primary_effect_diagnostics(data_version, stats_row, fit)})\n      ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_16/625568314.py\", line 97, in primary_effect_diagnostics\n    'two_sample_MDE80_alpha05_approx': minimum_detectable_d(len(a), len(b)),\n                                       ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"/tmp/ipykernel_16/625568314.py\", line 80, in minimum_detectable_d\n    return float(brentq(lambda d: detection(d)-power, 0, 5))\n                 ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/scipy/optimize/_zeros_py.py\", line 846, in brentq\n    r = _zeros._brentq(f, a, b, xtol, rtol, maxiter, args, full_output, disp)\n  File \"/usr/local/lib/python3.13/dist-packages/scipy/optimize/_zeros_py.py\", line 102, in f_raise\n    raise err\nValueError: The function value at x=5.0 is NaN; solver cannot continue.\n"
+    },
+    {
+      "analysis": "efficiency_relationships",
+      "status": "completed"
+    },
+    {
+      "analysis": "clinical_analyses",
+      "status": "completed"
+    },
+    {
+      "analysis": "classification",
+      "status": "completed"
+    }
+  ],
+  "all_jobs_completed": false,
+  "statistical_results_reviewed": false,
+  "ready_for_submission": false,
+  "remaining_scientific_checks": [
+    "upstream fALFF band/input provenance",
+    "author review of changed anatomical scope and handedness description",
+    "QC/model diagnostics, sensitivity results, and model identifiability",
+    "rewritten manuscript, figures, supporting information, response letter"
+  ],
+  "null_model_caveat": "network/hemisphere blocks preserve coarse organization, not full spatial autocorrelation",
+  "equivalence_caveat": "exploratory conventional bounds; no validated clinical SESOI",
+  "ComBat_caveat": "exploratory sensitivity; uncertainty does not integrate harmonization parameter estimation",
+  "prediction_scope": "site-held-out models conditional on cohort-wide QC mask; not prospective validation of mask selection"
+}

@@ -1,0 +1,7 @@
+pipeline,stage,n,ASD,Control,sites
+GSR,downloaded_and_extracted_in_saved_run,182,90,92,14
+GSR,after_pooled_raw_energy_IQR,167,80,87,13
+GSR,after_small_site_filter,164,78,86,11
+noGSR,downloaded_and_extracted_in_saved_run,182,90,92,14
+noGSR,after_pooled_raw_energy_IQR,168,80,88,13
+noGSR,after_small_site_filter,165,78,87,11

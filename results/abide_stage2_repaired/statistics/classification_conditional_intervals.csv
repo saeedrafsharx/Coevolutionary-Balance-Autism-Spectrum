@@ -1,0 +1,5 @@
+pipeline,model,n_OOF_predictions,balanced_accuracy,conditional_site_bootstrap_CI95_low,conditional_site_bootstrap_CI95_high,valid_bootstrap_replicates,caveat
+GSR,LogisticRegression,140,0.5344968360889977,0.4688248452048508,0.613127890182503,1000,fixed OOF predictions; does not include all model-training uncertainty
+GSR,SVM_RBF,140,0.5576648295570524,0.46389969164212075,0.652782960199005,1000,fixed OOF predictions; does not include all model-training uncertainty
+noGSR,LogisticRegression,140,0.4852010614411104,0.42767792792792797,0.559125086198108,1000,fixed OOF predictions; does not include all model-training uncertainty
+noGSR,SVM_RBF,140,0.4854051847315779,0.3849791420766068,0.5914514076070678,1000,fixed OOF predictions; does not include all model-training uncertainty

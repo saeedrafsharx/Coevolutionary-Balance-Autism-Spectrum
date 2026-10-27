@@ -1,0 +1,11 @@
+pipeline,model,n_OOF_predictions,balanced_accuracy,conditional_site_bootstrap_CI95_low,conditional_site_bootstrap_CI95_high,valid_bootstrap_replicates,caveat
+GSR,GaussianNB,140,0.4984690753214942,0.4282196689818235,0.5830549734401868,1000,fixed OOF predictions; does not include all model-training uncertainty
+GSR,KNN,140,0.5183710961420698,0.4554042243987896,0.5811169879925587,1000,fixed OOF predictions; does not include all model-training uncertainty
+GSR,LogisticRegression,140,0.5344968360889977,0.4688248452048508,0.613127890182503,1000,fixed OOF predictions; does not include all model-training uncertainty
+GSR,SVM_RBF,140,0.5576648295570524,0.4638996916421207,0.652782960199005,1000,fixed OOF predictions; does not include all model-training uncertainty
+GSR,XGBoost,140,0.4568279240661359,0.3898016719825578,0.5306217373312961,1000,fixed OOF predictions; does not include all model-training uncertainty
+noGSR,GaussianNB,140,0.5147989385588896,0.4012742519869098,0.6326810517287259,1000,fixed OOF predictions; does not include all model-training uncertainty
+noGSR,KNN,140,0.5423555827719944,0.4695747767188155,0.6272160508573552,1000,fixed OOF predictions; does not include all model-training uncertainty
+noGSR,LogisticRegression,140,0.4852010614411104,0.4276779279279279,0.559125086198108,1000,fixed OOF predictions; does not include all model-training uncertainty
+noGSR,SVM_RBF,140,0.4854051847315779,0.3849791420766068,0.5914514076070678,1000,fixed OOF predictions; does not include all model-training uncertainty
+noGSR,XGBoost,140,0.5065319452949582,0.4394019680500658,0.6146127276415434,1000,fixed OOF predictions; does not include all model-training uncertainty

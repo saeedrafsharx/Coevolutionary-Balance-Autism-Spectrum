@@ -1,0 +1,81 @@
+{
+  "status": "working_revision_draft_not_submission_ready",
+  "validation": [
+    "12 diagnostic design matrices full rank",
+    "both pipelines have identical 88-feature schema",
+    "no corrected significant group tests in completed Stage 2 tables",
+    "all supporting ZIP members verified against SHA-256 manifest",
+    "manuscript and S1 PDFs compile; no undefined citations/references or overfull boxes",
+    "main results table and supporting sensitivity/table page visually inspected",
+    "71 distinct recorded-male controls per pipeline/null; 284 ID-joined comparisons",
+    "control delta H / null SD reproduces every saved z-score",
+    "residualized efficiency plots reproduce saved partial r and sample sizes",
+    "control null table/paired plot and full inter-network heatmap visually inspected",
+    "ethics wording describes ABIDE approvals/consent and public deidentified secondary use; no formal exemption asserted",
+    "All 364 original exported H correlations and BH probabilities reproduced to atol 1e-10",
+    "1044 restored H correlations checked; all BH families cross-checked against statsmodels",
+    "59 per-group-BH-significant revised raw H associations fully exported",
+    "All 8 main and 6 supporting figures and all tables have callouts; original section ordering restored",
+    "H-correlation Results/table/figure and original-descriptor/group-null supporting tables visually inspected",
+    "8 complete classifier/pipeline pairs; original logistic/SVM predictions and bootstrap intervals reproduced unchanged",
+    "8 complete classifier/pipeline pairs; original logistic/SVM predictions and bootstrap intervals reproduced unchanged",
+    "1120 complete OOF records across 8 pairs checked against frozen IDs/site/diagnosis",
+    "baseline 560 OOF records unchanged; identical bootstrap intervals at 1e-12",
+    "20 saved GaussianNB/KNN folds reused in continuation without refitting",
+    "4 classifier-extension tests pass; incomplete, crossed-site and wrong-label predictions rejected",
+    "extended classification table, forest plot and confusion-matrix figure visually inspected",
+    "10 complete classifier/pipeline pairs; original logistic/SVM predictions and bootstrap intervals reproduced unchanged",
+    "All 50 baseline selector fits reproduce saved labels and scores within 1e-6",
+    "1400 complete exploratory OOF rows use exactly the baseline site folds",
+    "4400 per-fold feature records and all 50 full inner candidate grids checked",
+    "Four feature-selector tests pass; held-out transforms cannot refit feature masks",
+    "Baseline source prediction SHA-256 unchanged; original manuscript/bibliography/AGENTS unchanged",
+    "Feature-selection table and vector performance/frequency heatmaps visually inspected in PDFs",
+    "All eight main and ten supplementary figures and every table have explicit callouts; no unresolved references or overfull boxes"
+  ],
+  "preserved_source_sha256": {
+    "manuscript.tex": "1dff55b40ae5a9638e57b5bee68aed787e505c336e9790df8bc4c159ce8952c6",
+    "Bibliography.bib": "9ca106a98f44e7c85ee363c1634b7385c4307041316c983c42698c6c85f0b70e",
+    "AGENTS.md": "b28ace7504fa9dc009123bdcfb2ca8b784139c6ba125b32ac46c7a672ff4dfe0"
+  },
+  "local_exhibit_build_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.1.4+dfsg",
+    "scipy": "1.11.4",
+    "matplotlib": "3.6.3"
+  },
+  "approximate_abstract_words": 271,
+  "compiled_pdf_sha256": {
+    "manuscript_revision.pdf": "36e5aa700f2be9f5f20f930cd77af5edc2fea38545de69db168efec1fbb2739e",
+    "supporting_information.pdf": "d54bbf8f7464c6f3e6074803bf4712e38763cecde29adeafd034cfb1f8a515e4"
+  },
+  "main_figure_count": 8,
+  "supplementary_figure_count": 10,
+  "control_null_comparisons": 284,
+  "original_image_inventory_count": 48,
+  "continuity_H_association_rows": 1044,
+  "revised_raw_H_Pearson_q87_significant": 59,
+  "continuity_environment_versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.1.4+dfsg",
+    "scipy": "1.11.4",
+    "statsmodels": "0.15.0",
+    "matplotlib": "3.6.3"
+  },
+  "classification_source": "results/abide_stage2_classification_extension/statistics",
+  "complete_classifier_pipeline_pairs": 10,
+  "completed_classifier_models": [
+    "LogisticRegression",
+    "SVM_RBF",
+    "GaussianNB",
+    "KNN",
+    "XGBoost"
+  ],
+  "pending_classifier_models": [],
+  "ready_for_submission": false,
+  "feature_selection_followup_source": "results/abide_ml_feature_selection_review",
+  "baseline_feature_selection_reconstruction_folds": 50,
+  "feature_selection_followup_pairs": 10,
+  "baseline_original_classifier_types_complete": true,
+  "feature_selection_result": "Four point estimates improved; six declined; all paired conditional change intervals contain zero"
+}

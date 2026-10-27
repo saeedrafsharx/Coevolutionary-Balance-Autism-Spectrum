@@ -1,0 +1,46 @@
+{
+  "documents": {
+    "manuscript_illustrated": {
+      "pages": 35,
+      "unresolved_or_overflow_errors": []
+    },
+    "manuscript_submission": {
+      "pages": 27,
+      "unresolved_or_overflow_errors": []
+    },
+    "supporting_information": {
+      "pages": 19,
+      "unresolved_or_overflow_errors": []
+    },
+    "response_to_reviewers": {
+      "pages": 8,
+      "unresolved_or_overflow_errors": []
+    },
+    "manuscript_marked": {
+      "pages": 54,
+      "unresolved_or_overflow_errors": []
+    }
+  },
+  "main_figures": 11,
+  "supporting_figures": 13,
+  "main_tables": 9,
+  "indexed_data_payloads": 179,
+  "code_payloads": 58,
+  "feature_table_sha256": "25178d5b3f5b87ad10c4b2f60f0574fb5fe51b26d042ddac7255f9030894848b",
+  "original_file_hashes": {
+    "manuscript.tex": "1dff55b40ae5a9638e57b5bee68aed787e505c336e9790df8bc4c159ce8952c6",
+    "Bibliography.bib": "9ca106a98f44e7c85ee363c1634b7385c4307041316c983c42698c6c85f0b70e",
+    "AGENTS.md": "b28ace7504fa9dc009123bdcfb2ca8b784139c6ba125b32ac46c7a672ff4dfe0"
+  },
+  "build_validation_passed": true,
+  "submission_files_complete": true,
+  "provider_falff_implementation_independently_verified": false,
+  "provider_documentation_limitation_disclosed": true,
+  "reviewer_upstream_question_claimed_fully_verified": false,
+  "visual_review": "Final Methods page and response opening inspected; earlier complete-page montage and representative figures reviewed.",
+  "uploaded_or_published": false,
+  "standalone_latex_source_build_passed": true,
+  "standalone_source_pdf_text_matches_submission": true,
+  "upload_archive_integrity_verified": true,
+  "private_review_correspondence_excluded_from_public_code": true
+}

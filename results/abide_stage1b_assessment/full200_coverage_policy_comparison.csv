@@ -1,0 +1,11 @@
+population,minimum_coverage_every_ROI,n,ASD,Control,applied
+all182,0.0,168,79,89,False
+all182,0.1,150,67,83,False
+all182,0.2,134,60,74,False
+all182,0.5,92,44,48,False
+all182,0.8,6,3,3,False
+age18_30_FIQgt80,0.0,129,60,69,False
+age18_30_FIQgt80,0.1,116,50,66,False
+age18_30_FIQgt80,0.2,101,43,58,False
+age18_30_FIQgt80,0.5,69,31,38,False
+age18_30_FIQgt80,0.8,3,1,2,False

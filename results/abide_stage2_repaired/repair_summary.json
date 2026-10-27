@@ -1,0 +1,19 @@
+{
+  "finished_utc": "2026-10-26T18:03:27.917411+00:00",
+  "input_review": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/results/abide_stage2_review",
+  "feature_table_sha256": "25178d5b3f5b87ad10c4b2f60f0574fb5fe51b26d042ddac7255f9030894848b",
+  "feature_rows_reused": 626,
+  "imaging_or_graph_recalculation": false,
+  "raw_adjusted_models_recovered": true,
+  "ComBat_sensitivity_requested": true,
+  "ComBat_sensitivity_failures": 0,
+  "classification_full_cohort_recovered": true,
+  "completed_original_clinical_efficiency_null_outputs_preserved": true,
+  "full_repair_complete": true,
+  "ready_for_submission": false,
+  "repair_changes": [
+    "adaptive CDF-based power bracket; optional power diagnostics cannot abort group tables",
+    "size-balanced site-disjoint classification folds, verified to contain both classes",
+    "incomplete OOF predictions cannot produce a full-cohort aggregate"
+  ]
+}

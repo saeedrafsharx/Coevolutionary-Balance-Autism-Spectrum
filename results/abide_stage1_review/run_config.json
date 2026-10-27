@@ -1,0 +1,19 @@
+{
+  "started_utc": "2026-10-25T19:04:50.752389+00:00",
+  "derivatives_root": "/kaggle/input/datasets/saeedrezaeiafshar/abide-full-derivatives-dataset/abide_revision",
+  "metadata_patch_root": "/kaggle/input/datasets/saeedrezaeiafshar/abide-metadata-patch/abide_metadata_patch_local_v2",
+  "primary_Yeo_mask": "liberal (provisional; mapping audit required)",
+  "falff_source": "downloaded nofilt strategy maps; upstream computation remains to verify",
+  "FC_source": "downloaded filt strategy ROI time series, original length",
+  "binarization": "participant median; values >= median are +1",
+  "outliers": "pooled raw energy IQR flags only; no exclusions",
+  "compute_local_efficiency": true,
+  "save_FC": true,
+  "packages": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "nibabel": "5.4.2"
+  }
+}

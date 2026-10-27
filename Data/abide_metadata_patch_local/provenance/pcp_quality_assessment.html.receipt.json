@@ -1,0 +1,16 @@
+{
+  "url": "https://preprocessed-connectomes-project.github.io/abide/quality_assessment.html",
+  "path": "/kaggle/working/abide_metadata_patch/provenance/pcp_quality_assessment.html",
+  "status": "downloaded",
+  "error": "",
+  "checked_utc": "2026-10-24T19:58:00.735536+00:00",
+  "sha256": "f8d91934315b6eb767fce742cc83079bbcada4a74add902a105f7953afb1c56c",
+  "size_bytes": 14784,
+  "headers": {
+    "ETag": "\"6031fd93-39c0\"",
+    "Last-Modified": "Sun, 21 Feb 2021 06:28:35 GMT",
+    "Content-Length": "14784"
+  },
+  "details": {},
+  "downloaded_utc": "2026-10-24T19:58:01.041809+00:00"
+}

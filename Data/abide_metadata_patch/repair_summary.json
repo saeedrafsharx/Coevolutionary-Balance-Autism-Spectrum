@@ -1,0 +1,10 @@
+{
+  "finished_utc": "2026-10-24T19:58:30.642930+00:00",
+  "participant_derivatives_redownloaded": 0,
+  "subjects_requested": 182,
+  "subjects_with_TR": 0,
+  "required_reference_resources_complete": false,
+  "metadata_repair_complete": false,
+  "scientific_eligibility_confirmed": false,
+  "notes": "This supplements the original dataset; it does not replace its derivative manifests."
+}

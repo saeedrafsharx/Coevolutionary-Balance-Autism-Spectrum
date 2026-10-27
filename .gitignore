@@ -1,0 +1,49 @@
+# Local environments, managed directories and publication metadata
+.venv*/
+venv/
+.git/
+.publication-git/
+.agents/
+.aws/
+.codex/
+.env
+.env.*
+!.env.example
+
+# Python/runtime caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+**/cache/
+
+# LaTeX build intermediates; retain final PDF and original manuscript.bbl
+*.aux
+*.log
+*.out
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*_build.txt
+revision/**/*.bbl
+
+# Private correspondence and local session details
+/Comments.pdf
+/Cover_Letter_PLOS_ONE.pdf
+/Jafari_Fee_Waiver_Request_Letter.pdf
+/session_id.txt
+revision/resubmission/source_support/reviewer_comments.txt
+
+# Recoverable duplicate archives / superseded draft artifacts
+Data/abide_metadata_patch_local_v2.zip
+results/abide_stage1b_qc_review.zip
+revision/revised_paper/S2_supporting_tables_DRAFT.zip
+revision/revised_paper/*.pdf
+revision/revised_paper/figures/
+revision/revised_paper/tables/
+
+# Local recovery artifacts
+revision/resubmission/repository_cleanup.json
+*.bundle
+.DS_Store

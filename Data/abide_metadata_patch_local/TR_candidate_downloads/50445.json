@@ -1,0 +1,21 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json",
+    "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/sidecars/ABIDE/scan_jsons/USM/task-rest_bold.json",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:15:52.771357+00:00",
+    "sha256": "bca3fd260e4b4da67d9c511850618c8b47564c87a75ef5e72ca28a3bd4ee26eb",
+    "size_bytes": 1625,
+    "headers": {
+      "ETag": "\"874bba8ca06fa015f3b42ccf25bec3e9ec7ac56ea6edbe1bb537e23d7ed14dda\"",
+      "Last-Modified": null,
+      "Content-Length": "1625"
+    },
+    "details": {
+      "TR_seconds": 2.0,
+      "source_path": "ABIDE/scan_jsons/USM/task-rest_bold.json"
+    },
+    "downloaded_utc": "2026-10-24T20:15:17.948785+00:00"
+  }
+]

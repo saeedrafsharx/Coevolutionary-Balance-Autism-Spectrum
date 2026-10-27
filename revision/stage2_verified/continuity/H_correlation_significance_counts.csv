@@ -1,0 +1,13 @@
+version,pipeline,group,n,tests,Pearson_q87_below05,Pearson_q348_below05,Spearman_q87_below05
+ComBat_model_subset,GSR,ASD,67,87,24,22,22
+ComBat_model_subset,GSR,Control,69,87,25,18,20
+ComBat_model_subset,noGSR,ASD,67,87,10,10,12
+ComBat_model_subset,noGSR,Control,69,87,0,10,0
+raw_eligible,GSR,ASD,69,87,26,20,16
+raw_eligible,GSR,Control,71,87,21,19,18
+raw_eligible,noGSR,ASD,69,87,12,12,14
+raw_eligible,noGSR,Control,71,87,0,8,6
+raw_model_subset,GSR,ASD,67,87,28,18,8
+raw_model_subset,GSR,Control,69,87,19,19,21
+raw_model_subset,noGSR,ASD,67,87,10,12,10
+raw_model_subset,noGSR,Control,69,87,0,6,0

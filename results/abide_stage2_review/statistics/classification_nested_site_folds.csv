@@ -1,0 +1,13 @@
+pipeline,model,fold,n_train,n_test,test_sites,balanced_accuracy,accuracy,F1_ASD_positive,AUC,majority_baseline_accuracy,majority_baseline_balanced_accuracy,best_inner_params
+GSR,LogisticRegression,0,123,17,MAX_MUN,0.30833333333333335,0.35294117647058826,0.15384615384615385,0.25,0.29411764705882354,0.5,"{'clf__C': 10, 'select__percentile': 100}"
+GSR,LogisticRegression,1,112,28,PITT|TRINITY|UM_2,0.47860962566844917,0.4642857142857143,0.4444444444444444,0.5561497326203209,0.39285714285714285,0.5,"{'clf__C': 0.1, 'select__percentile': 25}"
+GSR,LogisticRegression,4,136,4,SBL|UM_1,0.5,0.5,0.5,0.75,0.5,0.5,"{'clf__C': 0.1, 'select__percentile': 100}"
+GSR,SVM_RBF,0,123,17,MAX_MUN,0.35,0.4117647058823529,0.16666666666666666,0.38333333333333336,0.29411764705882354,0.5,"{'clf__C': 1, 'clf__gamma': 'scale', 'select__percentile': 25}"
+GSR,SVM_RBF,1,112,28,PITT|TRINITY|UM_2,0.6417112299465241,0.6428571428571429,0.5833333333333334,0.6363636363636364,0.39285714285714285,0.5,"{'clf__C': 10, 'clf__gamma': 'scale', 'select__percentile': 100}"
+GSR,SVM_RBF,4,136,4,SBL|UM_1,0.5,0.5,0.5,0.75,0.5,0.5,"{'clf__C': 10, 'clf__gamma': 'scale', 'select__percentile': 100}"
+noGSR,LogisticRegression,0,123,17,MAX_MUN,0.26666666666666666,0.29411764705882354,0.14285714285714285,0.2833333333333333,0.29411764705882354,0.5,"{'clf__C': 0.1, 'select__percentile': 50}"
+noGSR,LogisticRegression,1,112,28,PITT|TRINITY|UM_2,0.41711229946524064,0.42857142857142855,0.3333333333333333,0.4331550802139037,0.39285714285714285,0.5,"{'clf__C': 0.1, 'select__percentile': 100}"
+noGSR,LogisticRegression,4,136,4,SBL|UM_1,0.5,0.5,0.6666666666666666,0.0,0.5,0.5,"{'clf__C': 0.01, 'select__percentile': 50}"
+noGSR,SVM_RBF,0,123,17,MAX_MUN,0.3333333333333333,0.47058823529411764,0.0,0.2833333333333333,0.29411764705882354,0.5,"{'clf__C': 10, 'clf__gamma': 'scale', 'select__percentile': 100}"
+noGSR,SVM_RBF,1,112,28,PITT|TRINITY|UM_2,0.5828877005347594,0.5714285714285714,0.5384615384615384,0.6203208556149733,0.39285714285714285,0.5,"{'clf__C': 1, 'clf__gamma': 'scale', 'select__percentile': 25}"
+noGSR,SVM_RBF,4,136,4,SBL|UM_1,0.25,0.25,0.4,0.5,0.5,0.5,"{'clf__C': 10, 'clf__gamma': 'scale', 'select__percentile': 25}"

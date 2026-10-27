@@ -1,0 +1,21 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Olin/task-rest_bold.json",
+    "path": "Data/abide_metadata_patch_local_v2/sidecars/ABIDE/scan_jsons/Olin/task-rest_bold.json",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:21:19.379816+00:00",
+    "sha256": "57f56318f4704c834d3cabdb256e57ee1443a9aa983ba7fc7246215a464d158f",
+    "size_bytes": 1573,
+    "headers": {
+      "ETag": "\"ffa9645f41b0e6c730a97e8d41ddec9a56c5d4f6bbb64675fec5fcd651b4387c\"",
+      "Last-Modified": null,
+      "Content-Length": "1573"
+    },
+    "details": {
+      "TR_seconds": 1.5,
+      "source_path": "ABIDE/scan_jsons/Olin/task-rest_bold.json"
+    },
+    "downloaded_utc": "2026-10-24T20:15:25.017979+00:00"
+  }
+]

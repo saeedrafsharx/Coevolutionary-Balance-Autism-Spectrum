@@ -1,0 +1,21 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+    "path": "Data/abide_metadata_patch_local_v2/sidecars/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:21:20.122660+00:00",
+    "sha256": "dd8ceae1487b540678a96b14d6bc9dda44fd41804e40ae3e01ce99cc71ebaf7e",
+    "size_bytes": 2074,
+    "headers": {
+      "ETag": "\"b9954ff447d9fe093dcd1ce7493994b6704e167ae486d8bf4255b53d23e1c40d\"",
+      "Last-Modified": null,
+      "Content-Length": "2074"
+    },
+    "details": {
+      "TR_seconds": 3.0,
+      "source_path": "ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json"
+    },
+    "downloaded_utc": "2026-10-24T20:15:28.600991+00:00"
+  }
+]

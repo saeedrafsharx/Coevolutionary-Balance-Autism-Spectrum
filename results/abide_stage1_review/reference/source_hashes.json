@@ -1,0 +1,14 @@
+{
+  "CC200": {
+    "path": "/kaggle/input/datasets/saeedrezaeiafshar/abide-full-derivatives-dataset/abide_revision/atlases/CC200.nii/CC200.nii",
+    "sha256": "ebd4e3a229a4ea41f26f8e8cda82ef048cb152b26d859686d8102621501675f8"
+  },
+  "thin": {
+    "path": "/kaggle/input/datasets/saeedrezaeiafshar/abide-metadata-patch/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.normalized.nii",
+    "sha256": "c93abf8b302f44efe39a292dd68416d9e81602aa01cbbd09da1c0aeeaee7ef29"
+  },
+  "liberal": {
+    "path": "/kaggle/input/datasets/saeedrezaeiafshar/abide-metadata-patch/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.normalized.nii",
+    "sha256": "67142ee27866d04ce5b34d16fcfec3f2fde3a3197031ac48c3dcfcbce80d3921"
+  }
+}

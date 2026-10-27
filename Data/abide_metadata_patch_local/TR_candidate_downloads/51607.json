@@ -1,0 +1,78 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+    "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/sidecars/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:15:42.952232+00:00",
+    "sha256": "dd8ceae1487b540678a96b14d6bc9dda44fd41804e40ae3e01ce99cc71ebaf7e",
+    "size_bytes": 2074,
+    "headers": {
+      "ETag": "\"b9954ff447d9fe093dcd1ce7493994b6704e167ae486d8bf4255b53d23e1c40d\"",
+      "Last-Modified": null,
+      "Content-Length": "2074"
+    },
+    "details": {
+      "TR_seconds": 3.0,
+      "source_path": "ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json"
+    },
+    "downloaded_utc": "2026-10-24T20:15:28.600991+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+    "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/sidecars/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:15:42.952596+00:00",
+    "sha256": "a35400f071437934f36217d200f6144d41834177594101a37f19b7936477196f",
+    "size_bytes": 2169,
+    "headers": {
+      "ETag": "\"b71d0471cd83490343b74e25c0fe6556bf3a74c0168eae35d91d5394177f47bb\"",
+      "Last-Modified": null,
+      "Content-Length": "2169"
+    },
+    "details": {
+      "TR_seconds": 3.0,
+      "source_path": "ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json"
+    },
+    "downloaded_utc": "2026-10-24T20:15:29.562675+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+    "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/sidecars/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:15:42.952882+00:00",
+    "sha256": "92bbf943b500b99052e24349b18a381c41ccc002ae433c8a8482a74b8a78d02a",
+    "size_bytes": 2202,
+    "headers": {
+      "ETag": "\"735d91989085d82eee4484afb45fdb2e47cdfc1df591900486444e4e61cdfcb9\"",
+      "Last-Modified": null,
+      "Content-Length": "2202"
+    },
+    "details": {
+      "TR_seconds": 3.0,
+      "source_path": "ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json"
+    },
+    "downloaded_utc": "2026-10-24T20:15:31.879757+00:00"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json",
+    "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/sidecars/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:15:42.953132+00:00",
+    "sha256": "887c9aed66e23e960b2e5b36f979893d4a56d15cf11738477e6bcbbb7b3e52b0",
+    "size_bytes": 2203,
+    "headers": {
+      "ETag": "\"47144775905d77f4b930a42f149b542729ca007425ea2a45a833dcaa4526b851\"",
+      "Last-Modified": null,
+      "Content-Length": "2203"
+    },
+    "details": {
+      "TR_seconds": 3.0,
+      "source_path": "ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    },
+    "downloaded_utc": "2026-10-24T20:15:33.620758+00:00"
+  }
+]

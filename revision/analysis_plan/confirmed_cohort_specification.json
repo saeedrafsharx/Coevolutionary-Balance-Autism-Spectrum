@@ -1,0 +1,27 @@
+{
+  "confirmed_by_author": "2026-10-25",
+  "primary_demographic_criteria": {
+    "age_at_scan_years": {
+      "minimum": 18,
+      "maximum": 30,
+      "bounds": "inclusive"
+    },
+    "FIQ": {
+      "operator": ">",
+      "value": 80,
+      "missing_values": "ineligible; no IQ imputation for primary eligibility"
+    }
+  },
+  "source_n": 182,
+  "eligible_n": 140,
+  "eligible_ASD": 69,
+  "eligible_Control": 71,
+  "final_analysis_cohort": false,
+  "pending": [
+    "ROI and coverage policy",
+    "Handedness interpretation and disclosure",
+    "Site/model identifiability and harmonization design"
+  ],
+  "energy_outlier_exclusions_applied": false,
+  "group_effect_tests_run": false
+}

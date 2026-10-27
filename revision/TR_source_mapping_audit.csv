@@ -1,0 +1,183 @@
+SUB_ID,SITE_ID,candidate_count,paths
+50499,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50694,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+51020,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51470,CALTECH,1,ABIDE/scan_jsons/Caltech/task-rest_bold.json
+50518,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51025,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50232,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+50490,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50520,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50704,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+50245,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+50514,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51467,CALTECH,1,ABIDE/scan_jsons/Caltech/task-rest_bold.json
+50530,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50236,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+51585,SBL,1,ABIDE/scan_jsons/SBL/task-rest_bold.json
+50521,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51016,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50241,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+51468,CALTECH,1,ABIDE/scan_jsons/Caltech/task-rest_bold.json
+50134,OLIN,1,ABIDE/scan_jsons/Olin/task-rest_bold.json
+51021,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51459,CALTECH,1,ABIDE/scan_jsons/Caltech/task-rest_bold.json
+50702,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+50024,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+51026,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50012,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+50482,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50689,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+50004,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+51023,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50711,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+51318,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+50486,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51329,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+50237,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+50130,OLIN,1,ABIDE/scan_jsons/Olin/task-rest_bold.json
+50399,UM_2,1,ABIDE/scan_jsons/UM_2/task-rest_bold.json
+51027,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51322,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+50485,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50254,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+50121,OLIN,1,ABIDE/scan_jsons/Olin/task-rest_bold.json
+50496,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51029,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51017,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51328,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+51571,SBL,1,ABIDE/scan_jsons/SBL/task-rest_bold.json
+51474,CALTECH,1,ABIDE/scan_jsons/Caltech/task-rest_bold.json
+50320,UM_1,1,ABIDE/scan_jsons/UM_1/task-rest_bold.json
+50690,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+51466,CALTECH,1,ABIDE/scan_jsons/Caltech/task-rest_bold.json
+50973,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51572,SBL,1,ABIDE/scan_jsons/SBL/task-rest_bold.json
+50693,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+50251,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+50498,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50487,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50500,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50233,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+50136,OLIN,1,ABIDE/scan_jsons/Olin/task-rest_bold.json
+51473,CALTECH,1,ABIDE/scan_jsons/Caltech/task-rest_bold.json
+50696,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+50246,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+50700,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+51015,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50695,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+50131,OLIN,1,ABIDE/scan_jsons/Olin/task-rest_bold.json
+50686,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+51237,UCLA_1,1,ABIDE/scan_jsons/UCLA_1/task-rest_bold.json
+51457,CALTECH,1,ABIDE/scan_jsons/Caltech/task-rest_bold.json
+51464,CALTECH,1,ABIDE/scan_jsons/Caltech/task-rest_bold.json
+50507,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51607,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+50488,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51018,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50516,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50649,CMU,2,ABIDE/scan_jsons/CMU_a/task-rest_bold.json | ABIDE/scan_jsons/CMU_b/task-rest_bold.json
+50480,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50491,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50504,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50020,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+50253,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+51019,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50503,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50184,SDSU,1,ABIDE/scan_jsons/SDSU/task-rest_bold.json
+50007,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+51028,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50527,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51465,CALTECH,1,ABIDE/scan_jsons/Caltech/task-rest_bold.json
+50415,UM_2,1,ABIDE/scan_jsons/UM_2/task-rest_bold.json
+50388,UM_2,1,ABIDE/scan_jsons/UM_2/task-rest_bold.json
+50442,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50267,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+51077,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50382,UM_2,1,ABIDE/scan_jsons/UM_2/task-rest_bold.json
+51147,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51067,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50440,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51559,SBL,1,ABIDE/scan_jsons/SBL/task-rest_bold.json
+50446,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50345,UM_1,1,ABIDE/scan_jsons/UM_1/task-rest_bold.json
+50469,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51150,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50339,UM_1,1,ABIDE/scan_jsons/UM_1/task-rest_bold.json
+50107,OLIN,1,ABIDE/scan_jsons/Olin/task-rest_bold.json
+50044,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+51365,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+51113,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51268,UCLA_1,1,ABIDE/scan_jsons/UCLA_1/task-rest_bold.json
+51146,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50449,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50444,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50030,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+51118,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50032,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+50445,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50115,OLIN,1,ABIDE/scan_jsons/Olin/task-rest_bold.json
+50368,UM_1,1,ABIDE/scan_jsons/UM_1/task-rest_bold.json
+50060,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+50703,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+51344,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+51151,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51114,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50259,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+51334,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+51131,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50035,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+50710,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+51558,SBL,1,ABIDE/scan_jsons/SBL/task-rest_bold.json
+51132,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+50058,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+50270,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+51152,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51148,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50260,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+50261,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+51560,SBL,1,ABIDE/scan_jsons/SBL/task-rest_bold.json
+50344,UM_1,1,ABIDE/scan_jsons/UM_1/task-rest_bold.json
+50037,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+51153,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51112,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50385,UM_2,1,ABIDE/scan_jsons/UM_2/task-rest_bold.json
+51332,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+50706,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+50439,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51557,SBL,1,ABIDE/scan_jsons/SBL/task-rest_bold.json
+50329,UM_1,1,ABIDE/scan_jsons/UM_1/task-rest_bold.json
+50391,UM_2,1,ABIDE/scan_jsons/UM_2/task-rest_bold.json
+51139,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+51346,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+51117,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50041,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+51364,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+50040,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+50349,UM_1,1,ABIDE/scan_jsons/UM_1/task-rest_bold.json
+51156,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50046,PITT,1,ABIDE/scan_jsons/Pitt/task-rest_bold.json
+51130,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+50117,OLIN,1,ABIDE/scan_jsons/Olin/task-rest_bold.json
+50709,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+51339,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+50441,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51149,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51116,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51347,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+50263,TRINITY,1,ABIDE/scan_jsons/Trinity/task-rest_bold.json
+51340,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+50335,UM_1,1,ABIDE/scan_jsons/UM_1/task-rest_bold.json
+51129,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json
+51335,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+50386,UM_2,1,ABIDE/scan_jsons/UM_2/task-rest_bold.json
+51333,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+50443,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50434,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50424,UM_2,1,ABIDE/scan_jsons/UM_2/task-rest_bold.json
+50707,LEUVEN_1,1,ABIDE/scan_jsons/Leuven_1/task-rest_bold.json
+50467,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50433,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+50463,USM,1,ABIDE/scan_jsons/USM/task-rest_bold.json
+51342,MAX_MUN,4,ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json | ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json
+51066,NYU,1,ABIDE/scan_jsons/NYU/task-rest_bold.json

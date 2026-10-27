@@ -1,0 +1,19 @@
+{
+  "url": "https://api.github.com/repos/FCP-INDI/indi_bidsification/git/trees/master?recursive=1",
+  "path": "Data/abide_metadata_patch_local_v2/provenance/indi_bidsification_tree.json",
+  "status": "verified_existing",
+  "error": "",
+  "checked_utc": "2026-10-24T20:21:19.069146+00:00",
+  "sha256": "51b48045cde229b46fc22bac2438388f69c2811eda97f806e77183971ffc13b7",
+  "size_bytes": 969450,
+  "headers": {
+    "ETag": "W/\"51b48045cde229b46fc22bac2438388f69c2811eda97f806e77183971ffc13b7\"",
+    "Last-Modified": "Tue, 21 Apr 2026 00:55:29 GMT",
+    "Content-Length": null
+  },
+  "details": {
+    "commit_sha": "f45c831f78c58b4525222f8a9d6c0a6b0500792d",
+    "n_entries": 3704
+  },
+  "downloaded_utc": "2026-10-24T19:58:02.646383+00:00"
+}

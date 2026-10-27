@@ -1,0 +1,30 @@
+{
+  "ComBat_used_for_prediction": false,
+  "complete_pipeline_model_pairs": 10,
+  "completed_models": [
+    "GaussianNB",
+    "KNN",
+    "LogisticRegression",
+    "SVM_RBF",
+    "XGBoost"
+  ],
+  "expected_models": [
+    "LogisticRegression",
+    "SVM_RBF",
+    "GaussianNB",
+    "KNN",
+    "XGBoost"
+  ],
+  "expected_per_pipeline": {
+    "GSR": 140,
+    "noGSR": 140
+  },
+  "fold_construction": "deterministic size-balanced site-disjoint K-fold: outer 5, inner 3; both classes required in every split",
+  "interpretation": "exploratory prediction conditional on the fixed cohort-wide QC mask; not a fully prospective validation of the entire acquisition/QC workflow",
+  "new_model_score_type": "positive-class probability",
+  "original_algorithm_types_restored": true,
+  "pending_models": [],
+  "previous_logistic_SVM_predictions_reused_unchanged": true,
+  "training_steps": "imputation, scaling, feature selection, and tuning nested within site-held-out folds",
+  "upstream_QC_mask": "106-node mask selected using QC from the whole eligible cohort before CV"
+}

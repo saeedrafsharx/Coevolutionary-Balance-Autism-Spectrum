@@ -1,0 +1,150 @@
+[
+  {
+    "resource": "Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.nii.gz",
+    "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.nii.gz",
+    "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.nii.gz",
+    "sha256": "a11cfeba3c88e25b6cd9c6d4b542ef67d3587bc674023bb8661447f213329d3f",
+    "size_bytes": 338795,
+    "status": "verified_existing",
+    "checked_utc": "2026-10-24T20:21:07.541913+00:00",
+    "details": {
+      "shape": [
+        256,
+        256,
+        256,
+        1
+      ],
+      "voxel_sizes": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bitpix": 32,
+      "vox_offset": 352,
+      "TR_seconds": null,
+      "time_unit_code": 16,
+      "raw_pixdim4": 0.0,
+      "raw_bitpix": 4,
+      "raw_vox_offset": 352.0,
+      "legacy_header_interpretation": true,
+      "labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "recovered_from_rejected_download": true,
+    "error": "",
+    "normalized_copy": {
+      "source_path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.nii.gz",
+      "source_sha256": "a11cfeba3c88e25b6cd9c6d4b542ef67d3587bc674023bb8661447f213329d3f",
+      "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.normalized.nii.gz",
+      "sha256": "f7322808e2993b3fe92b48021b4323690fc188082800e083cafe50a18410ea41",
+      "created_utc": "2026-10-24T20:21:13.101893+00:00",
+      "original_bitpix": 4,
+      "normalized_bitpix": 32,
+      "original_vox_offset": 352.0,
+      "normalized_vox_offset": 352,
+      "voxel_payload_sha256": "96d581034e2d310b8f09a48f95a340ca708b21398c499d3ede1974f5adeb5802",
+      "voxel_bytes_unchanged": true,
+      "spatial_transform_fields_unchanged": true,
+      "operation": "Header normalization only; no resampling or relabeling"
+    }
+  },
+  {
+    "resource": "Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.nii.gz",
+    "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.nii.gz",
+    "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.nii.gz",
+    "sha256": "c8e2ee01cd23beb1c5424980e0922cce7417c26e3176432dd0074518144851d3",
+    "size_bytes": 271559,
+    "status": "verified_existing",
+    "checked_utc": "2026-10-24T20:21:14.225738+00:00",
+    "details": {
+      "shape": [
+        256,
+        256,
+        256,
+        1
+      ],
+      "voxel_sizes": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bitpix": 32,
+      "vox_offset": 352,
+      "TR_seconds": null,
+      "time_unit_code": 16,
+      "raw_pixdim4": 0.0,
+      "raw_bitpix": 4,
+      "raw_vox_offset": 352.0,
+      "legacy_header_interpretation": true,
+      "labels": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "recovered_from_rejected_download": true,
+    "error": "",
+    "normalized_copy": {
+      "source_path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.nii.gz",
+      "source_sha256": "c8e2ee01cd23beb1c5424980e0922cce7417c26e3176432dd0074518144851d3",
+      "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.normalized.nii.gz",
+      "sha256": "0fe7bdc6ca78123cf2b6ca64845644c62429b276c775b77f55df6b4f3c3ab5e2",
+      "created_utc": "2026-10-24T20:21:18.831013+00:00",
+      "original_bitpix": 4,
+      "normalized_bitpix": 32,
+      "original_vox_offset": 352.0,
+      "normalized_vox_offset": 352,
+      "voxel_payload_sha256": "795469a7790686c0295ecf7ec2acbd5ae9cd47169d4ad340631133444f4892a2",
+      "voxel_bytes_unchanged": true,
+      "spatial_transform_fields_unchanged": true,
+      "operation": "Header normalization only; no resampling or relabeling"
+    }
+  },
+  {
+    "resource": "Yeo2011_7Networks_ColorLUT.txt",
+    "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo2011_7Networks_ColorLUT.txt",
+    "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_ColorLUT.txt",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:21:19.061268+00:00",
+    "sha256": "f6e68af76dffac569c4e6b5d7cfe13036e5ce0a702192a3774ddae48af985e26",
+    "size_bytes": 288,
+    "headers": {
+      "ETag": "\"5cd8c972ed15d67255c60b634c8094d70b24cad8b358e974275458c964c75202\"",
+      "Last-Modified": null,
+      "Content-Length": "288"
+    },
+    "details": {},
+    "downloaded_utc": "2026-10-24T20:15:15.182046+00:00"
+  },
+  {
+    "resource": "Yeo_JNeurophysiol11_MNI152_README",
+    "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo_JNeurophysiol11_MNI152_README",
+    "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo_JNeurophysiol11_MNI152_README",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:21:19.067302+00:00",
+    "sha256": "839f1990d7c4b058565d7f9beeaf00fabef4bd49510da366586856f730848086",
+    "size_bytes": 6122,
+    "headers": {
+      "ETag": "\"feaf94389be83716bf1659f285b9d715aa45e258bf20dabf361271404d19db46\"",
+      "Last-Modified": null,
+      "Content-Length": "6122"
+    },
+    "details": {},
+    "downloaded_utc": "2026-10-24T20:15:16.820735+00:00"
+  }
+]

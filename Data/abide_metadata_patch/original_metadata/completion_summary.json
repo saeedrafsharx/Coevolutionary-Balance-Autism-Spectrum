@@ -1,0 +1,12 @@
+{
+  "finished_utc": "2026-10-24T19:29:35.371773+00:00",
+  "requested_subjects": 182,
+  "requested_derivative_files": 1820,
+  "valid_derivative_files": 1820,
+  "subjects_all_four_strategies": 182,
+  "subjects_recommended_pair": 182,
+  "subjects_with_TR": 0,
+  "required_reference_resources_complete": false,
+  "acquisition_complete": false,
+  "scientific_eligibility_confirmed": false
+}

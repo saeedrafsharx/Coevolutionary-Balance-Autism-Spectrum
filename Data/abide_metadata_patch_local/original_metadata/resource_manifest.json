@@ -1,0 +1,108 @@
+[
+  {
+    "resource": "pcp_download.html",
+    "url": "https://preprocessed-connectomes-project.org/abide/download.html",
+    "path": "/kaggle/working/abide_revision/provenance/pcp_download.html",
+    "status": "failed",
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'preprocessed-connectomes-project.org'. (_ssl.c:1032)>",
+    "checked_utc": "2026-10-24T19:12:28.191926+00:00"
+  },
+  {
+    "resource": "pcp_pipelines.html",
+    "url": "https://preprocessed-connectomes-project.org/abide/Pipelines.html",
+    "path": "/kaggle/working/abide_revision/provenance/pcp_pipelines.html",
+    "status": "failed",
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'preprocessed-connectomes-project.org'. (_ssl.c:1032)>",
+    "checked_utc": "2026-10-24T19:12:31.723326+00:00"
+  },
+  {
+    "resource": "pcp_cpac.html",
+    "url": "https://preprocessed-connectomes-project.org/abide/cpac.html",
+    "path": "/kaggle/working/abide_revision/provenance/pcp_cpac.html",
+    "status": "failed",
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'preprocessed-connectomes-project.org'. (_ssl.c:1032)>",
+    "checked_utc": "2026-10-24T19:12:35.104599+00:00"
+  },
+  {
+    "resource": "pcp_quality_assessment.html",
+    "url": "https://preprocessed-connectomes-project.org/abide/quality_assessment.html",
+    "path": "/kaggle/working/abide_revision/provenance/pcp_quality_assessment.html",
+    "status": "failed",
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'preprocessed-connectomes-project.org'. (_ssl.c:1032)>",
+    "checked_utc": "2026-10-24T19:12:38.484700+00:00"
+  },
+  {
+    "resource": "pipeline_config_abide_rerun.yml",
+    "url": "https://raw.githubusercontent.com/preprocessed-connectomes-project/abide/master/preprocessing/settings/pipeline_config_abide_rerun.yml",
+    "path": "/kaggle/working/abide_revision/provenance/pipeline_config_abide_rerun.yml",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:12:41.855687+00:00",
+    "sha256": "86392916beccef674d62a2a7c5132cd9f466d7759827c1fb84a13e253a20e63a",
+    "size_bytes": 23816,
+    "headers": {
+      "ETag": "\"1b74daee4dda01330462b9d16b9f221bb0a3a1bf16057f1aba11c3ce2ce8869c\"",
+      "Last-Modified": null,
+      "Content-Length": "23816"
+    },
+    "details": {},
+    "downloaded_utc": "2026-10-24T19:12:42.077494+00:00"
+  },
+  {
+    "resource": "abide_rois.txt",
+    "url": "https://raw.githubusercontent.com/preprocessed-connectomes-project/abide/master/preprocessing/settings/abide_rois.txt",
+    "path": "/kaggle/working/abide_revision/provenance/abide_rois.txt",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:12:42.078313+00:00",
+    "sha256": "99878b225656ef8f519ae9b93ee4d38d8e1983089fabe37e1f831ea8f99f7e36",
+    "size_bytes": 497,
+    "headers": {
+      "ETag": "\"00d0e0c2fcdf143e5daaaff5042ca6d6d26a71394f422139e13a1e4ba6a2f5d8\"",
+      "Last-Modified": null,
+      "Content-Length": "497"
+    },
+    "details": {},
+    "downloaded_utc": "2026-10-24T19:12:42.273263+00:00"
+  },
+  {
+    "resource": "CC200.nii.gz",
+    "url": "https://raw.githubusercontent.com/preprocessed-connectomes-project/abide/master/preprocessing/resources/abide_rois/CC200.nii.gz",
+    "path": "/kaggle/working/abide_revision/atlases/CC200.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:12:42.273658+00:00",
+    "sha256": "dd444ad89dd6b84ab44555eb8b319cb52661612e3f318905fc75466090b8e626",
+    "size_bytes": 12338,
+    "headers": {
+      "ETag": "\"fb806854f6525cdbc8348edda1a5f5b31386c3b4c885573eb1e97beb69a5d2d8\"",
+      "Last-Modified": null,
+      "Content-Length": "12338"
+    },
+    "details": {
+      "shape": [
+        63,
+        75,
+        61
+      ],
+      "voxel_sizes": [
+        3.0,
+        3.0,
+        3.0
+      ],
+      "bitpix": 16,
+      "vox_offset": 4112,
+      "TR_seconds": null,
+      "time_unit_code": 0
+    },
+    "downloaded_utc": "2026-10-24T19:12:42.424271+00:00"
+  },
+  {
+    "resource": "Yeo_JNeurophysiol11_MNI152.zip",
+    "url": "https://ftp.nmr.mgh.harvard.edu/pub/data/Yeo_JNeurophysiol11_MNI152.zip",
+    "path": "/kaggle/working/abide_revision/atlases/Yeo_JNeurophysiol11_MNI152.zip",
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 404: Not Found",
+    "checked_utc": "2026-10-24T19:12:42.424645+00:00"
+  }
+]

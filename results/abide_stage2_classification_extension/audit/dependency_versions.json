@@ -1,0 +1,7 @@
+{
+  "numpy": "1.26.4",
+  "pandas": "2.1.4+dfsg",
+  "scikit-learn": "1.9.1",
+  "scipy": "1.11.4",
+  "xgboost": "3.4.1"
+}

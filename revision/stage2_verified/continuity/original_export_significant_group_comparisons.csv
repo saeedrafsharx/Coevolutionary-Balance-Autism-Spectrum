@@ -1,0 +1,4 @@
+source_scope,pipeline,Feature,Category,ASD_Mean,Control_Mean,ASD_Std,Control_Std,Test_Used,p_value,p_corrected,Significant_FDR,Significant_Uncorrected
+original supplied export; not necessarily submitted-manuscript run,GSR,Inter_SomatoMotor__Frontoparietal_AvgWeight,Inter,0.0042364230393327,0.0004691066578373,0.0060615624355595,0.0057861628187694,t-test,6.894343374941813e-05,0.0043434363262133,True,True
+original supplied export; not necessarily submitted-manuscript run,GSR,Inter_DorsalAttn__Salience/VentAttn_AvgWeight,Inter,0.006409079352786,0.0021452007959524,0.00783995815765,0.0089801604661457,t-test,0.0014610514264424,0.03262613114666,True,True
+original supplied export; not necessarily submitted-manuscript run,GSR,Inter_SomatoMotor__Salience/VentAttn_AvgWeight,Inter,0.0031355022296539,-0.0003696033649194,0.0076111053056678,0.0063640733012331,t-test,0.001553625292698,0.03262613114666,True,True

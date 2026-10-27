@@ -1,0 +1,21 @@
+{
+  "finished_utc": "2026-10-25T20:27:19.578002+00:00",
+  "requested_subjects": 182,
+  "successful_feature_rows": 336,
+  "expected_feature_rows": 364,
+  "technical_failures": 28,
+  "feature_rows_by_pipeline": {
+    "GSR": 168,
+    "noGSR": 168
+  },
+  "common_technical_participants": 168,
+  "atlas_ROI_count": 200,
+  "unassigned_ROIs_liberal": 16,
+  "thin_liberal_mapping_disagreements": 9,
+  "technical_extraction_complete": false,
+  "scientific_cohort_approved": false,
+  "upstream_fALFF_validity_established": false,
+  "outliers_removed": 0,
+  "harmonization_performed": false,
+  "group_tests_performed": false
+}

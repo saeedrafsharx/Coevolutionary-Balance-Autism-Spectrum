@@ -1,0 +1,21 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json",
+    "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/sidecars/ABIDE/scan_jsons/Trinity/task-rest_bold.json",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:15:52.796218+00:00",
+    "sha256": "b4305cdb504006a08e6604752943372af8764c6c607e8d8ef46fdbb7696ef6ab",
+    "size_bytes": 1536,
+    "headers": {
+      "ETag": "\"cc745b3a417451666a463863053ca9f3a47233055ef05908da64d7ce2f79cf9d\"",
+      "Last-Modified": null,
+      "Content-Length": "1536"
+    },
+    "details": {
+      "TR_seconds": 2.0,
+      "source_path": "ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    },
+    "downloaded_utc": "2026-10-24T20:15:22.762433+00:00"
+  }
+]

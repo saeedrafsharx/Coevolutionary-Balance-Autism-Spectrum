@@ -1,0 +1,16 @@
+{
+  "url": "https://preprocessed-connectomes-project.github.io/abide/download.html",
+  "path": "/kaggle/working/abide_metadata_patch/provenance/pcp_download.html",
+  "status": "downloaded",
+  "error": "",
+  "checked_utc": "2026-10-24T19:57:59.718068+00:00",
+  "sha256": "9659911c7b06815fce3bfcf94668368189ba160ac31a5e99e00c600709dcdfb8",
+  "size_bytes": 21657,
+  "headers": {
+    "ETag": "\"6031fd93-5499\"",
+    "Last-Modified": "Sun, 21 Feb 2021 06:28:35 GMT",
+    "Content-Length": "21657"
+  },
+  "details": {},
+  "downloaded_utc": "2026-10-24T19:58:00.124666+00:00"
+}

@@ -1,0 +1,9 @@
+{
+  "n_permutations": 1000,
+  "run_ComBat_sensitivity": true,
+  "run_clinical": true,
+  "run_classification": true,
+  "effect_size_bootstraps": 2000,
+  "model_primary": "raw site/age/IQ/FD-adjusted, HC3",
+  "prediction_harmonization": "none"
+}

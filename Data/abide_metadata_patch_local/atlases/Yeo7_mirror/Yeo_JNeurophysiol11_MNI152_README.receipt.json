@@ -1,0 +1,16 @@
+{
+  "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo_JNeurophysiol11_MNI152_README",
+  "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/atlases/Yeo7_mirror/Yeo_JNeurophysiol11_MNI152_README",
+  "status": "downloaded",
+  "error": "",
+  "checked_utc": "2026-10-24T20:15:15.182379+00:00",
+  "sha256": "839f1990d7c4b058565d7f9beeaf00fabef4bd49510da366586856f730848086",
+  "size_bytes": 6122,
+  "headers": {
+    "ETag": "\"feaf94389be83716bf1659f285b9d715aa45e258bf20dabf361271404d19db46\"",
+    "Last-Modified": null,
+    "Content-Length": "6122"
+  },
+  "details": {},
+  "downloaded_utc": "2026-10-24T20:15:16.820735+00:00"
+}

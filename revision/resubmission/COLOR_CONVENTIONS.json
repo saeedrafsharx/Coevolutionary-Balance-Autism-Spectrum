@@ -1,0 +1,16 @@
+{
+  "ASD": "#DA005D",
+  "Control": "#00473A",
+  "positive_H_correlation": "#d62728",
+  "negative_H_correlation": "#1f77b4",
+  "model_colors": {
+    "GaussianNB": "#1f77b4",
+    "SVM_RBF": "#ff7f0e",
+    "LogisticRegression": "#2ca02c",
+    "KNN": "#d62728",
+    "XGBoost": "#9467bd"
+  },
+  "font": "Arial",
+  "main_figure_dpi": 600,
+  "note": "Group colors match original ml-gsr-nogsr-rerun.ipynb. State colors in the conceptual diagram denote mathematical labels, not diagnoses."
+}

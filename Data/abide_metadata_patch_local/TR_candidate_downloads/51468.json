@@ -1,0 +1,21 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Caltech/task-rest_bold.json",
+    "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/sidecars/ABIDE/scan_jsons/Caltech/task-rest_bold.json",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:15:23.903663+00:00",
+    "sha256": "fa7a61fbdadd72bdbcfd3b8f75cc4edc8c8a981ce6e1750491627ec86a12394c",
+    "size_bytes": 1751,
+    "headers": {
+      "ETag": "\"0acf9824b8b357fda59209b2594b008e193cfab3380ea602ddf6bff2e732a4f9\"",
+      "Last-Modified": null,
+      "Content-Length": "1751"
+    },
+    "details": {
+      "TR_seconds": 2.0,
+      "source_path": "ABIDE/scan_jsons/Caltech/task-rest_bold.json"
+    },
+    "downloaded_utc": "2026-10-24T20:15:21.432505+00:00"
+  }
+]

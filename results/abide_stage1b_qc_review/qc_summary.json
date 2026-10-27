@@ -1,0 +1,10 @@
+{
+  "requested_subjects": 182,
+  "ROI_labels": 200,
+  "ROI_rows": 72800,
+  "processing_failures": 0,
+  "participant_exclusions_applied": 0,
+  "ROI_exclusions_applied": 0,
+  "group_tests_performed": false,
+  "cohort_finalized": false
+}

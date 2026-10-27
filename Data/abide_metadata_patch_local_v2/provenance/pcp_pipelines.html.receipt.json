@@ -1,0 +1,16 @@
+{
+  "url": "https://preprocessed-connectomes-project.github.io/abide/Pipelines.html",
+  "path": "/kaggle/working/abide_metadata_patch/provenance/pcp_pipelines.html",
+  "status": "downloaded",
+  "error": "",
+  "checked_utc": "2026-10-24T19:58:00.125768+00:00",
+  "sha256": "e512073d8ebada063a658878b1a1d7abe19d403f81ba81396a46758efd732773",
+  "size_bytes": 17859,
+  "headers": {
+    "ETag": "\"6031fd93-45c3\"",
+    "Last-Modified": "Sun, 21 Feb 2021 06:28:35 GMT",
+    "Content-Length": "17859"
+  },
+  "details": {},
+  "downloaded_utc": "2026-10-24T19:58:00.474959+00:00"
+}

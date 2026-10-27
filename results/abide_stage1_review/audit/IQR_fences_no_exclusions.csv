@@ -1,0 +1,5 @@
+pipeline,definition,n_finite,Q1,Q3,lower_fence,upper_fence,pooled_diagnoses,quantile_interpolation,fence_endpoints_included
+GSR,downloaded_map_candidate,168,-326.32657741753894,-180.98815259258137,-544.3342146549753,37.019484644855,True,linear,True
+GSR,legacy_fixed_TR_2,171,-192.07425846380107,-64.0812230309478,-384.063811613081,127.90833011833212,True,linear,True
+noGSR,downloaded_map_candidate,168,-252.5260397105486,-122.96164071779421,-446.8726381996802,71.38495777133735,True,linear,True
+noGSR,legacy_fixed_TR_2,171,-399.4352634420919,-176.67190114827213,-733.5803068828216,157.47314229245757,True,linear,True

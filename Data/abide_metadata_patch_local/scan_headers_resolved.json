@@ -1,0 +1,5145 @@
+{
+  "50499": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050499_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:03.897087+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50499_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50694": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050694_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:04.474287+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50694_nifti_header.bin",
+    "header_sha256": "710d077a21d07e74f3bab933387dabf3385864f11e73a462c9d7909abf0e205a",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "51020": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051020_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:04.998073+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51020_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51470": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Caltech_0051470_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:05.530246+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51470_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Caltech/task-rest_bold.json"
+    ]
+  },
+  "50518": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050518_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:06.028362+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50518_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51025": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051025_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:06.529215+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51025_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50232": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050232_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:07.085604+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50232_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "50490": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050490_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:07.605247+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50490_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50520": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050520_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:08.097592+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50520_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50704": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050704_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:08.702079+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50704_nifti_header.bin",
+    "header_sha256": "1c5b0734aa644a979b026f7dc8776ee8b133c3f3f0f34c48530cbe924adf4e7b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "50245": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050245_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:09.229752+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50245_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "50514": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050514_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:09.696061+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50514_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51467": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Caltech_0051467_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:10.201410+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51467_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Caltech/task-rest_bold.json"
+    ]
+  },
+  "50530": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050530_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:10.723365+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50530_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50236": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050236_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:11.233248+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50236_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "51585": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/SBL_0051585_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:11.725973+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.2,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51585_nifti_header.bin",
+    "header_sha256": "9f1adfa063f38e2dc7598241002d97f72f17be7d64217090ab6be38ef7307e15",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/SBL/task-rest_bold.json"
+    ]
+  },
+  "50521": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050521_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:12.276070+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50521_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51016": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051016_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:12.756577+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51016_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50241": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050241_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:13.226852+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50241_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "51468": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Caltech_0051468_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:13.742140+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51468_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Caltech/task-rest_bold.json"
+    ]
+  },
+  "50134": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Olin_0050134_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:14.356870+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      206
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50134_nifti_header.bin",
+    "header_sha256": "573e9a079561f298426071f91b3df7c709b8c516722aa8a8e1b795d14d8b1380",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Olin/task-rest_bold.json"
+    ]
+  },
+  "51021": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051021_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:14.840312+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51021_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51459": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Caltech_0051459_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:15.414768+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51459_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Caltech/task-rest_bold.json"
+    ]
+  },
+  "50702": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050702_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:15.857181+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50702_nifti_header.bin",
+    "header_sha256": "0d190eff51dcaf7b437627898da218a336964aef37cab2d7e7ad260a1d7ce06f",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "50024": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050024_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:16.360748+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50024_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "51026": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051026_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:16.787357+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51026_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50012": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050012_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:17.289952+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50012_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "50482": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050482_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:17.773195+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50482_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50689": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050689_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:18.350213+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50689_nifti_header.bin",
+    "header_sha256": "25321a51817a237e8eca8a8e028339a10c1a81ecbf2c3e78d84ce11de67b1e8a",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "50004": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050004_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:18.792672+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50004_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "51023": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051023_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:19.307315+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51023_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50711": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050711_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:19.764391+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50711_nifti_header.bin",
+    "header_sha256": "b0616987d17114a18a35ad1e7a1a0f31f2fa6fa641a7e08f246eeb46e65fb310",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "51318": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_a_0051318_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:20.229394+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51318_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "50486": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050486_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:20.793148+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50486_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51329": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_d_0051329_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:21.309416+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51329_nifti_header.bin",
+    "header_sha256": "caf8375d6417a59b1776b7764dc288e0e7caf239c5eb2422e3957bbeba4fc505",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "50237": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050237_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:21.760951+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50237_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "50130": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Olin_0050130_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:22.294294+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      206
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50130_nifti_header.bin",
+    "header_sha256": "573e9a079561f298426071f91b3df7c709b8c516722aa8a8e1b795d14d8b1380",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Olin/task-rest_bold.json"
+    ]
+  },
+  "50399": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_2_0050399_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:22.797056+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50399_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_2/task-rest_bold.json"
+    ]
+  },
+  "51027": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051027_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:23.271479+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51027_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51322": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_b_0051322_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:23.830923+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51322_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "50485": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050485_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:24.323797+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50485_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50254": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050254_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:24.784129+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50254_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "50121": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Olin_0050121_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:25.254590+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      206
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50121_nifti_header.bin",
+    "header_sha256": "573e9a079561f298426071f91b3df7c709b8c516722aa8a8e1b795d14d8b1380",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Olin/task-rest_bold.json"
+    ]
+  },
+  "50496": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050496_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:25.817478+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50496_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51029": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051029_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:26.321627+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51029_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51017": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051017_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:26.766663+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51017_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51328": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_c_0051328_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:27.320266+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51328_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "51571": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/SBL_0051571_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:27.817657+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.2,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51571_nifti_header.bin",
+    "header_sha256": "9f1adfa063f38e2dc7598241002d97f72f17be7d64217090ab6be38ef7307e15",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/SBL/task-rest_bold.json"
+    ]
+  },
+  "51474": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Caltech_0051474_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:28.333082+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51474_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Caltech/task-rest_bold.json"
+    ]
+  },
+  "50320": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_1_0050320_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:28.826938+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50320_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_1/task-rest_bold.json"
+    ]
+  },
+  "50690": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050690_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:29.308468+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50690_nifti_header.bin",
+    "header_sha256": "afed527689294cec6cec60603af167129328752f199157629db368281a5ce9a5",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "51466": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Caltech_0051466_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:29.809562+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51466_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Caltech/task-rest_bold.json"
+    ]
+  },
+  "50973": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0050973_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:30.278824+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50973_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51572": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/SBL_0051572_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:30.785108+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.2,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51572_nifti_header.bin",
+    "header_sha256": "9f1adfa063f38e2dc7598241002d97f72f17be7d64217090ab6be38ef7307e15",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/SBL/task-rest_bold.json"
+    ]
+  },
+  "50693": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050693_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:31.287004+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50693_nifti_header.bin",
+    "header_sha256": "eee444c1e06982327d435db909b81e5086ab4152275ee7b8e8ec47ec9e241c70",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "50251": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050251_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:31.781986+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50251_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "50498": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050498_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:32.250079+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50498_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50487": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050487_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:32.696270+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50487_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50500": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050500_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:33.153310+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50500_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50233": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050233_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:33.656664+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50233_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "50136": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Olin_0050136_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:34.132812+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      206
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50136_nifti_header.bin",
+    "header_sha256": "573e9a079561f298426071f91b3df7c709b8c516722aa8a8e1b795d14d8b1380",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Olin/task-rest_bold.json"
+    ]
+  },
+  "51473": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Caltech_0051473_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:34.589878+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51473_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Caltech/task-rest_bold.json"
+    ]
+  },
+  "50696": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050696_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:35.191725+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50696_nifti_header.bin",
+    "header_sha256": "4b92819aa264228212d3ae0deb1b9506e20787c4dad3a9a01f8a2560cf9dce97",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "50246": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050246_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:35.760977+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50246_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "50700": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050700_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:36.226859+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50700_nifti_header.bin",
+    "header_sha256": "3d4a2acf6257197e254338a42ffcee90b2dff74ba29b26528d0aa585c91a7c31",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "51015": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051015_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:36.738197+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51015_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50695": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050695_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:37.187294+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50695_nifti_header.bin",
+    "header_sha256": "915e8bf5da6576303966cbfe1ab965531d4aa7768ed919223ecb56103ee14dac",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "50131": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Olin_0050131_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:37.665664+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      206
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50131_nifti_header.bin",
+    "header_sha256": "573e9a079561f298426071f91b3df7c709b8c516722aa8a8e1b795d14d8b1380",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Olin/task-rest_bold.json"
+    ]
+  },
+  "50686": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050686_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:38.214796+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50686_nifti_header.bin",
+    "header_sha256": "aeb274694be04ca6367bc9f3b98052e585137f596071158ae0d0173cc5de5a1f",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "51237": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UCLA_1_0051237_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:38.749349+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51237_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UCLA_1/task-rest_bold.json"
+    ]
+  },
+  "51457": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Caltech_0051457_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:39.252246+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51457_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Caltech/task-rest_bold.json"
+    ]
+  },
+  "51464": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Caltech_0051464_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:39.781927+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51464_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Caltech/task-rest_bold.json"
+    ]
+  },
+  "50507": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050507_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:40.291382+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50507_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51607": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_a_0051607_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:40.769729+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51607_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "50488": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050488_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:41.223134+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50488_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51018": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051018_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:41.737536+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51018_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50516": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050516_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:42.189974+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50516_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50649": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/CMU_a_0050649_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:42.675904+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": null,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50649_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "conflicting_scan_TRs"
+  },
+  "50480": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050480_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:43.143678+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50480_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50491": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050491_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:43.622476+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50491_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50504": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050504_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:44.064020+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50504_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50020": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050020_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:44.547232+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50020_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "50253": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050253_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:44.953875+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50253_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "51019": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051019_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:45.427426+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51019_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50503": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050503_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:45.960967+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50503_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50184": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/SDSU_0050184_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:46.418484+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50184_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/SDSU/task-rest_bold.json"
+    ]
+  },
+  "50007": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050007_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:46.973639+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50007_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "51028": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051028_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:47.483770+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51028_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50527": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050527_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:47.965258+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50527_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51465": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Caltech_0051465_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:48.506776+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51465_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Caltech/task-rest_bold.json"
+    ]
+  },
+  "50415": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_2_0050415_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:48.999890+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50415_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_2/task-rest_bold.json"
+    ]
+  },
+  "50388": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_2_0050388_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:49.517354+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50388_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_2/task-rest_bold.json"
+    ]
+  },
+  "50442": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050442_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:50.021508+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50442_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50267": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050267_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:50.524596+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50267_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "51077": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051077_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:51.014666+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51077_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50382": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_2_0050382_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:51.567021+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50382_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_2/task-rest_bold.json"
+    ]
+  },
+  "51147": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051147_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:52.104351+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51147_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51067": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051067_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:52.525363+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51067_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50440": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050440_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:53.021694+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50440_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51559": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/SBL_0051559_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:53.536443+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.2,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51559_nifti_header.bin",
+    "header_sha256": "9f1adfa063f38e2dc7598241002d97f72f17be7d64217090ab6be38ef7307e15",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/SBL/task-rest_bold.json"
+    ]
+  },
+  "50446": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050446_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:54.081857+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50446_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50345": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_1_0050345_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:54.601305+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50345_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_1/task-rest_bold.json"
+    ]
+  },
+  "50469": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050469_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:55.162128+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50469_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51150": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051150_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:55.640038+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51150_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50339": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_1_0050339_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:56.106002+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50339_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_1/task-rest_bold.json"
+    ]
+  },
+  "50107": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Olin_0050107_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:56.585292+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      206
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50107_nifti_header.bin",
+    "header_sha256": "573e9a079561f298426071f91b3df7c709b8c516722aa8a8e1b795d14d8b1380",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Olin/task-rest_bold.json"
+    ]
+  },
+  "50044": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050044_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:57.094371+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50044_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "51365": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_a_0051365_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:57.612418+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51365_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "51113": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051113_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:58.080272+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51113_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51268": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UCLA_1_0051268_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:58.538195+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51268_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UCLA_1/task-rest_bold.json"
+    ]
+  },
+  "51146": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051146_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:59.118692+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51146_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50449": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050449_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:28:59.543156+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50449_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50444": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050444_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:00.042938+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50444_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50030": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050030_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:00.565820+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50030_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "51118": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051118_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:01.021098+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51118_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50032": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050032_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:01.535555+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50032_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "50445": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050445_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:02.053119+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50445_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50115": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Olin_0050115_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:02.580306+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      206
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50115_nifti_header.bin",
+    "header_sha256": "573e9a079561f298426071f91b3df7c709b8c516722aa8a8e1b795d14d8b1380",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Olin/task-rest_bold.json"
+    ]
+  },
+  "50368": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_1_0050368_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:03.055682+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50368_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_1/task-rest_bold.json"
+    ]
+  },
+  "50060": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050060_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:03.584083+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50060_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "50703": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050703_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:04.085871+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50703_nifti_header.bin",
+    "header_sha256": "0aab69acb7d02a3011e61a6475b2ad105b23f29a86e29d73f39141006cd68f34",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "51344": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_c_0051344_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:04.686205+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51344_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "51151": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051151_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:05.183369+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51151_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51114": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051114_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:05.701373+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51114_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50259": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050259_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:06.172469+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50259_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "51334": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_c_0051334_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:06.641942+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51334_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "51131": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051131_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:07.154419+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51131_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50035": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050035_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:07.661369+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50035_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "50710": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050710_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:08.242804+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50710_nifti_header.bin",
+    "header_sha256": "c4c80758f212c84a3a324fa1a121154dec01eae088f7b566b146a0343c8cb4e6",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "51558": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/SBL_0051558_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:08.700609+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.2,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51558_nifti_header.bin",
+    "header_sha256": "9f1adfa063f38e2dc7598241002d97f72f17be7d64217090ab6be38ef7307e15",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/SBL/task-rest_bold.json"
+    ]
+  },
+  "51132": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0051132_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:09.243690+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51132_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "50058": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050058_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:09.753259+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50058_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "50270": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050270_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:10.266925+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50270_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "51152": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051152_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:10.765698+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51152_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51148": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051148_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:11.275636+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51148_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50260": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050260_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:11.723830+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50260_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "50261": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050261_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:12.237059+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50261_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "51560": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/SBL_0051560_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:12.707544+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.2,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51560_nifti_header.bin",
+    "header_sha256": "9f1adfa063f38e2dc7598241002d97f72f17be7d64217090ab6be38ef7307e15",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/SBL/task-rest_bold.json"
+    ]
+  },
+  "50344": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_1_0050344_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:13.185682+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50344_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_1/task-rest_bold.json"
+    ]
+  },
+  "50037": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050037_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:13.644258+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50037_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "51153": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051153_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:14.187027+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51153_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51112": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051112_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:14.725892+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51112_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50385": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_2_0050385_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:15.219003+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50385_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_2/task-rest_bold.json"
+    ]
+  },
+  "51332": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_c_0051332_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:15.761245+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51332_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "50706": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050706_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:16.268297+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50706_nifti_header.bin",
+    "header_sha256": "89894d47374ff64cb99d115d6406cef9623df3f9817689834431b2bb8af80912",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "50439": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050439_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:16.743891+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50439_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51557": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/SBL_0051557_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:17.338355+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.2,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51557_nifti_header.bin",
+    "header_sha256": "9f1adfa063f38e2dc7598241002d97f72f17be7d64217090ab6be38ef7307e15",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/SBL/task-rest_bold.json"
+    ]
+  },
+  "50329": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_1_0050329_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:17.784991+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50329_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_1/task-rest_bold.json"
+    ]
+  },
+  "50391": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_2_0050391_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:18.361891+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50391_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_2/task-rest_bold.json"
+    ]
+  },
+  "51139": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0051139_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:18.854670+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51139_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "51346": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_c_0051346_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:19.359662+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51346_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "51117": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051117_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:19.883015+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51117_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50041": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050041_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:20.366054+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50041_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "51364": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_a_0051364_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:20.839582+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51364_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "50040": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050040_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:21.317327+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50040_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "50349": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_1_0050349_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:21.784756+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50349_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_1/task-rest_bold.json"
+    ]
+  },
+  "51156": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051156_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:22.257946+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51156_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50046": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Pitt_0050046_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:22.726671+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      196
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50046_nifti_header.bin",
+    "header_sha256": "19782705f4310835bbdc43cfbabe5913eb0ab04bdcd019955a884c272192830e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Pitt/task-rest_bold.json"
+    ]
+  },
+  "51130": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051130_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:23.248081+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51130_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "50117": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Olin_0050117_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:23.801964+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      206
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.5,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50117_nifti_header.bin",
+    "header_sha256": "573e9a079561f298426071f91b3df7c709b8c516722aa8a8e1b795d14d8b1380",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Olin/task-rest_bold.json"
+    ]
+  },
+  "50709": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050709_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:24.272780+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50709_nifti_header.bin",
+    "header_sha256": "25321a51817a237e8eca8a8e028339a10c1a81ecbf2c3e78d84ce11de67b1e8a",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "51339": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_c_0051339_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:24.799973+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51339_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "50441": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050441_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:25.268413+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50441_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51149": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051149_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:25.719015+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51149_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51116": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051116_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:26.126328+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51116_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51347": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_c_0051347_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:26.591073+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51347_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "50263": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Trinity_0050263_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:27.115144+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      146
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50263_nifti_header.bin",
+    "header_sha256": "4e00e74f62f16058e0df3707d3035fc23c11b48a8388e90e629c7525d9cba877",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Trinity/task-rest_bold.json"
+    ]
+  },
+  "51340": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_c_0051340_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:27.585415+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51340_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "50335": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_1_0050335_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:28.125434+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50335_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_1/task-rest_bold.json"
+    ]
+  },
+  "51129": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051129_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:28.697026+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51129_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  },
+  "51335": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_c_0051335_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:29.205063+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51335_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "50386": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_2_0050386_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:29.741446+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50386_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_2/task-rest_bold.json"
+    ]
+  },
+  "51333": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_c_0051333_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:30.266475+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51333_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "50443": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050443_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:30.723237+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50443_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50434": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050434_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:31.221280+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50434_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50424": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/UM_2_0050424_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:31.714939+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      296
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50424_nifti_header.bin",
+    "header_sha256": "d88352437145caacc262498afc3ed36f7ddbd940d4b2b6b49b5a7561ba1e113b",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/UM_2/task-rest_bold.json"
+    ]
+  },
+  "50707": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/Leuven_1_0050707_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:32.125092+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      246
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 1.6669999999999998,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50707_nifti_header.bin",
+    "header_sha256": "bcf44441251a676e7788d49fd03085b7612fd2bcd016f8e3d67edae504377b8e",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/Leuven_1/task-rest_bold.json"
+    ]
+  },
+  "50467": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050467_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:32.611607+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50467_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50433": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050433_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:33.143727+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50433_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "50463": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/USM_0050463_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:33.729388+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      236
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/50463_nifti_header.bin",
+    "header_sha256": "a4139bb58faee91c2614f901ec9bc496cf7150b0233957d3514cb97114826f41",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/USM/task-rest_bold.json"
+    ]
+  },
+  "51342": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/MaxMun_c_0051342_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:34.200382+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      116
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 3.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51342_nifti_header.bin",
+    "header_sha256": "9d1ea3d2a8f41a5ab402454fe3377c49fa7ed5c19ff3e6795ebe827dd5b3e1fc",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_a/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_c/task-rest_bold.json",
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_d/task-rest_bold.json"
+    ]
+  },
+  "51066": {
+    "url": "https://s3.amazonaws.com/fcp-indi/data/Projects/ABIDE_Initiative/Outputs/cpac/nofilt_noglobal/func_preproc/NYU_0051066_func_preproc.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:29:34.729743+00:00",
+    "shape": [
+      61,
+      73,
+      61,
+      176
+    ],
+    "voxel_sizes": [
+      3.0,
+      3.0,
+      3.0
+    ],
+    "bitpix": 64,
+    "vox_offset": 352,
+    "TR_seconds": 2.0,
+    "time_unit_code": 0,
+    "header_path": "/kaggle/working/abide_revision/metadata/scan_headers/51066_nifti_header.bin",
+    "header_sha256": "15dcecb6e386b67e5e973f2dda58f8a819d52520a432c2076b412cd8bca492f8",
+    "resolution": "site_inherited_BIDS_sidecars",
+    "TR_source_scope": "site_inherited",
+    "TR_source_urls": [
+      "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    ]
+  }
+}

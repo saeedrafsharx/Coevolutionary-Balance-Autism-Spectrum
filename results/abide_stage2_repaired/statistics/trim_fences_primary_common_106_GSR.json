@@ -1,0 +1,11 @@
+{
+  "n_finite": 140,
+  "Q1": -121.42266307403422,
+  "Q3": -55.42314103826272,
+  "lower_fence": -220.42194612769146,
+  "upper_fence": 43.57614201539452,
+  "pooled_diagnoses": true,
+  "quantile_interpolation": "linear",
+  "fence_endpoints_included": true,
+  "stage": "all eligible design participants before small-site exclusion"
+}

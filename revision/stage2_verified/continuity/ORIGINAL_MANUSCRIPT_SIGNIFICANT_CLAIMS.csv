@@ -1,0 +1,7 @@
+original_claim,manuscript_probability,verification_scope
+ASD empirical H versus null mean,t-test p=7.5e-5; Wilcoxon p=9.1e-5,Submitted claim; original subject-level null ensemble unavailable here
+Control empirical H versus null mean,t-test p=1.2e-4; Wilcoxon p=1.6e-4,Submitted claim; original subject-level null ensemble unavailable here
+Within-ASD no-GSR H versus global/local efficiency,FDR p approximately .005,Original supplied export reproduced: r approximately -.324; q=.005917; n=80
+Within-ASD H versus block state-weighted FC and energy,Strongest FDR p below 1e-7,"All original exported H-feature r, p and q reproduced; scope differs from revision"
+Within-ASD no-GSR H versus selected block mean FC,FDR p approximately .009,Original-export full significant list retained; do not equate to a group interaction
+Earlier pre-harmonization GSR diagnosis-energy contrast,FDR p approximately .002,Historical earlier-run claim in Discussion; exact run not identified by supplied current exports

@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering\small
+\caption{\textbf{Exploratory feature-selection comparison on the same known outer folds.}}\label{tab:selection}
+\begin{tabular}{llrrrl}
+\toprule
+Pipeline & Model & Baseline BA & Follow-up BA & Change & Change 95\% CI \\
+\midrule
+GSR & GNB & 0.498 & 0.491 & -0.008 & -0.092, 0.074 \\
+GSR & KNN & 0.518 & 0.442 & -0.076 & -0.193, 0.024 \\
+GSR & LR & 0.534 & 0.521 & -0.013 & -0.107, 0.036 \\
+GSR & SVM & 0.558 & 0.534 & -0.023 & -0.097, 0.068 \\
+GSR & XGB & 0.457 & 0.492 & 0.036 & -0.031, 0.103 \\
+noGSR & GNB & 0.515 & 0.493 & -0.022 & -0.086, 0.038 \\
+noGSR & KNN & 0.542 & 0.557 & 0.014 & -0.098, 0.108 \\
+noGSR & LR & 0.485 & 0.544 & 0.059 & -0.015, 0.109 \\
+noGSR & SVM & 0.485 & 0.536 & 0.051 & -0.038, 0.148 \\
+noGSR & XGB & 0.507 & 0.500 & -0.006 & -0.149, 0.078 \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}\footnotesize
+Paired change intervals resample sites conditional on fixed OOF predictions. The follow-up was specified after baseline results had been examined and is not independent confirmation of improvement. Representation and XGBoost search grids also differ. All ten estimates are shown; no classifier is selected by outer performance.
+\end{flushleft}
+\end{table}

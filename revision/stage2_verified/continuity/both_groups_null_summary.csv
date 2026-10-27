@@ -1,0 +1,9 @@
+group,pipeline,null,n,mean_z,nominal_p_below05,q560_below05
+ASD,GSR,network_hemisphere_blocks,69,-2.331074616624409,44,40
+ASD,GSR,node_permutation,69,-4.705342169118906,62,61
+ASD,noGSR,network_hemisphere_blocks,69,-2.5913183397455417,48,46
+ASD,noGSR,node_permutation,69,-4.916830883363078,62,60
+Control,GSR,network_hemisphere_blocks,71,-2.3131379313835834,40,36
+Control,GSR,node_permutation,71,-4.690194356054394,64,61
+Control,noGSR,network_hemisphere_blocks,71,-2.759720280912249,53,50
+Control,noGSR,node_permutation,71,-5.1585883430711705,69,64

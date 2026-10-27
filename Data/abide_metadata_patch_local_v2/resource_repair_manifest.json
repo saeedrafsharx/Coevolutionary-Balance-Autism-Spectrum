@@ -1,0 +1,304 @@
+[
+  {
+    "resource": "pcp_download.html",
+    "url": "https://preprocessed-connectomes-project.github.io/abide/download.html",
+    "path": "Data/abide_metadata_patch_local_v2/provenance/pcp_download.html",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:21:06.609686+00:00",
+    "sha256": "9659911c7b06815fce3bfcf94668368189ba160ac31a5e99e00c600709dcdfb8",
+    "size_bytes": 21657,
+    "headers": {
+      "ETag": "\"6031fd93-5499\"",
+      "Last-Modified": "Sun, 21 Feb 2021 06:28:35 GMT",
+      "Content-Length": "21657"
+    },
+    "details": {},
+    "downloaded_utc": "2026-10-24T19:58:00.124666+00:00"
+  },
+  {
+    "resource": "pcp_pipelines.html",
+    "url": "https://preprocessed-connectomes-project.github.io/abide/Pipelines.html",
+    "path": "Data/abide_metadata_patch_local_v2/provenance/pcp_pipelines.html",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:21:06.610121+00:00",
+    "sha256": "e512073d8ebada063a658878b1a1d7abe19d403f81ba81396a46758efd732773",
+    "size_bytes": 17859,
+    "headers": {
+      "ETag": "\"6031fd93-45c3\"",
+      "Last-Modified": "Sun, 21 Feb 2021 06:28:35 GMT",
+      "Content-Length": "17859"
+    },
+    "details": {},
+    "downloaded_utc": "2026-10-24T19:58:00.474959+00:00"
+  },
+  {
+    "resource": "pcp_cpac.html",
+    "url": "https://preprocessed-connectomes-project.github.io/abide/cpac.html",
+    "path": "Data/abide_metadata_patch_local_v2/provenance/pcp_cpac.html",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:21:06.610395+00:00",
+    "sha256": "de96b8d54e8760ca13ca41d57fbd460954170183551bd456e44b34f12e447195",
+    "size_bytes": 4393,
+    "headers": {
+      "ETag": "\"6031fd93-1129\"",
+      "Last-Modified": "Sun, 21 Feb 2021 06:28:35 GMT",
+      "Content-Length": "4393"
+    },
+    "details": {},
+    "downloaded_utc": "2026-10-24T19:58:00.734892+00:00"
+  },
+  {
+    "resource": "pcp_quality_assessment.html",
+    "url": "https://preprocessed-connectomes-project.github.io/abide/quality_assessment.html",
+    "path": "Data/abide_metadata_patch_local_v2/provenance/pcp_quality_assessment.html",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:21:06.610625+00:00",
+    "sha256": "f8d91934315b6eb767fce742cc83079bbcada4a74add902a105f7953afb1c56c",
+    "size_bytes": 14784,
+    "headers": {
+      "ETag": "\"6031fd93-39c0\"",
+      "Last-Modified": "Sun, 21 Feb 2021 06:28:35 GMT",
+      "Content-Length": "14784"
+    },
+    "details": {},
+    "downloaded_utc": "2026-10-24T19:58:01.041809+00:00"
+  },
+  {
+    "resource": "pipeline_config_abide_rerun.yml",
+    "url": "https://raw.githubusercontent.com/preprocessed-connectomes-project/abide/master/preprocessing/settings/pipeline_config_abide_rerun.yml",
+    "path": "/kaggle/working/abide_revision/provenance/pipeline_config_abide_rerun.yml",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:12:41.855687+00:00",
+    "sha256": "86392916beccef674d62a2a7c5132cd9f466d7759827c1fb84a13e253a20e63a",
+    "size_bytes": 23816,
+    "headers": {
+      "ETag": "\"1b74daee4dda01330462b9d16b9f221bb0a3a1bf16057f1aba11c3ce2ce8869c\"",
+      "Last-Modified": null,
+      "Content-Length": "23816"
+    },
+    "details": {},
+    "downloaded_utc": "2026-10-24T19:12:42.077494+00:00"
+  },
+  {
+    "resource": "abide_rois.txt",
+    "url": "https://raw.githubusercontent.com/preprocessed-connectomes-project/abide/master/preprocessing/settings/abide_rois.txt",
+    "path": "/kaggle/working/abide_revision/provenance/abide_rois.txt",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:12:42.078313+00:00",
+    "sha256": "99878b225656ef8f519ae9b93ee4d38d8e1983089fabe37e1f831ea8f99f7e36",
+    "size_bytes": 497,
+    "headers": {
+      "ETag": "\"00d0e0c2fcdf143e5daaaff5042ca6d6d26a71394f422139e13a1e4ba6a2f5d8\"",
+      "Last-Modified": null,
+      "Content-Length": "497"
+    },
+    "details": {},
+    "downloaded_utc": "2026-10-24T19:12:42.273263+00:00"
+  },
+  {
+    "resource": "CC200.nii.gz",
+    "url": "https://raw.githubusercontent.com/preprocessed-connectomes-project/abide/master/preprocessing/resources/abide_rois/CC200.nii.gz",
+    "path": "/kaggle/working/abide_revision/atlases/CC200.nii.gz",
+    "status": "downloaded",
+    "error": "",
+    "checked_utc": "2026-10-24T19:12:42.273658+00:00",
+    "sha256": "dd444ad89dd6b84ab44555eb8b319cb52661612e3f318905fc75466090b8e626",
+    "size_bytes": 12338,
+    "headers": {
+      "ETag": "\"fb806854f6525cdbc8348edda1a5f5b31386c3b4c885573eb1e97beb69a5d2d8\"",
+      "Last-Modified": null,
+      "Content-Length": "12338"
+    },
+    "details": {
+      "shape": [
+        63,
+        75,
+        61
+      ],
+      "voxel_sizes": [
+        3.0,
+        3.0,
+        3.0
+      ],
+      "bitpix": 16,
+      "vox_offset": 4112,
+      "TR_seconds": null,
+      "time_unit_code": 0
+    },
+    "downloaded_utc": "2026-10-24T19:12:42.424271+00:00"
+  },
+  {
+    "resource": "Yeo_JNeurophysiol11_MNI152.zip",
+    "url": "https://ftp.nmr.mgh.harvard.edu/pub/data/Yeo_JNeurophysiol11_MNI152.zip",
+    "path": "/kaggle/working/abide_revision/atlases/Yeo_JNeurophysiol11_MNI152.zip",
+    "status": "unavailable",
+    "error": "HTTPError: HTTP Error 404: Not Found",
+    "checked_utc": "2026-10-24T19:12:42.424645+00:00"
+  },
+  {
+    "resource": "Yeo7_mirrored_files",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/",
+    "details": {
+      "files": [
+        {
+          "resource": "Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.nii.gz",
+          "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.nii.gz",
+          "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.nii.gz",
+          "sha256": "a11cfeba3c88e25b6cd9c6d4b542ef67d3587bc674023bb8661447f213329d3f",
+          "size_bytes": 338795,
+          "status": "verified_existing",
+          "checked_utc": "2026-10-24T20:21:07.541913+00:00",
+          "details": {
+            "shape": [
+              256,
+              256,
+              256,
+              1
+            ],
+            "voxel_sizes": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bitpix": 32,
+            "vox_offset": 352,
+            "TR_seconds": null,
+            "time_unit_code": 16,
+            "raw_pixdim4": 0.0,
+            "raw_bitpix": 4,
+            "raw_vox_offset": 352.0,
+            "legacy_header_interpretation": true,
+            "labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "recovered_from_rejected_download": true,
+          "error": "",
+          "normalized_copy": {
+            "source_path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.nii.gz",
+            "source_sha256": "a11cfeba3c88e25b6cd9c6d4b542ef67d3587bc674023bb8661447f213329d3f",
+            "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.normalized.nii.gz",
+            "sha256": "f7322808e2993b3fe92b48021b4323690fc188082800e083cafe50a18410ea41",
+            "created_utc": "2026-10-24T20:21:13.101893+00:00",
+            "original_bitpix": 4,
+            "normalized_bitpix": 32,
+            "original_vox_offset": 352.0,
+            "normalized_vox_offset": 352,
+            "voxel_payload_sha256": "96d581034e2d310b8f09a48f95a340ca708b21398c499d3ede1974f5adeb5802",
+            "voxel_bytes_unchanged": true,
+            "spatial_transform_fields_unchanged": true,
+            "operation": "Header normalization only; no resampling or relabeling"
+          }
+        },
+        {
+          "resource": "Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.nii.gz",
+          "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.nii.gz",
+          "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.nii.gz",
+          "sha256": "c8e2ee01cd23beb1c5424980e0922cce7417c26e3176432dd0074518144851d3",
+          "size_bytes": 271559,
+          "status": "verified_existing",
+          "checked_utc": "2026-10-24T20:21:14.225738+00:00",
+          "details": {
+            "shape": [
+              256,
+              256,
+              256,
+              1
+            ],
+            "voxel_sizes": [
+              1.0,
+              1.0,
+              1.0
+            ],
+            "bitpix": 32,
+            "vox_offset": 352,
+            "TR_seconds": null,
+            "time_unit_code": 16,
+            "raw_pixdim4": 0.0,
+            "raw_bitpix": 4,
+            "raw_vox_offset": 352.0,
+            "legacy_header_interpretation": true,
+            "labels": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "recovered_from_rejected_download": true,
+          "error": "",
+          "normalized_copy": {
+            "source_path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.nii.gz",
+            "source_sha256": "c8e2ee01cd23beb1c5424980e0922cce7417c26e3176432dd0074518144851d3",
+            "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm_LiberalMask.normalized.nii.gz",
+            "sha256": "0fe7bdc6ca78123cf2b6ca64845644c62429b276c775b77f55df6b4f3c3ab5e2",
+            "created_utc": "2026-10-24T20:21:18.831013+00:00",
+            "original_bitpix": 4,
+            "normalized_bitpix": 32,
+            "original_vox_offset": 352.0,
+            "normalized_vox_offset": 352,
+            "voxel_payload_sha256": "795469a7790686c0295ecf7ec2acbd5ae9cd47169d4ad340631133444f4892a2",
+            "voxel_bytes_unchanged": true,
+            "spatial_transform_fields_unchanged": true,
+            "operation": "Header normalization only; no resampling or relabeling"
+          }
+        },
+        {
+          "resource": "Yeo2011_7Networks_ColorLUT.txt",
+          "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo2011_7Networks_ColorLUT.txt",
+          "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_ColorLUT.txt",
+          "status": "verified_existing",
+          "error": "",
+          "checked_utc": "2026-10-24T20:21:19.061268+00:00",
+          "sha256": "f6e68af76dffac569c4e6b5d7cfe13036e5ce0a702192a3774ddae48af985e26",
+          "size_bytes": 288,
+          "headers": {
+            "ETag": "\"5cd8c972ed15d67255c60b634c8094d70b24cad8b358e974275458c964c75202\"",
+            "Last-Modified": null,
+            "Content-Length": "288"
+          },
+          "details": {},
+          "downloaded_utc": "2026-10-24T20:15:15.182046+00:00"
+        },
+        {
+          "resource": "Yeo_JNeurophysiol11_MNI152_README",
+          "url": "https://raw.githubusercontent.com/edickie/scwg2018_python_neuroimaging/master/resources/rois/yeo_2011/Yeo_JNeurophysiol11_MNI152/Yeo_JNeurophysiol11_MNI152_README",
+          "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo_JNeurophysiol11_MNI152_README",
+          "status": "verified_existing",
+          "error": "",
+          "checked_utc": "2026-10-24T20:21:19.067302+00:00",
+          "sha256": "839f1990d7c4b058565d7f9beeaf00fabef4bd49510da366586856f730848086",
+          "size_bytes": 6122,
+          "headers": {
+            "ETag": "\"feaf94389be83716bf1659f285b9d715aa45e258bf20dabf361271404d19db46\"",
+            "Last-Modified": null,
+            "Content-Length": "6122"
+          },
+          "details": {},
+          "downloaded_utc": "2026-10-24T20:15:16.820735+00:00"
+        }
+      ],
+      "distribution": "third-party HTTPS mirror",
+      "original_archive_identical_bytes_verified": false
+    },
+    "error": ""
+  }
+]

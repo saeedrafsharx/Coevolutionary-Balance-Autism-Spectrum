@@ -1,0 +1,8 @@
+{
+  "joblib": "1.6.0",
+  "numpy": "1.26.4",
+  "pandas": "2.1.4+dfsg",
+  "scikit-learn": "1.9.1",
+  "scipy": "1.11.4",
+  "xgboost-cpu": "3.4.1"
+}

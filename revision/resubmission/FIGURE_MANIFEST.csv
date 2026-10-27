@@ -1,0 +1,12 @@
+file,description,width_pixels,height_pixels,DPI,RGB,bytes,sha256
+Fig1.tif,Workflow and participant flow,4500,3720,600,True,1131676,a2b9584c709843e4cd881d11bc85f5d973c4d0251ee0e3b320d6abbd80dcfa42
+Fig2.tif,Empirical versus null alignment in both groups,4500,3840,600,True,1001990,fa1fb5fae1289df267ec42acd9d9fd1dd6bdf5923d21eddf7950a74cbfab68ba
+Fig3.tif,Global distributions,4500,3780,600,True,1452774,04da0e5c7732a052a60049937a5c3c984b2995b6daa10f267be1aeba9556b553
+Fig4.tif,Intra-network comparisons,4500,2700,600,True,1225096,135caa65492ae1be16fd79cff53bb8a7608aa6de0f1d9d35d6b8871e586bff06
+Fig5.tif,Inter-network comparisons,4500,4680,600,True,2427460,3c2928fef031bcc7f72b6ada3e7be238a9666ac1cc59795831fc4d79bf627bfc
+Fig6.tif,Within-group H correlations,4500,4680,600,True,1319664,9efbdf99e739b7047f1678a28c80d42ad6a7178a5088707a32da04411f998509
+Fig7.tif,Adjusted efficiency associations,4500,3720,600,True,872234,334fdc1a5952359f019e4c2c019cf356b4feb1fa723d41be060f9e0ef3430275
+Fig8.tif,Clinical associations and PLS regression,4500,2820,600,True,619852,525475c267e2ab00b1d39441926abbefdedecf76052a1e9f4fb48ebf4bc9bd08
+Fig9.tif,Complete site-held-out ROC curves,4500,2520,600,True,778896,28b497b8c7314ee0422d08a23b12921307b832742b94b0f951773d30cd584d0d
+Fig10.tif,Classifier comparison,4500,2640,600,True,406170,29217381b98e0cfdd8d284774d6c0f537553afdac96b5226cbc46698bdf6b61e
+Fig11.tif,Pairwise state-sign configurations,4500,1800,600,True,363324,dae4ea2da8927560e0e46e2bb1c91d9fa6d3dec4c1cc02db3f6838b8bb2d637c

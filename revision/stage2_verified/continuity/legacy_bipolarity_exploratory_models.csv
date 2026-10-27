@@ -1,0 +1,3 @@
+pipeline,feature,n,scope,beta,SE_HC3,CI95_low,CI95_high,p,df_residual,implementation_backend,p_Holm_exploratory
+GSR,Whole_Bipolarity_legacy_spectral,136,exploratory original descriptor; separate from frozen families,0.0004002780602762237,0.0036088413285155405,-0.006743202073656346,0.007543758194208793,0.9118637814538791,123.0,statsmodels_OLS_HC3,0.9162646945714796
+noGSR,Whole_Bipolarity_legacy_spectral,136,exploratory original descriptor; separate from frozen families,0.010545625590565164,0.01416907511453813,-0.017501189822773017,0.03859244100390334,0.4581323472857398,123.0,statsmodels_OLS_HC3,0.9162646945714796

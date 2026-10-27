@@ -1,0 +1,15 @@
+{
+  "source_path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.nii.gz",
+  "source_sha256": "a11cfeba3c88e25b6cd9c6d4b542ef67d3587bc674023bb8661447f213329d3f",
+  "path": "Data/abide_metadata_patch_local_v2/atlases/Yeo7_mirror/Yeo2011_7Networks_MNI152_FreeSurferConformed1mm.normalized.nii.gz",
+  "sha256": "f7322808e2993b3fe92b48021b4323690fc188082800e083cafe50a18410ea41",
+  "created_utc": "2026-10-24T20:21:13.101893+00:00",
+  "original_bitpix": 4,
+  "normalized_bitpix": 32,
+  "original_vox_offset": 352.0,
+  "normalized_vox_offset": 352,
+  "voxel_payload_sha256": "96d581034e2d310b8f09a48f95a340ca708b21398c499d3ede1974f5adeb5802",
+  "voxel_bytes_unchanged": true,
+  "spatial_transform_fields_unchanged": true,
+  "operation": "Header normalization only; no resampling or relabeling"
+}

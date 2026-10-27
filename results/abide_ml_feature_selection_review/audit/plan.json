@@ -1,0 +1,22 @@
+{
+  "baseline_predictions_sha256": "206f1136822b69d7bba6c548daf034548bb251d78996e7e420b213d091e127a4",
+  "feature_selection_configs": 10,
+  "feature_sha256": "25178d5b3f5b87ad10c4b2f60f0574fb5fe51b26d042ddac7255f9030894848b",
+  "k_values": [
+    5,
+    10,
+    20
+  ],
+  "metadata_sha256": "e8e7872e502ce37d6f72f36d252a99f861a73988576999828f012d5e985857d2",
+  "original_inputs_preserved": true,
+  "outer_results_already_seen": true,
+  "redundancy_threshold": 0.9999999999,
+  "selection_methods": [
+    "all",
+    "anova",
+    "mutual_info",
+    "l1"
+  ],
+  "specification_sha256": "7029a8b8da238cefd3b58d7c5ca58bd31df7a7a4007d0952b1f558077604ad5d",
+  "validation": "exploratory nested 5 outer/3 inner site folds; same folds as baseline"
+}

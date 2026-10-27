@@ -1,0 +1,21 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/NYU/task-rest_bold.json",
+    "path": "Data/abide_metadata_patch_local_v2/sidecars/ABIDE/scan_jsons/NYU/task-rest_bold.json",
+    "status": "verified_existing",
+    "error": "",
+    "checked_utc": "2026-10-24T20:21:19.120638+00:00",
+    "sha256": "7e33bc0d7793506496fce03d6c426354af5979af4ce654e7a33e45f0cf4fb1f7",
+    "size_bytes": 2023,
+    "headers": {
+      "ETag": "\"a69bf873452f5a73ff5c0e49edfd1ecbd6d77c10efd262205497026037e7c69d\"",
+      "Last-Modified": null,
+      "Content-Length": "2023"
+    },
+    "details": {
+      "TR_seconds": 2.0,
+      "source_path": "ABIDE/scan_jsons/NYU/task-rest_bold.json"
+    },
+    "downloaded_utc": "2026-10-24T20:15:20.304322+00:00"
+  }
+]

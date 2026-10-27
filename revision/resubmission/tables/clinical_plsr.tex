@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Nested site-held-out PLS regression. Baselines predict the outer-fold training mean. Negative OOF $R^2$ does not imply evidence of an inverse biological effect.}\label{tab:Splsr}
+\begin{tabular}{llrrrr}
+\toprule
+Pipeline & Score & N & OOF R2 & OOF MSE & Baseline MSE \\
+\midrule
+GSR & ADI R Social & 30 & -0.416 & 37.895 & 27.874 \\
+GSR & ADI R Verbal & 30 & -0.130 & 25.895 & 23.572 \\
+GSR & ADI R Onset & 28 & -0.928 & 3.512 & 2.017 \\
+GSR & ADOS Total & 50 & -0.029 & 10.838 & 10.723 \\
+GSR & ADOS Communication & 43 & -0.047 & 1.409 & 1.392 \\
+noGSR & ADI R Social & 30 & -0.381 & 36.939 & 27.874 \\
+noGSR & ADI R Verbal & 30 & -0.370 & 31.387 & 23.572 \\
+noGSR & ADI R Onset & 28 & -0.348 & 2.455 & 2.017 \\
+noGSR & ADOS Total & 50 & -0.105 & 11.633 & 10.723 \\
+noGSR & ADOS Communication & 43 & -0.305 & 1.756 & 1.392 \\
+\bottomrule
+\end{tabular}
+\end{table}

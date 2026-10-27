@@ -1,0 +1,15 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Primary-model diagnostics. Site partial $R^2$ is descriptive and conditional on diagnosis, age, FIQ and mean FD. The design is identical before and after ComBat.}\label{tab:Sdiag}
+\begin{tabular}{llrrr}
+\toprule
+Pipeline & Version & Site partial R2 & Max leverage & Max Cook's D \\
+\midrule
+GSR & raw & 0.056 & 0.352 & 0.080 \\
+GSR & ComBat & 0.004 & 0.352 & 0.079 \\
+noGSR & raw & 0.047 & 0.352 & 0.062 \\
+noGSR & ComBat & 0.005 & 0.352 & 0.072 \\
+\bottomrule
+\end{tabular}
+\end{table}

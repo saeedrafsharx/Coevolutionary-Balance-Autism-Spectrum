@@ -1,0 +1,226 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip,microtype,lmodern}
+\emergencystretch=3em
+\sloppy
+\begin{document}
+\section*{Response to the editor and reviewers}
+
+\textbf{Manuscript:} PONE-D-26-34219, “Coevolutionary balance of resting-state brain networks in autism”
+
+
+Locations refer to manuscript\_submission.pdf; line numbers identify the start of the relevant passage. Reviewer comments are reproduced from Comments.pdf. We distinguish corrections to our analysis and reporting from historical implementation details that remain undocumented by the derivative provider.
+
+
+Dear Editor and Reviewers,
+
+
+Thank you for identifying methodological and reporting concerns. We audited the original notebooks and rebuilt the analysis using downloaded PCP derivatives, explicit demographic/coverage criteria, anatomical network assignments, untrimmed raw adjusted primary models, checked ComBat sensitivities, and site-held-out prediction. The corrected analysis does not support the submitted ASD-specific efficiency claim or diagnostic utility. We report uncertainty and inconclusive equivalence tests rather than interpreting nonsignificance as proof of no effect. The changes affect the scientific analysis, not only presentation.
+
+
+\section*{Editor: preprocessing may require reprocessing}
+
+\textbf{Response.} Thank you for identifying this ambiguity. The revised analysis uses voxelwise fALFF maps distributed by the Preprocessed Connectomes Project (PCP) for ABIDE I and generated upstream using C-PAC. We did not preprocess MRI, extract the downloaded ROI time series, or calculate voxelwise fALFF. Locally, we calculated FC from the downloaded regional time series and extracted regional means from the downloaded fALFF maps. We have rewritten the Methods to make these responsibilities explicit.
+
+
+Our audit also identified a fixed-TR spectral ratio calculated from filtered ROI series in historical notebooks. That legacy calculation is excluded from the revised analysis. The revised analysis uses the provider's maps directly, with no new voxelwise denominator or spectral calculation. We have removed the former Butterworth-filter/0.01--0.08-Hz/fixed-0.25-Hz description because it does not describe the derivatives used for the revision.
+
+
+The provider's archived configuration specifies 0.01--0.1 Hz fALFF bounds, and its mapping identifies the distributed smoothed standard-space fALFF output. These records do not independently establish the exact historical input branch, denominator implementation, or smoothing kernel. We explicitly report this limitation and do not claim that an unfiltered denominator has been verified. Using a downloaded derivative establishes its source; it does not by itself verify every upstream step. The revised Methods therefore provide the documented information, distinguish all local processing, and limit the interpretation accordingly. This clarification corrects the reporting and makes the limits of the available provider documentation explicit.
+
+
+\textbf{Location:} p. 18, line 326; p. 18, line 341.
+
+
+\section*{Journal requirements}
+
+1. \textbf{Style and file naming.} The revised LaTeX manuscript retains the PLOS template and    separates manuscript, response, figures, and supporting information. The submission-format file has inline captions and separate Fig1--Fig11 TIFFs; a companion illustrated PDF is supplied for reading. Main and supporting PDFs have been compiled and cross-references checked.
+
+
+2. \textbf{Ethics only in Methods.} The ethics paragraph appears only in Methods.    It identifies the contributing ABIDE studies' approvals and consent procedures    and explains that no new approval or consent was obtained for secondary    analysis of public deidentified records, without claiming a formal exemption.
+
+
+3. \textbf{Figure callouts.} The original numerical exhibits are replaced rather than    retained with stale data. All 11 revised main figures are called out in Results    or Methods; all supplementary figures are called out in S1. Final renumbering    therefore replaces the original Figures 3, 4, 6, and 8.
+
+
+4. \textbf{Table 12 callout.} All main replacement tables have explicit text    callouts. The original Table 12 is superseded by the revised supporting    analyses, whose files and legends are identified separately.
+
+
+5. \textbf{Separate supporting information.} Supplementary material is in S1 PDF and    S2 Data and S3 Code ZIP archives, with legends after the manuscript references. It is    no longer appended as supplementary tables/figures within the main article.
+
+
+6. \textbf{Suggested literature.} Relevant primary work on developmental balance,    energy landscapes, adult fALFF, multisite reproducibility, signed networks,    harmonization, and spatial nulls is incorporated; conceptual differences are    stated explicitly rather than treating all energy measures as equivalent.
+
+
+\section*{Reviewer 1}
+
+\subsection*{1. Inconsistent exhibit versions and captions}
+
+\textbf{Comment:} Several exhibits seem to predate the harmonization fix: Figs 2, 4, 6, 7, 8 and S2; Tables S5--S6. Fig 2 also contains two panels although its caption describes more? Fig 3 shows different metrics from Table 3; and the accuracies in Fig S4 differ from those in Table 10.
+
+
+\textbf{Location:} p. 7, line 107; p. 8, line 117; p. 11, line 164.
+
+
+ \textbf{Addressed in the revised manuscript.} All main tables and figures were regenerated from the verified repair outputs. None of the old nominal contrasts, figures, or incomplete classifier aggregates are reused. Dedicated global, intra-network, inter-network, H--metric, clinical, PLS, prediction and GSR/no-GSR sections retain the original questions and section organization. The revised feature CSV is identified by its SHA-256; the manuscript-facing tables are generated by a script. The revised figures include the retained conceptual configuration, corrected global distributions, explicit control-only null comparisons, complete cortical effect heatmaps, adjusted efficiency scatter plots, clinical validation, and complete OOF ROC/confusion plots. Global distributions, ROC curves and classifier uncertainty now have separate, matched captions. Main and supporting prediction results use the same complete OOF record.
+
+
+\subsection*{2. Cohort/site counts, per-site H, and raw adjusted inference}
+
+\textbf{Comment:} Samples and sites: Table 1 lists N = 90/92 while the text gives 78/86, and 14 sites minus two is 12, not 11. Participant-flow and site-by-group tables (with per-site means of H) would help readers judge harmonization, because site and diagnosis are locally confounded at sites containing only one diagnostic group. A complementary analysis of the un-harmonized features including group, site, FD, age and IQ would help assess whether the apparent group effect reflects site structure.
+
+
+\textbf{Location:} p. 4, line 51; p. 20, line 398.
+
+
+ \textbf{Addressed.} The 182-person requested pool is distinguished from demographic eligibility (140; 69 ASD/71 controls), common-node feature computation (all 140), and the minimum-site-size adjusted model (136; 67/69). The flow figure replaces the unexplained initial 200-person account. Three small sites are omitted from primary adjusted inference, leaving nine sites; this is a new verified cohort, not an attempt to preserve the previous 11-site description.
+
+
+S1 lists site/group counts. S2 includes per-site/group raw and harmonized H means, SDs, and participant manifests. The primary unharmonized H regression includes diagnosis, site, FD, age, and IQ. GSR/no-GSR diagnosis coefficients are 1.432 (95\% CI -17.173 to 20.038) and 2.056 (-12.387 to 16.499), both Holm p=1.00. CALTECH contains only ASD participants. Excluding it leaves 127 participants and similar imprecise estimates (1.115 and 1.660, both Holm p=1.00). Full-rank checks, leverage, Cook's distance, and descriptive site diagnostics are retained. We withdraw the claim that protecting diagnosis guarantees preservation of biology or proves site variance caused the originally reported contrast.
+
+
+\subsection*{3. Analysis order, leakage, trimming, and FD}
+
+\textbf{Comment:} Analysis order: if I understood correctly, ComBat was fitted on the full sample, with diagnosis as a covariate, before the train/test split, so “leakage-safe” may be too strong; should fit it within training folds; energy-based trimming within each group trims the outcome itself, so untrimmed results would reassure readers, as would mean FD by group and as a covariate, since motion raises global FC and hence H.
+
+
+\textbf{Location:} p. 20, line 398; p. 22, line 456; p. 23, line 485.
+
+
+ \textbf{Addressed with explicit limits.} Raw untrimmed adjusted features define primary inference. ComBat is an exploratory group-analysis sensitivity, with categorical diagnosis and continuous age/IQ/FD explicitly protected, and has no raw fallback. It is not used for prediction. Imputation, scaling, selection, and tuning are nested inside site-held-out training folds. We qualify prediction as conditional on a cohort-wide QC/node mask rather than calling the entire workflow leakage-safe.
+
+
+The original-code audit found pooled raw-energy trimming, not diagnosis-specific trimming; we clarify this discrepancy rather than reproduce an inaccurate account. The new pooled 1.5-IQR trimming sensitivity is separate from untrimmed inference and is never used to select the prediction sample. Table 1 reports mean FD by group (.081$\pm$.044 mm ASD, .073$\pm$.032 mm control); FD is a covariate. Both pipelines use the same primary participants and nodes. Feature selection was already nested in the baseline: ANOVA retained 22 features in 11 outer fits, 44 in 17, and 88 in 22; reconstruction reproduces all saved predictions. A separately labeled exploratory follow-up compares ANOVA, mutual information and L1-ranked selection with training-only redundancy pruning. Four model/pipeline point estimates improve and six decline, with every paired interval including zero. All ten comparisons, ROC curves, confusion matrices and selected feature names are supplied, without choosing an outer-test winner.
+
+
+\subsection*{4. Construction-related efficiency correlations and group specificity}
+
+\textbf{Comment:} The energy--efficiency correlation: I wonder whether this partly follows from construction; with a median split, a uniform shift m in all edge weights changes H by +100m, so higher global FC makes H less negative while raising |w|-based efficiency, consistent with r = -0.33 without GSR and -0.20 with it. As the ASD--TD difference is untested, I would soften “robustly” and the “trade-off” and “ASD-specific” wording and add partial correlations controlling for mean FC and FD.
+
+
+\textbf{Location:} p. 10, line 144; p. 21, line 422.
+
+
+ \textbf{Addressed; interpretation changed.} The Methods derive the uniform-edge-shift identity for H, with the actual state counts and graph size. Within-group partial correlations control mean Fisher FC, FD, age, IQ, and site. ASD global-efficiency partial r is .017 with GSR and .077 without GSR; neither survives correction. The diagnosis-by-efficiency interactions are also nonsignificant (Holm p=.635 and .940). The original descriptive H-versus-all-metrics question is retained separately, with raw and matched raw/ComBat outputs and explicit per-group correction. We reproduced all 364 original exported H correlations and FDR probabilities, including the original no-GSR ASD H--efficiency result (r=-.324, q=.00592, n=80). Its absence in the revised feature/cohort definition does not establish that the original association was false. The claims of a robust ASD-specific trade-off are removed because no corresponding group interaction is established. Dependence between summaries derived from the same matrix is discussed as a limitation.
+
+
+\subsection*{5. Participant null scores and spatial constraints}
+
+\textbf{Comment:} The null model: permuting across regions removes the spatial co-organization of fALFF and FC, and the share of favourable edges is near chance, so per-subject z-scores and, if feasible, a spatially constrained null would help.
+
+
+\textbf{Location:} p. 5, line 58; p. 21, line 422.
+
+
+ \textbf{Addressed in part; limitation retained.} S2 contains individual null means, SDs, z-scores, lower-tail Monte Carlo probabilities, and state counts from 1,000 permutations. We added network/hemisphere-block state permutations alongside unrestricted permutations. A separate main-text baseline now shows all 71 male controls against their own null expectations, with a paired figure, summary table, and individual z-score plot. Control mean z is -4.690/-5.159 for unrestricted states and -2.313/-2.760 for blocked states (GSR/no-GSR). Individual exploratory BH correction in the revised main text spans all 560 participant/pipeline/null comparisons, covering both diagnostic groups. The separately documented control-only family remains identifiable in S2. The full signed weighted FC matrix remains fixed; no rewired-network null is implied. We explicitly state that these blocks preserve coarse organization and do not preserve full spatial autocorrelation. We do not present this as a full spatial null or independent biological validation. A full spatial-autocorrelation null remains a limitation, with relevant methods cited.
+
+
+\subsection*{6. Effect sizes, uncertainty, sensitivity power, and equivalence}
+
+\textbf{Comment:} Power and framing: the assumed d = 0.5 is optimistic for ASD connectivity effects; the minimum detectable effect here is about d = 0.44; please consider effect sizes with 95\% CI, a sensitivity power analysis and an equivalence test or Bayes factor.
+
+
+\textbf{Location:} p. 21, line 416.
+
+
+ \textbf{Addressed.} Primary estimates include HC3 intervals, and descriptive unadjusted Hedges' g includes bootstrap intervals. Approximate two-sample 80\%-power MDE is .484 at alpha=.05 and .534 at alpha=.025 for the corrected model sample; this approximation does not model site/covariate adjustment. Equivalence tests using exploratory $\pm$.2 observed pooled-SD bounds are inconclusive (p=.193/.223). These bounds are not claimed to be clinically established. We no longer argue that power for d=.5 rules out meaningful autism-related effects.
+
+
+\subsection*{7. fALFF branch, truncation, TR, regressors, and GSR rationale}
+
+\textbf{Comment:} Preprocessing and classification: please confirm that fALFF used unfiltered residuals, give the truncation length and TR $\geq$ 2.5 s handling, list each pipeline’s regressors, and say why GSR is primary, given what is known about GSR and ASD group comparisons.
+
+
+\textbf{Location:} p. 18, line 326; p. 18, line 341.
+
+
+ \textbf{Response.} The revised Methods explicitly state that fALFF maps were calculated upstream by PCP/C-PAC and downloaded, not calculated from the FC time series by us. Regional means were extracted locally from those maps. The provider's configuration specifies 0.01--0.1 Hz fALFF bounds; the exact historical denominator and input filtering order have not been independently verified. We have removed unsupported claims about a local Butterworth calculation and a universal 0.25-Hz denominator, and state the upstream documentation limitation rather than supply an unverified confirmation of unfiltered residuals.
+
+
+We apply no additional temporal filter or fixed-length truncation to the downloaded FC series; supplied lengths are 116--296 volumes. TR is participant/site-specific, including 17 eligible scans with TR of 3 s. The downloaded maps are used as provided, without reconstructing a fixed-TR denominator. PCP documents 24 motion terms (six parameters, their lags, and squares of those 12 terms), five white-matter/CSF components, and linear/quadratic trends, with global signal added only in the GSR branch. The same participants, nodes, features and inferential rules are used for GSR and no-GSR; both are reported because GSR changes signed correlations and can affect ASD group comparisons. We do not describe GSR as a biologically superior reference.
+
+
+\subsection*{8. Grammar}
+
+\textbf{Comment:} Some minor grammar issues: please fix.
+
+
+\textbf{Location:} p. 19, line 377.
+
+
+ \textbf{Revised throughout.} The replacement text uses consistent terminology and removes causal physiological interpretations unsupported by these measurements. Terminology, captions and interpretation have been checked against the final analysis tables.
+
+
+\subsection*{9. Related work}
+
+\textbf{Comment:} Related work: please consider setting the adult null against earlier structural-balance analyses of ABIDE data, including the group’s own work in younger participants without GSR, and against energy-landscape (Ising-type) studies of resting-state dynamics in autism, which are the closest conceptual precedents; recent methodological work on building signed brain networks and on spatially constrained null models; large multi-site and mega-analytic ASD connectivity literature, which reports small effects that replicate poorly across sites; harmonization literature, particularly on protected covariates when sites and groups are unbalanced, and prior fALFF studies in adult ASD.
+
+
+\textbf{Location:} p. 15, line 261.
+
+
+ \textbf{Addressed.} The Introduction and Discussion distinguish the group's earlier 6--18-year-old no-GSR triadic-balance analysis (Moradimanesh et al., 2021), Watanabe and Rees's dynamic energy-landscape analysis (2017), and regional adult fALFF work (Itahashi et al., 2015) from the present static nodal-state statistic. King et al. (2019), Rubinov and Sporns (2011), Nygaard et al. (2016), and Markello and Misic (2021) inform the multisite, signed-network, harmonization, and null-model limitations. The result is not interpreted as developmental normalization or contradiction of dynamic-state work. Holiga et al. (2019) supplies a complementary large-cohort example of reproducible connectivity changes with overlapping individual distributions; Vasa and Misic (2022) clarifies the role of null constraints. These references prevent interpreting all multisite findings as uniformly nonreproducible.
+
+
+\subsection*{10. Stale public code/data information}
+
+\textbf{Comment:} Data and code: thank you for sharing code and data. TSome residual info in the posted data is stale and confusing, for example the GitHub README.
+
+
+\textbf{Location:} p. 24, line 507.
+
+
+ \textbf{Response.} We supply the exact revised code and results with the submission: S2 Data contains complete feature matrices, analysis covariates, clinical outcomes, statistical results, out-of-fold predictions, selection records and provenance; S3 Code contains executable revision source, analysis specifications, software information and execution instructions. The accompanying README distinguishes the original notebooks from the current analysis and documents the limits of upstream fALFF information. The revised Data and code availability statement points to these supporting archives and the original ABIDE/PCP sources rather than relying on the older GitHub README. We do not claim to have updated that externally hosted page; the versioned files supplied with this revision define the analysis reported here.
+
+
+\subsection*{Sex and generalizability}
+
+\textbf{Comment:} I understand the decision to study adult males, given how few autistic females ABIDE includes in this age and IQ range, and I think it is a defensible choice here. However, the Limitations section needs to discuss at length the consequences of this choice in detail rather than in a single sentence. Autistic women and girls remain underrepresented across autism research, and when study after study restricts to males for the same practical reason, the cumulative evidence base, and any biomarkers or diagnostic frameworks built on it, risks describing autistic males rather than autistic people, which can reinforce the under-recognition of autistic women and girls. This matters for the present results too. Functional connectivity and low-frequency amplitude measures can differ by sex, and autistic females are often diagnosed later and may present differently, so neither the null result nor the within-ASD H--efficiency relationship can be assumed to hold for them. It would help to state the male-only scope in the abstract, consider how sex might interact with the energy framework, and outline how the framework could be tested in samples that include autistic women.
+
+
+\textbf{Location:} p. 15, line 261.
+
+
+ \textbf{Expanded substantially.} The abstract states the male-only scope. A dedicated Discussion subsection addresses underrepresentation, limits of binary recorded sex, possible effects of sex-related variation in FC/fALFF on the statistic, and consequences for biomarker generalizability and under-recognition. Neither the null result nor the efficiency analysis is extended to autistic females. We outline adequately powered inclusive recruitment, sex-by-diagnosis tests, QC comparisons, and subgroup calibration/validation, citing sex-dependent FC work by Alaerts et al. (2016), rather than proposing an underpowered post hoc female subgroup as a solution.
+
+
+\section*{Reviewer 2}
+
+\subsection*{1. fALFF calculated after band-pass filtering}
+
+\textbf{Comment:} The methods state that the authors applied a 0.01--0.1 Hz Butterworth band-pass filter to residual BOLD time series and subsequently calculated fALFF as low-frequency amplitude (0.01--0.08 Hz) relative to the amplitude over 0--0.25 Hz. If the fALFF was thus calculated with the filtered signal, the denominator no longer reflects the original frequency bands, with higher frequencies severely attenuated. This could be a serious methodological problem. Please clarify the preprocessing steps used to calculate fALFF and whether fALFF was calculated from unfiltered time series.
+
+
+\textbf{Location:} p. 18, line 341.
+
+
+ \textbf{Response.} We agree that filtering a time series before constructing a full-spectrum fALFF denominator can change the measure, and we have corrected the Methods to avoid attributing that computation to our revised workflow. We used publicly distributed PCP C-PAC voxelwise fALFF maps for ABIDE I. We did not compute their voxelwise fALFF numerator or denominator, and we did not generate the revised maps from the downloaded band-pass-filtered FC time series. Our local operation was extraction of regional map values within the specified parcels and functional masks. The spectral ratio identified in the historical notebook audit is not used in the revised features.
+
+
+The available provider configuration lists fALFF bounds of 0.01--0.1 Hz. We have replaced the unsupported 0.01--0.08-Hz and fixed 0--0.25-Hz description with this documented information and an explicit attribution to PCP/C-PAC. However, the available release records do not independently confirm the precise historical denominator or input filtering order; we say so directly. A definitive implementation-level answer would require additional provider records or clarification. We therefore address the reporting error and identify the remaining source-documentation limitation, without claiming that the upstream computation has been independently verified. The Discussion restricts physiological interpretation to the relative alignment statistic based on these distributed maps.
+
+
+\subsection*{2. Relative median labels versus neuronal activity}
+
+\textbf{Comment:} The authors classify regions relative to each participant’s median fALFF. While this is mathematically an appropriate and reproducible method of classification, it raises two issues with interpreting the actual physiological activity of these regions. First, a brain region can have a higher fALFF value i.e. a relatively larger proportion of low-frequency fluctuations, without having a higher overall mean neuronal firing rate. Hence, above median values are not necessarily ‘high intrinsic activity’, as described in the methods. Second, this is made more complicated because the median threshold is different for each participant. Hence, the exact same fALFF value can be considered ‘high’ in one participant and ‘low’ in another one depending on their distributions. The authors should clearly discuss on these issues and distinguish mathematical nodal states from physiological neuronal activity states.
+
+
+\textbf{Location:} p. 19, line 377.
+
+
+ \textbf{Addressed.} The state definition is explicitly participant-relative, with ties assigned +1. The same numerical fALFF can receive a different label across participants; median splitting discards absolute scale. Above-median fALFF is not interpreted as increased neuronal firing, and negative FC is not equated with synaptic inhibition. H is a static signed alignment statistic, not measured metabolic energy or a demonstrated evolving brain state.
+
+
+\subsection*{3. Efficiency inclusion and identical feature schemas}
+
+\textbf{Comment:} The authors should clarify the rationale for inclusion of graph efficiency measurements as network features in some but not all their analyses. For example, the univariate clinical correlations include all 92 features, whereas PLS regression uses only 90. More importantly, the machine-learning methods indicate that the GSR pipeline uses 90 features for initial feature selection, while the noGSR pipeline includes 92 features. Ideally, the machine learning comparisons should use identical feature sets across both pipelines.
+
+
+\textbf{Location:} p. 22, line 456.
+
+
+ \textbf{Addressed.} Both efficiencies are retained as complementary features in both pipelines and across clinical correlations, PLS regression/correlation, and classification. The primary inferential schema has 88 features: the legacy spectral bipolarity descriptor is excluded and three within-limbic features are structurally unavailable because only one primary limbic node remains. These are transparent changes to the old 90/92-feature descriptions. The original spectral descriptor is also reported as a separate exploratory adjusted group comparison, without changing the frozen inferential/predictive families. Training-fold variance filtering/selection may retain fewer features within a particular model, but the starting feature schema is identical across pipelines.
+
+\end{document}

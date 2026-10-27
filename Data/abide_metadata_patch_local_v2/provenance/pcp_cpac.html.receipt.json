@@ -1,0 +1,16 @@
+{
+  "url": "https://preprocessed-connectomes-project.github.io/abide/cpac.html",
+  "path": "/kaggle/working/abide_metadata_patch/provenance/pcp_cpac.html",
+  "status": "downloaded",
+  "error": "",
+  "checked_utc": "2026-10-24T19:58:00.475926+00:00",
+  "sha256": "de96b8d54e8760ca13ca41d57fbd460954170183551bd456e44b34f12e447195",
+  "size_bytes": 4393,
+  "headers": {
+    "ETag": "\"6031fd93-1129\"",
+    "Last-Modified": "Sun, 21 Feb 2021 06:28:35 GMT",
+    "Content-Length": "4393"
+  },
+  "details": {},
+  "downloaded_utc": "2026-10-24T19:58:00.734892+00:00"
+}

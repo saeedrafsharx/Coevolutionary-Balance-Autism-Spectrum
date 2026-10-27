@@ -1,0 +1,9 @@
+pipeline,model,fold,reason
+GSR,LogisticRegression,2,single_class_inner_fold
+GSR,LogisticRegression,3,single_class_train_or_test
+GSR,SVM_RBF,2,single_class_inner_fold
+GSR,SVM_RBF,3,single_class_train_or_test
+noGSR,LogisticRegression,2,single_class_inner_fold
+noGSR,LogisticRegression,3,single_class_train_or_test
+noGSR,SVM_RBF,2,single_class_inner_fold
+noGSR,SVM_RBF,3,single_class_train_or_test

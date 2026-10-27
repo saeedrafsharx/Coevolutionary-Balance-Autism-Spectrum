@@ -1,0 +1,5 @@
+definition,n,ASD,Control,sites
+all_requested,182,90,92,14
+technical_complete,168,79,89,13
+technical_age18_30_FIQgt80,129,60,69,12
+technical_age18_30_FIQgt80_explicit_R,64,30,34,9

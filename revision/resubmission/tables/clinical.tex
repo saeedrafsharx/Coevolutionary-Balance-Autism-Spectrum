@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering\small
+\caption{\textbf{Adjusted H associations and clinical prediction.}}\label{tab:clinical}
+\begin{tabular}{llrrrrr}
+\toprule
+Pipeline & Score & N & Partial r & BH q & OOF R2 & MSE ratio \\
+\midrule
+GSR & ADI R Social & 30 & 0.078 & 0.961 & -0.416 & 1.360 \\
+GSR & ADI R Verbal & 30 & 0.203 & 0.961 & -0.130 & 1.099 \\
+GSR & ADI R Onset & 28 & -0.026 & 0.961 & -0.928 & 1.741 \\
+GSR & ADOS Total & 50 & 0.008 & 0.961 & -0.029 & 1.011 \\
+GSR & ADOS Communication & 43 & 0.009 & 0.961 & -0.047 & 1.012 \\
+noGSR & ADI R Social & 30 & 0.354 & 0.528 & -0.381 & 1.325 \\
+noGSR & ADI R Verbal & 30 & 0.420 & 0.514 & -0.370 & 1.332 \\
+noGSR & ADI R Onset & 28 & 0.153 & 0.961 & -0.348 & 1.217 \\
+noGSR & ADOS Total & 50 & 0.061 & 0.961 & -0.105 & 1.085 \\
+noGSR & ADOS Communication & 43 & 0.059 & 0.961 & -0.305 & 1.262 \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}\footnotesize
+The partial correlation controls age, FIQ, mean FD and site; BH covers the ten score/pipeline tests. PLSR uses the common 88-feature set and nested site-held-out validation. MSE ratio compares PLSR with the corresponding outer-training-mean predictor; ratios above one favor that baseline.
+\end{flushleft}
+\end{table}

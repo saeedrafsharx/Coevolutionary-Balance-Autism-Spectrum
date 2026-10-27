@@ -1,0 +1,19 @@
+{
+  "url": "https://raw.githubusercontent.com/FCP-INDI/indi_bidsification/f45c831f78c58b4525222f8a9d6c0a6b0500792d/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+  "path": "/home/qermez/Desktop/Coev_balance_PLOS_ONE/Data/abide_metadata_patch_local/sidecars/ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json",
+  "status": "downloaded",
+  "error": "",
+  "checked_utc": "2026-10-24T20:15:28.601400+00:00",
+  "sha256": "a35400f071437934f36217d200f6144d41834177594101a37f19b7936477196f",
+  "size_bytes": 2169,
+  "headers": {
+    "ETag": "\"b71d0471cd83490343b74e25c0fe6556bf3a74c0168eae35d91d5394177f47bb\"",
+    "Last-Modified": null,
+    "Content-Length": "2169"
+  },
+  "details": {
+    "TR_seconds": 3.0,
+    "source_path": "ABIDE/scan_jsons/MaxMun_b/task-rest_bold.json"
+  },
+  "downloaded_utc": "2026-10-24T20:15:29.562675+00:00"
+}

@@ -1,0 +1,7 @@
+design,pipeline,status,max_abs_change
+primary_common_106,GSR,ok,21.413173225462288
+sensitivity_broader_181,GSR,ok,108.34135615682453
+sensitivity_full200,GSR,ok,131.04424260979818
+primary_common_106,noGSR,ok,41.45592052500439
+sensitivity_broader_181,noGSR,ok,135.5039171332741
+sensitivity_full200,noGSR,ok,106.72754116049282

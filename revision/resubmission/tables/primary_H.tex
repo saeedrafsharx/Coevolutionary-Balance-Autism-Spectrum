@@ -1,0 +1,19 @@
+\begin{table}[H]
+\centering\small
+\caption{\textbf{Adjusted diagnosis coefficients for primary-network H.}}\label{tab:primary}
+\begin{tabular}{llrrlrr}
+\toprule
+Pipeline & Model & N & Coefficient & 95\% CI & p & Holm p \\
+\midrule
+GSR & Raw adjusted & 136 & 1.432 & -17.17, 20.04 & 0.879 & 1.000 \\
+GSR & ComBat & 136 & 1.139 & -17.15, 19.42 & 0.902 & 1.000 \\
+GSR & Pooled trim & 135 & -2.613 & -19.56, 14.34 & 0.761 & 1.000 \\
+noGSR & Raw adjusted & 136 & 2.056 & -12.39, 16.50 & 0.779 & 1.000 \\
+noGSR & ComBat & 136 & 2.247 & -11.81, 16.30 & 0.752 & 1.000 \\
+noGSR & Pooled trim & 135 & 3.500 & -10.77, 17.77 & 0.628 & 1.000 \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}\footnotesize
+Coefficients compare ASD with controls, adjusting for site, age, FIQ and mean FD. HC3 intervals use a t reference. Holm correction covers the two pipelines within each model version. ComBat and pooled trimming are exploratory sensitivities.
+\end{flushleft}
+\end{table}
