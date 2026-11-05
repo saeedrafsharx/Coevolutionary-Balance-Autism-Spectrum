@@ -17,7 +17,7 @@
       "unresolved_or_overflow_errors": []
     },
     "manuscript_marked": {
-      "pages": 54,
+      "pages": 66,
       "unresolved_or_overflow_errors": []
     }
   },
@@ -37,10 +37,13 @@
   "provider_falff_implementation_independently_verified": false,
   "provider_documentation_limitation_disclosed": true,
   "reviewer_upstream_question_claimed_fully_verified": false,
-  "visual_review": "Final Methods page and response opening inspected; earlier complete-page montage and representative figures reviewed.",
+  "visual_review": "Reviewed November 5: title page, separate abstract page, marked deletion appendix tables 1 and 12 and red deletion text; earlier main/supporting figure and page reviews retained.",
   "uploaded_or_published": false,
+  "ready_for_author_upload": true,
+  "deleted_original_main_tables_in_marked_copy": 12,
+  "journal_requirements_checked": "2026-11-05",
   "standalone_latex_source_build_passed": true,
   "standalone_source_pdf_text_matches_submission": true,
   "upload_archive_integrity_verified": true,
-  "private_review_correspondence_excluded_from_public_code": true
+  "upload_archive_file_count": 21
 }

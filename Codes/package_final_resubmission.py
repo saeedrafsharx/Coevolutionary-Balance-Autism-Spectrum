@@ -13,6 +13,9 @@ for name in ['manuscript_illustrated','manuscript_submission','supporting_inform
  pages=int(re.search(r'Output written on .*?\((\d+) pages',s,re.S).group(1));logs[name]={'pages':pages,'unresolved_or_overflow_errors':bad}
 s=(R/'manuscript.tex').read_text();assert re.findall(r'\\paperfigure\{Fig(\d+)\}',s)==list(map(str,range(1,12)))
 assert len(re.findall(r'\\input\{tables/',s))==9
+marked=(R/'manuscript_marked.tex').read_text()
+assert len(re.findall(r'\\label\{deletedoriginal:',marked))==12
+assert 'Short title:' in s
 # The local analysis data are unchanged.
 f=ROOT/'results/abide_stage2_repaired/features/all_designs_raw_untrimmed.csv'
 feature_sha=sha(f.read_bytes());assert feature_sha=='25178d5b3f5b87ad10c4b2f60f0574fb5fe51b26d042ddac7255f9030894848b'
@@ -88,26 +91,46 @@ for p in sorted((R/'upload_figures').glob('*.tif')):
 assert len(figs)==11
 expected={'manuscript.tex':'1dff55b40ae5a9638e57b5bee68aed787e505c336e9790df8bc4c159ce8952c6','Bibliography.bib':'9ca106a98f44e7c85ee363c1634b7385c4307041316c983c42698c6c85f0b70e','AGENTS.md':'b28ace7504fa9dc009123bdcfb2ca8b784139c6ba125b32ac46c7a672ff4dfe0'}
 for n,h in expected.items():assert sha((ROOT/n).read_bytes())==h
-report={'documents':logs,'main_figures':11,'supporting_figures':13,'main_tables':9,'indexed_data_payloads':len(rows),'code_payloads':len(code)-1,'feature_table_sha256':feature_sha,'original_file_hashes':expected,'build_validation_passed':True,'submission_files_complete':True,'provider_falff_implementation_independently_verified':False,'provider_documentation_limitation_disclosed':True,'reviewer_upstream_question_claimed_fully_verified':False,'visual_review':'Final Methods page and response opening inspected; earlier complete-page montage and representative figures reviewed.','uploaded_or_published':False}
+report={'documents':logs,'main_figures':11,'supporting_figures':13,'main_tables':9,'indexed_data_payloads':len(rows),'code_payloads':len(code)-1,'feature_table_sha256':feature_sha,'original_file_hashes':expected,'build_validation_passed':True,'submission_files_complete':True,'provider_falff_implementation_independently_verified':False,'provider_documentation_limitation_disclosed':True,'reviewer_upstream_question_claimed_fully_verified':False,'visual_review':'Final Methods page and response opening inspected; earlier complete-page montage and representative figures reviewed.','uploaded_or_published':False,'ready_for_author_upload':True,'deleted_original_main_tables_in_marked_copy':12,'journal_requirements_checked':'2026-11-05'}
 (R/'validation.json').write_text(json.dumps(report,indent=2)+'\n')
 files={p.name:p.read_bytes() for p in [R/n for n in ['manuscript_submission.pdf','manuscript_marked.pdf','response_to_reviewers.pdf','supporting_information.pdf','S2_Data.zip','S3_Code.zip','manuscript_source.zip']]}
 for p in (R/'upload_figures').glob('*.tif'):files[p.name]=p.read_bytes()
-files['UPLOAD_README.txt']=b'''PONE-D-26-34219 revision files
+upload_rows=[('manuscript_submission.pdf','Manuscript','Required'),('manuscript_marked.pdf','Revised Manuscript with Track Changes / Revised Article with Changes Highlighted','Required'),('response_to_reviewers.pdf','Response to Reviewers','Required'),('supporting_information.pdf','Supporting Information: S1 Appendix','Required'),('S2_Data.zip','Supporting Information: S2 Data','Required'),('S3_Code.zip','Supporting Information: S3 Code','Required')]+[(f'Fig{i}.tif','Figure','Required') for i in range(1,12)]+[('manuscript_source.zip','LaTeX source','Only if requested by the portal')]
+buf=io.StringIO();writer=csv.writer(buf);writer.writerow(['filename','upload_category','status']);writer.writerows(upload_rows)
+files['UPLOAD_ORDER.csv']=buf.getvalue().encode()
+(R/'UPLOAD_ORDER.csv').write_bytes(files['UPLOAD_ORDER.csv'])
+files['UPLOAD_README.txt']=b'''PONE-D-26-34219: COMPLETE REVISION UPLOAD SET (checked November 5, 2026)
 
-Revised manuscript: manuscript_submission.pdf (clean, captions inline).
-Manuscript source: manuscript_source.zip; entry file main.tex.
-Manuscript with changes: manuscript_marked.pdf (original numerical tables omitted
-from deletion display; replacement tables included).
-Response to Reviewers: response_to_reviewers.pdf (locations reference clean PDF).
-Supporting Information: supporting_information.pdf = S1 Appendix;
-S2_Data.zip = S2 Data; S3_Code.zip = S3 Code.
-Figures: Fig1.tif through Fig11.tif, separately, matching numbered captions.
+1. Extract this ZIP on your computer. Upload the enclosed files individually;
+   the package ZIP itself is a container, not the manuscript upload.
+2. In Submissions Needing Revision, open PONE-D-26-34219 and revise the submission.
+3. Replace the manuscript with manuscript_submission.pdf (clean article).
+4. Upload manuscript_marked.pdf under the marked/track-changes category and
+   response_to_reviewers.pdf under Response to Reviewers. The response's
+   page/line locations refer to the clean manuscript.
+5. Replace ALL old main figure entries with Fig1.tif through Fig11.tif.
+6. Replace the old supporting files with supporting_information.pdf (S1 Appendix),
+   S2_Data.zip (S2 Data), and S3_Code.zip (S3 Code). Do not retain stale duplicates.
+7. The clean article is compiled LaTeX PDF; no Word conversion is needed.
+   manuscript_source.zip is available if the portal requests source files.
+8. Retain accurate existing portal declarations and author details. Build the
+   portal's combined PDF and check that it includes the revised figures and
+   links to the replacement supporting files before approving the submission.
 
-The paper and response clearly attribute voxelwise fALFF to downloaded PCP/C-PAC
-derivatives. Historical denominator/filter-order details are not independently
-verified and are transparently disclosed. No provider confirmation is invented.
-Files are prepared for upload; nothing has been submitted automatically.
+UPLOAD_ORDER.csv lists each file's category. Files are prepared for author upload;
+nothing has been submitted automatically. The marked copy retains all 12 deleted
+original main tables in a clearly labeled deletion appendix; only the new tables
+appear in the clean article. Do not upload the illustrated reading PDF as well.
+
+The fALFF response attributes voxelwise computation to downloaded PCP/C-PAC
+maps, documents the provider's 0.01-0.1 Hz band, and discloses unverified historical
+denominator/filter-order details. The editor will assess this explanation; no
+provider confirmation or independent verification is invented.
+
+PLOS guidance: https://journals.plos.org/plosone/s/revising-your-manuscript
+LaTeX/PDF format: https://journals.plos.org/plosone/s/submission-guidelines
 '''
+(R/'UPLOAD_README.txt').write_bytes(files['UPLOAD_README.txt'])
 files['FILES_SHA256.csv']=('file,bytes,sha256\n'+''.join(f'{n},{len(b)},{sha(b)}\n' for n,b in sorted(files.items()))).encode()
 with ZipFile(R/'PLOS_revision_upload.zip','w',ZIP_DEFLATED) as z:
  for n,b in sorted(files.items()):z.writestr(n,b)

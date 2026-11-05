@@ -4,9 +4,12 @@ import re
 R=Path(__file__).resolve().parents[1]/'revision/resubmission'
 s=(R/'response_to_reviewers.md').read_text();aux=(R/'manuscript_submission.aux').read_text()
 loc={k:(int(line),int(page)) for k,line,page in re.findall(r'\\newlabel\{lin:([^}]+)\}\{\{(\d+)\}\{(\d+)\}',aux)}
-map1={1:['results_intra','results_inter','results_ML'],2:['participants','groupmodels'],3:['groupmodels','ML','selection'],4:['efficiency','nulls'],5:['results_null','nulls'],6:['power'],7:['preprocessing','falff_provenance'],8:['states'],9:['sex'],10:['data']}
+map1={1:['results_intra','results_inter','results_ML'],2:['participants','groupmodels'],3:['groupmodels','ML','selection'],4:['efficiency','nulls'],5:['results_null','nulls'],6:['power'],7:['preprocessing','falff_provenance'],8:['states'],9:['introduction','discussion'],10:['data']}
 def location(keys):return '; '.join(f'p. {loc[k][1]}, line {loc[k][0]}' for k in keys)+'.'
 s=s.replace('{LOCATION_EDITOR}',location(['preprocessing','falff_provenance']))
+head,tail=s.split('## Journal requirements',1)
+head=re.sub(r'\*\*Location:\*\*[^\n]*','**Location:** '+location(['preprocessing','falff_provenance']),head)
+s=head+'## Journal requirements'+tail
 parts=re.split(r'(?m)(^## Reviewer [12]\n|^### [^\n]+\n)',s);reviewer=0;keys=[];result=''
 for part in parts:
  if part.startswith('## Reviewer '):reviewer=int(part.split()[2]);result+=part

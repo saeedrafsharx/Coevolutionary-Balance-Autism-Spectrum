@@ -28,7 +28,7 @@ The provider's archived configuration specifies 0.01–0.1 Hz fALFF bounds, and 
 ## Journal requirements
 
 1. **Style and file naming.** The revised LaTeX manuscript retains the PLOS template and
-   separates manuscript, response, figures, and supporting information. The submission-format file has inline captions and separate Fig1--Fig11 TIFFs; a companion illustrated PDF is supplied for reading. Main and supporting PDFs have been compiled and cross-references checked.
+   separates manuscript, response, figures, and supporting information. The submission-format file has inline captions and separate Fig1--Fig11 TIFFs; a companion illustrated PDF is supplied for reading. Main and supporting PDFs have been compiled and cross-references checked. The title page includes a short title; the abstract is placed on its own page. The marked copy includes the removed original tables in a clearly labeled deletion appendix.
 
 2. **Ethics only in Methods.** The ethics paragraph appears only in Methods.
    It identifies the contributing ABIDE studies' approvals and consent procedures
@@ -201,7 +201,7 @@ Terminology, captions and interpretation have been checked against the final ana
 
 **Comment:** Related work: please consider setting the adult null against earlier structural-balance analyses of ABIDE data, including the group’s own work in younger participants without GSR, and against energy-landscape (Ising-type) studies of resting-state dynamics in autism, which are the closest conceptual precedents; recent methodological work on building signed brain networks and on spatially constrained null models; large multi-site and mega-analytic ASD connectivity literature, which reports small effects that replicate poorly across sites; harmonization literature, particularly on protected covariates when sites and groups are unbalanced, and prior fALFF studies in adult ASD.
 
-**Location:** p. 15, line 261.
+**Location:** p. 3, line 2; p. 13, line 199.
 
 
 **Addressed.** The Introduction

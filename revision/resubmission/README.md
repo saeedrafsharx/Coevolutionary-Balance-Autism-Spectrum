@@ -1,15 +1,18 @@
-# Final revision files — October 27, 2026
+# Final revision files — November 5, 2026
 
 Start with **manuscript_illustrated.pdf** to read the complete article with plots
 beside the results. The original section order and group/model colors are preserved.
+
+Follow [UPLOAD_README.txt](UPLOAD_README.txt) and [UPLOAD_ORDER.csv](UPLOAD_ORDER.csv)
+when uploading. Extract PLOS_revision_upload.zip and upload its files individually.
 
 ## Files for the PLOS revision
 
 - `manuscript_submission.pdf`: clean manuscript, inline figure captions, continuous
   page/line numbers, and separate supporting-information captions after references.
 - `manuscript_marked.pdf`: marked main-text changes against the original submission.
-  Original numerical tables are omitted from the deletion display; replacement
-  tables are included. The original manuscript remains the record of old tables.
+  Includes the removed original main tables in a clearly labeled deletion appendix,
+  in addition to marked narrative changes and replacement tables.
 - `response_to_reviewers.pdf`: separate point-by-point response with manuscript locations.
 - `supporting_information.pdf`: S1 Appendix with 13 supporting figures and diagnostics.
 - `S2_Data.zip`: indexed analysis data, complete results and provenance.

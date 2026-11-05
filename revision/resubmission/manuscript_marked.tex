@@ -1,7 +1,7 @@
 % ======================================================================
 %DIF LATEXDIFF DIFFERENCE FILE
 %DIF DEL /home/qermez/Desktop/Coev_balance_PLOS_ONE/revision/resubmission/source_support/original_main_for_diff.tex   Tue Oct 27 09:27:32 2026
-%DIF ADD /home/qermez/Desktop/Coev_balance_PLOS_ONE/revision/resubmission/source_support/revision_main_for_diff.tex   Tue Oct 27 09:41:36 2026
+%DIF ADD /home/qermez/Desktop/Coev_balance_PLOS_ONE/revision/resubmission/source_support/revision_main_for_diff.tex   Thu Nov  5 12:39:56 2026
 % PLOS ONE submission -- prepared from the official PLOS LaTeX template
 % (Version 3.8, April 2026). Bibliography style: plos2025.bst
 % ======================================================================
@@ -218,10 +218,16 @@ G. R. Jafari\textsuperscript{2,*}
 
 * Corresponding author: gjafari@gmail.com
 
-\end{flushleft}
+\DIFaddbegin \medskip
+\textbf{\DIFadd{Short title:}} \DIFadd{Coevolutionary balance in adult male autism
+}
+
+\DIFaddend \end{flushleft}
 
 %DIF <  Please keep the abstract below 300 words
-\section*{Abstract}
+\DIFaddbegin \clearpage
+\newgeometry{top=0.85in,left=1in,right=1in,footskip=0.75in}
+\DIFaddend \section*{Abstract}
 \DIFdelbegin \DIFdel{Autism spectrum disorder (ASD) involves atypical brain organization, yet the large-scale functional principles underlying these alterations remain incompletely understood. Here we examine whether
 coevolutionary balance---a network-level energy measure derived from signed interactions and nodal
 activity states---captures disruptions in resting-state functional connectivity in autistic adults. Using ABIDE I}\DIFdelend \DIFaddbegin \DIFadd{Signed functional connectivity and regional low-frequency BOLD fluctuations offer
@@ -275,8 +281,7 @@ network, and the documented limits of the downloaded derivatives.
 \newgeometry{top=0.85in,left=1in,right=1in,footskip=0.75in}
 \linenumbers
 
-\section*{Introduction}
-\DIFdelbegin %DIFDELCMD < 
+\section*{Introduction}\DIFdelbegin %DIFDELCMD < 
 
 %DIFDELCMD < %%%
 \DIFdel{Autism spectrum disorder (ASD) is a heterogeneous neurodevelopmental condition marked by persistent
@@ -310,7 +315,8 @@ quantifying the proportion of power within this band relative to the full detect
 \DIFdel{. Functional connectivity (FC), typically estimated as the correlation
 between regional BOLD time series, captures statistical coupling between brain regions }%DIFDELCMD < \cite{Smith:2013fc}%%%
 \DIFdel{. Together, these measures allow one to view the brain as a network in which nodes are regional activity
-profiles and edges represent the strength and sign of their temporal relationships}\DIFdelend \DIFaddbegin \DIFadd{Resting-state functional MRI provides several descriptions of brain organization}\DIFaddend .
+profiles and edges represent the strength and sign of their temporal relationships}\DIFdelend \DIFaddbegin \linelabel{lin:introduction}
+\DIFadd{Resting-state functional MRI provides several descriptions of brain organization}\DIFaddend .
 \DIFdelbegin %DIFDELCMD < 
 
 %DIFDELCMD < %%%
@@ -680,9 +686,9 @@ networks. Using the Yeo 7-network parcellation }%DIFDELCMD < \cite{Yeo2011}%%%
 the network with maximal Dice overlap, and for every subject we summarized edges confined to a given
 network $u$ in three intra-network metrics: (i) the mean Fisher-$z$ transformed functional
 connectivity (AvgWeight$_u$), (ii) the mean fALFF-aligned connectivity (AvgFalffW$_u = \langle
-w_{ij} s_i s_j \rangle$ over $i,j \in u$), and (iii)the intra-network coevolutionary energy
-contribution $E_u$,
-computed as the Hamiltonian (see Methods, Eq.~\ref{eq:hamiltonian}) restricted
+w_{ij} s_i s_j \rangle$ over $i,j \in u$),
+and (iii) the intra-network coevolutionary energy
+contribution $E_u$, computed as the Hamiltonian (see Methods, Eq.~\ref{eq:hamiltonian}) restricted
 to edges within network $u$.
 }\DIFdelend \DIFaddbegin \input{tables/primary_H.tex}
 \DIFaddend 
@@ -1253,7 +1259,7 @@ site-held-out evaluation replaces the original random train/test procedure.
 }
 
 
-\section*{\DIFadd{Discussion}}
+\section*{\DIFadd{Discussion}}\linelabel{lin:discussion}
 \DIFadd{The revised analysis does not detect a corrected diagnosis effect in the
 coverage-defined adult male sample. Raw covariate-adjusted models, explicit
 ComBat sensitivities, pooled trimming, and mixed-diagnosis-site restriction are
@@ -2458,4 +2464,408 @@ file-integrity manifests. ZIP archive with an indexed README.
 }\paragraph{\DIFadd{S3 Code.}} \DIFadd{Revision analysis and figure-generation source, frozen
 analysis specifications, execution instructions and software-version records.
 ZIP archive. Historical source notebooks are retained separately as audit material.
- }\DIFaddend\end{document}
+ }\DIFaddend
+\clearpage
+\section*{Deleted original main-article tables}
+The following twelve tables reproduce the removed original tables in full for
+comparison with the replacement tables above. Red text marks material deleted
+from the original submission. These numerical values and methodological accounts
+are historical and do not describe the revised analysis. Table numbers below
+refer to the original submission. This deletion record appears only in the
+marked manuscript; it is not part of the clean revised article.
+\begingroup
+\singlespacing
+\color{red!70!black}
+\setcounter{table}{0}
+\renewcommand{\thetable}{Original \arabic{table}}
+\renewcommand{\theHtable}{deletedoriginal.\arabic{table}}
+
+\begin{table}[H]\color{red!70!black}
+\centering
+\caption{Null-model validation statistics for whole-brain coevolutionary energy. After unified
+outlier removal, 78 ASD and 86 TD participants remained. For each subject, empirical energy was
+compared to the mean energy from topology-preserving null networks in which node states and edge
+signs were randomly permuted. Shapiro--Wilk tests confirmed normality of the difference
+distributions, justifying the use of paired $t$-tests alongside Wilcoxon signed-rank tests.}
+\label{deletedoriginal:tab:null_model_validation}
+\small
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lccccccc}
+\toprule
+Group & $N$ & Shapiro--Wilk $W$ & Shapiro--Wilk $p$ & $t$ (df) & $t$-test $p$ & Wilcoxon $W$ & Wilcoxon $p$ \\
+\midrule
+ASD & 90 & 0.992 & 0.87 & $-4.12$ (89) & $7.5\times 10^{-5}$ & 1024 & $9.1\times 10^{-5}$ \\
+TD  & 92 & 0.989 & 0.81 & $-3.98$ (91) & $1.2\times 10^{-4}$ & 1008 & $1.6\times 10^{-4}$ \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\clearpage
+
+\begin{table}[H]\color{red!70!black}
+\centering
+\caption{Summary of statistical procedures and group comparison tests for whole-brain coevolutionary
+metrics. The upper panel lists the main analysis steps and their purpose. The lower panel reports
+group comparison statistics (Mann--Whitney $U$ tests and independent $t$-tests where appropriate,
+selected based on Shapiro--Wilk normality tests and Levene's homogeneity test applied
+independently to each feature), raw $p$-values, and FDR-corrected $p$-values for ASD versus TD
+after ComBat harmonization (GSR pipeline, $n = 78$ ASD, $86$ TD). No whole-brain feature survived
+FDR correction.}
+\label{deletedoriginal:tab:assumptions_and_tests}
+\small
+\setlength{\tabcolsep}{3pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{0.32\columnwidth}p{0.30\columnwidth}p{0.23\columnwidth}p{0.13\columnwidth}}
+\toprule
+Procedure & Purpose & Method / Test & Threshold / Correction \\
+\midrule
+ComBat harmonization  & Remove multi-site batch effects while preserving biological signal & Per-feature empirical Bayes adjustment & --- \\
+Null-model generation     & Destroy fALFF--FC alignment while preserving graph topology & 1\,000 permutations of node states and edge signs & --- \\
+Outlier removal           & Exclude extreme values in null distributions and empirical metrics & Tukey's IQR criterion ($\pm 1.5\times\mathrm{IQR}$) & --- \\
+Normality assessment      & Guide parametric vs. non-parametric test selection & Shapiro--Wilk test & $p > 0.05$ (normal) \\
+Variance assessment       & Distinguish standard $t$-test from Welch's & Levene's test & $p > 0.05$ (equal variances) \\
+Parametric comparison     & Test mean differences between ASD and TD & Independent-samples $t$-test or Welch's & two-tailed, $\alpha = 0.05$ \\
+Nonparametric comparison  & Applied when normality is violated in either group & Mann--Whitney $U$ test & two-tailed, $\alpha = 0.05$ \\
+Multiple comparisons      & Control false discovery across families of tests & Benjamini--Hochberg FDR & $q < 0.05$ \\
+\bottomrule
+\end{tabular}
+}
+
+\vspace{0.8em}
+
+\resizebox{\columnwidth}{!}{%
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+Metric & ASD Mean (SD) & TD Mean (SD) & Test & $p$ & $p_{\mathrm{FDR}}$ \\
+\midrule
+Energy global           & $-139.7$ (78.7) & $-118.8$ (76.2)  & Mann--Whitney $U$ & $0.048$ & $0.19$ \\
+Prop imbalanced same    & $0.256$ (0.006)  & $0.258$ (0.005)  & $t$-test         & $0.047$ & $0.19$ \\
+Prop agreement          & $0.241$ (0.005)  & $0.240$ (0.005)  & $t$-test          & $0.070$ & $0.19$ \\
+Prop disagreement       & $0.267$ (0.005)  & $0.267$ (0.005)  & $t$-test         & $0.679$ & $0.998$ \\
+Prop imbalanced opp     & $0.236$ (0.005)  & $0.236$ (0.005)  & $t$-test         & $0.816$ & $0.998$ \\
+Bipolarity              & $0.626$ (0.017)  & $0.627$ (0.015)  & $t$-test          & $0.532$ & $0.998$ \\
+Global efficiency       & $0.283$ (0.019)  & $0.283$ (0.018)  & $t$-test          & $0.998$ & $0.998$ \\
+\bottomrule
+\end{tabular}
+}%
+}
+\end{table}
+\clearpage
+
+\begin{table}[H]\color{red!70!black}
+\centering
+\small
+\caption{Largest intra-network trends within the seven canonical Yeo resting-state networks under
+the harmonized GSR pipeline ($n = 78$ ASD, $86$ TD). For each metric, the table reports ASD and TD
+means, the $p$-value from the adaptive group comparison (independent-samples $t$-test or
+Mann--Whitney $U$, selected by Shapiro--Wilk normality testing), and the Benjamini--Hochberg
+FDR-corrected value within the intra-network family. \emph{No intra-network metric reached even
+nominal significance} ($p < 0.05$) after harmonization; values are listed for completeness.}
+\label{deletedoriginal:tab:network_results}
+\setlength{\tabcolsep}{5pt}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Network} & \textbf{Metric} & \textbf{ASD mean} & \textbf{TD mean} & \textbf{$p$} & \textbf{$p_{\mathrm{FDR}}$} \\
+\midrule
+Salience/VentAttn & AvgWeight   & $-0.001$ & $0.002$  & $0.064$ & $0.566$ \\
+SomatoMotor       & EnergyBlock & $-1.41$  & $-0.53$  & $0.108$ & $0.566$ \\
+Limbic            & EnergyBlock & $-1.13$  & $-0.29$  & $0.137$ & $0.566$ \\
+SomatoMotor       & AvgFalffW   & $0.005$  & $0.002$  & $0.142$ & $0.566$ \\
+DorsalAttn        & EnergyBlock & $-1.21$  & $-0.44$  & $0.163$ & $0.566$ \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\clearpage
+
+\begin{table}[H]\color{red!70!black}
+\centering
+\caption{Inter-network differences in average connectivity (AvgWeight), fALFF-aligned connectivity
+(AvgFalffW), and coevolutionary energy (EnergyBlock) between canonical resting-state networks. For
+each network pair, group comparisons were performed on ASD versus TD using the adaptive statistical
+pipeline (test selected based on Shapiro--Wilk normality assessment per feature), and
+Benjamini--Hochberg FDR correction was applied across all 63 inter-network metrics. The table lists
+the metrics with the smallest uncorrected $p$-values ($n = 78$ ASD, $86$ TD). No inter-network
+metric survived FDR correction at $\alpha = 0.05$; the SomatoMotor--Frontoparietal effect
+($p_{\mathrm{FDR}} = 0.069$) is the closest and is treated as exploratory.}
+\label{deletedoriginal:tab:internetwork_new}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{llccc}
+\toprule
+\textbf{Network Pair} & \textbf{Metric} & \textbf{$p$} & \textbf{$p_{\mathrm{FDR}}$} \\
+\midrule
+SomatoMotor $\leftrightarrow$ Frontoparietal & AvgWeight & $0.0011$ & $0.069$ \\
+SomatoMotor $\leftrightarrow$ Salience/VentAttn & AvgWeight & $0.0030$ & $0.095$ \\
+DorsalAttn $\leftrightarrow$ Salience/VentAttn & AvgWeight & $0.0076$ & $0.160$ \\
+DorsalAttn $\leftrightarrow$ Frontoparietal & AvgWeight & $0.015$ & $0.237$ \\
+Visual $\leftrightarrow$ Default & EnergyBlock & $0.047$ & $0.590$ \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\clearpage
+
+\begin{table}[H]\color{red!70!black}
+\centering
+\small
+\caption{Partial Least Squares regression cross-validation results (harmonized GSR pipeline). For
+each clinical score, the table reports the number of ASD subjects with valid data and the mean
+cross-validated $R^2$ for the single-component model. All values are negative, indicating that the
+models do not predict behavioral scores above chance---consistent with the univariate result that no
+feature--clinical score association survives FDR correction at $q < 0.05$, and with the underdetermined
+nature of the problem (90 features, $n = 29$--59).}
+\label{deletedoriginal:tab:pls_results}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcc}
+\toprule
+Clinical Score & $n$ & CV $R^2$ (1 component) \\
+\midrule
+ADOS Total          & 59 & $-0.40$ \\
+ADOS Communication  & 50 & $-0.79$ \\
+ADI-R Social        & 32 & $-0.96$ \\
+ADI-R Verbal        & 32 & $-0.86$ \\
+ADI-R Onset         & 29 & $-0.80$ \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\clearpage
+
+\begin{table}[H]\color{red!70!black}
+\centering
+\small
+\caption{Strongest associations between network metrics and clinical scores under the harmonized GSR
+pipeline. The table reports the strongest associations (by uncorrected Pearson $p$-value) from the
+full analysis of 92 features $\times$ 5 clinical scores (460 tests), together with the whole-brain
+Hamiltonian for reference. None survived FDR correction at $q < 0.05$ (all $p_{\mathrm{FDR}} > 0.59$).
+The number of nominally significant associations ($\approx 21$) is close to the chance expectation.}
+\label{deletedoriginal:tab:behaviour_corr_expanded}
+\scriptsize
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{4.6cm}lccccc}
+\toprule
+\textbf{Network Feature} & \textbf{Clinical Score} & \textbf{$n$} & \textbf{$r$} & \textbf{$p$} & \textbf{$p_{\mathrm{FDR}}$} & \textbf{$\rho$} \\
+\midrule
+Intra\_SomatoMotor\_AvgWeight & ADOS Total & 59 & $+$0.37 & 0.004 & 0.60 & $+$0.40 \\
+Inter\_Vis\_\_Sal/VA\_EnergyBlock & ADI-R Social & 32 & $-$0.49 & 0.005 & 0.60 & $-$0.53 \\
+Inter\_Vis\_\_Sal/VA\_AvgFalffW & ADI-R Social & 32 & $+$0.48 & 0.005 & 0.60 & $+$0.52 \\
+Inter\_DA\_\_FP\_EnergyBlock & ADI-R Onset & 29 & $+$0.49 & 0.006 & 0.60 & $+$0.49 \\
+Inter\_DA\_\_FP\_AvgFalffW & ADI-R Onset & 29 & $-$0.49 & 0.007 & 0.60 & $-$0.51 \\
+Inter\_Vis\_\_Lim\_AvgWeight & ADOS Comm. & 50 & $-$0.34 & 0.017 & 0.90 & $-$0.33 \\
+Inter\_Lim\_\_FP\_EnergyBlock & ADI-R Social & 32 & $+$0.40 & 0.022 & 0.90 & $+$0.35 \\
+Whole\_Energy\_global & ADOS Total & 59 & $-$0.10 & 0.47 & 1.00 & $-$0.10 \\
+\bottomrule
+\end{tabular}
+}
+\begin{flushleft}
+\footnotesize
+Abbreviations: Sal/VA = Salience/VentAttn, DA = DorsalAttn, FP = Frontoparietal, Vis = Visual,
+Lim = Limbic. $p_{\mathrm{FDR}}$ denotes Benjamini--Hochberg corrected Pearson $p$-values. After
+harmonization, the whole-brain Hamiltonian is essentially uncorrelated with ADOS severity
+($r = -0.10$), and no association survives correction.
+\end{flushleft}
+\end{table}
+\clearpage
+
+\begin{table}[H]\color{red!70!black}
+\centering
+\caption{Performance of supervised classifiers for ASD versus TD classification using the selected
+coevolutionary and connectivity features after ComBat harmonization (GSR pipeline). CV accuracy was
+obtained from stratified 5-fold cross-validation on the training set (80\% of participants); test
+metrics were computed on the held-out 20\% test set ($n = 34$), which was not used at any stage of
+feature selection or hyperparameter tuning. No model exceeded chance in cross-validation.}
+\label{deletedoriginal:tab:ml_summary_full}
+\setlength{\tabcolsep}{4pt}
+\small
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+Model & CV Acc & Test Acc & Test Bal Acc & Test F1 & Test AUC \\
+\midrule
+Gaussian Naive Bayes  & 0.585 & 0.588 & 0.583 & 0.533 & 0.604 \\
+SVM (RBF)             & 0.586 & 0.647 & 0.649 & 0.647 & 0.635 \\
+Logistic Regression   & 0.556 & 0.500 & 0.503 & 0.514 & 0.552 \\
+KNN                   & 0.594 & 0.618 & 0.608 & 0.519 & 0.639 \\
+XGBoost               & 0.579 & 0.647 & 0.646 & 0.625 & 0.740 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\clearpage
+
+\begin{table}[H]\color{red!70!black}
+\centering
+\caption{Detailed metrics for the Gaussian Naive Bayes classifier (the model originally highlighted)
+on the held-out test set ($n = 34$) after ComBat harmonization. Performance is near chance.
+Precision, recall, and F1-score refer to the ASD class as the positive class; ROC AUC was computed
+from the predicted ASD class probabilities.}
+\label{deletedoriginal:tab:ml_best_model_metrics}
+\setlength{\tabcolsep}{6pt}
+\small
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lc}
+\toprule
+Metric & Value \\
+\midrule
+Accuracy & 0.588 \\
+Balanced accuracy & 0.583 \\
+F1-score & 0.533 \\
+ROC AUC & 0.604 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\clearpage
+
+\begin{table}[H]\color{red!70!black}
+\centering
+\caption{Whole-brain coevolutionary metrics in the no-GSR sensitivity analysis (CompCor-based
+preprocessing). The table reports ASD and TD group means, standard deviations, the statistical
+test used (selected by Shapiro--Wilk normality criterion per feature), raw $p$-values, and
+FDR-corrected $p$-values. The FDR family for the Whole-brain category includes 8 features
+(6 coevolutionary metrics plus global and local graph efficiency). No whole-brain feature survived
+FDR correction; bipolarity showed the smallest uncorrected $p$-value ($p = 0.026$,
+$p_{\mathrm{FDR}} = 0.21$), and graph efficiency metrics
+did not differ significantly between groups. Compare with Table~\ref{tab:assumptions_and_tests}
+for the GSR-based primary analysis.}
+\label{deletedoriginal:tab:noGSR_whole}
+\small
+\resizebox{\columnwidth}{!}{%
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+Metric & ASD Mean (SD) & TD Mean (SD) & Test & $p$ & $p_{\mathrm{FDR}}$ \\
+\midrule
+Bipolarity              & $0.591$ (0.043)   & $0.577$ (0.045)   & Mann--Whitney $U$ & $0.026$ & $0.211$ \\
+Prop agreement          & $0.432$ (0.040)   & $0.442$ (0.038)   & Mann--Whitney $U$ & $0.095$ & $0.236$ \\
+Prop imbalanced same    & $0.065$ (0.040)   & $0.055$ (0.038)   & Mann--Whitney $U$ & $0.109$ & $0.236$ \\
+Prop imbalanced opp     & $0.433$ (0.042)   & $0.443$ (0.039)   & Mann--Whitney $U$ & $0.121$ & $0.236$ \\
+Prop disagreement       & $0.070$ (0.042)   & $0.060$ (0.040)   & Mann--Whitney $U$ & $0.147$ & $0.236$ \\
+Global efficiency       & $0.387$ (0.070)   & $0.402$ (0.077)   & Mann--Whitney $U$ & $0.246$ & $0.283$ \\
+Local efficiency        & $0.387$ (0.070)   & $0.402$ (0.077)   & Mann--Whitney $U$ & $0.247$ & $0.283$ \\
+Energy global           & $-285.4$ (146.1)  & $-308.3$ (155.7)  & Mann--Whitney $U$ & $0.305$ & $0.305$ \\
+\bottomrule
+\end{tabular}
+}%
+}
+\end{table}
+\clearpage
+
+\begin{table}[H]\color{red!70!black}
+\centering
+\caption{Classification performance in the no-GSR sensitivity analysis (CompCor preprocessing) after
+ComBat harmonization. All models performed at or near chance (cross-validated accuracy
+$0.46$--$0.57$; held-out test accuracy $\leq 0.59$), consistent with the absence of FDR-significant
+univariate group differences.}
+\label{deletedoriginal:tab:noGSR_ml}
+\small
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lccccc}
+\toprule
+Model & CV Acc & Test Acc & Test Bal Acc & Test F1 & Test AUC \\
+\midrule
+Gaussian Naive Bayes  & 0.567 & 0.588 & 0.594 & 0.611 & 0.531 \\
+SVM (RBF)             & 0.530 & 0.500 & 0.503 & 0.514 & 0.554 \\
+Logistic Regression   & 0.552 & 0.529 & 0.531 & 0.529 & 0.587 \\
+KNN                   & 0.500 & 0.471 & 0.476 & 0.500 & 0.521 \\
+XGBoost               & 0.455 & 0.559 & 0.559 & 0.545 & 0.556 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\clearpage
+
+\begin{table}[H]\color{red!70!black}
+\centering
+\caption{Comparison of key results across pipelines after correct site harmonization, and the
+effect of harmonization itself. All group comparisons are FDR-corrected within their feature family.
+``Pre-harm.'' denotes the earlier analysis in which ComBat had failed silently and raw features were
+used.}
+\label{deletedoriginal:tab:GSR_comparison}
+\small
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lcc}
+\toprule
+\textbf{Finding} & \textbf{GSR (harmonized)} & \textbf{No-GSR / CompCor (harmonized)} \\
+\midrule
+Sample size (ASD / TD) & 78 / 86 & 78 / 87 \\
+\midrule
+\multicolumn{3}{l}{\textit{Effect of harmonization on whole-brain energy (GSR)}} \\
+\quad Pre-harmonization & \multicolumn{2}{c}{$p_{\mathrm{FDR}} = 0.002$ (apparently significant)} \\
+\quad Post-harmonization & \multicolumn{2}{c}{uncorrected $p = 0.048$, $p_{\mathrm{FDR}} = 0.19$ (n.s.)} \\
+\midrule
+\multicolumn{3}{l}{\textit{Whole-brain metrics (harmonized)}} \\
+\quad Energy global & $p = 0.048$, $p_{\mathrm{FDR}} = 0.19$ (n.s.) & $p = 0.305$ (n.s.) \\
+\quad Prop imbalanced same & $p = 0.047$, $p_{\mathrm{FDR}} = 0.19$ (n.s.) & $p = 0.109$ (n.s.) \\
+\quad Bipolarity & $p = 0.53$ (n.s.) & $p = 0.026$, $p_{\mathrm{FDR}} = 0.21$ (n.s.) \\
+\quad Graph efficiency (group diff.) & $p > 0.99$ (n.s.) & $p = 0.25$ (n.s.) \\
+\midrule
+\multicolumn{3}{l}{\textit{$H$--graph efficiency correlation (within ASD)}} \\
+\quad Global efficiency & $r = -0.20$, $p = 0.075$ (n.s.) & $r = -0.33$, $p_{\mathrm{FDR}} = 0.005$ (sig.) \\
+\midrule
+\multicolumn{3}{l}{\textit{Intra-/Inter-network metrics}} \\
+\quad FDR-significant effects & None & None \\
+\midrule
+\multicolumn{3}{l}{\textit{$H$--ADOS Total within-ASD correlation}} \\
+\quad ADOS Total & $r = -0.10$, $p = 0.47$ (n.s.) & $r = +0.05$, $p = 0.71$ (n.s.) \\
+\midrule
+\multicolumn{3}{l}{\textit{Behavioral correlations / PLSC}} \\
+\quad Any FDR-significant pair & 0 (of 460) & 0 (of 460) \\
+\quad PLSC LV1 (ADOS block) & perm $p = 0.73$ (n.s.) & perm $p = 0.26$ (n.s.) \\
+\midrule
+\multicolumn{3}{l}{\textit{Classification (best held-out test accuracy; harmonized)}} \\
+\quad Best model / accuracy & SVM / XGBoost, $0.65$ (CV $\approx 0.59$) & GaussianNB, $0.59$ (CV $\approx 0.57$) \\
+\quad Interpretation & \multicolumn{2}{c}{near chance in both pipelines} \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\clearpage
+
+\begin{table}[H]\color{red!70!black}
+\centering
+\caption{Demographic and sampling characteristics of the study cohort.}
+\label{deletedoriginal:tab:demographics}
+\setlength{\tabcolsep}{3pt}
+\small
+\resizebox{\columnwidth}{!}{%
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{p{0.38\columnwidth}p{0.27\columnwidth}p{0.27\columnwidth}}
+\toprule
+\textbf{Characteristic} & \textbf{ASD} & \textbf{TD} \\
+\midrule
+Initially selected from ABIDE I, $n$ & 100 & 100 \\
+Analyzed sample after QC, harmonization, and outlier removal (GSR), $n$ & 78 & 86 \\
+Sex (male / female), $n$ & all male & all male \\
+Age range (years) & 18--30 & 18--30 \\
+Handedness & right & right \\
+Full-scale IQ (FSIQ) inclusion & $>$ 80 & $>$ 80 \\
+Diagnostic status & DSM ASD, ADOS/ADI-R confirmed & Typically developing (TD), no ASD diagnosis \\
+Data source / preprocessing & ABIDE I, CPAC pipeline, CC200 atlas (200 ROIs) & ABIDE I, CPAC pipeline, CC200 atlas (200 ROIs) \\
+Contributing sites (after excluding single/two-subject sites) & 11 & 11 \\
+No-GSR (CompCor) analyzed sample (ASD / TD) & 78 / 87 & 78 / 87 \\
+\bottomrule
+\end{tabular}
+}%
+}
+\begin{flushleft}
+\footnotesize
+All participants were right-handed adult males (18--30 years) with full-scale IQ greater than 80,
+randomly selected from the ABIDE I repository and matched on age and IQ across groups. Both pipelines
+were applied to the same initially selected cohort (100 ASD, 100 TD) and used identical inclusion and
+motion-based quality-control criteria; the two pipelines differ only in the nuisance-regression step
+(GSR versus CompCor). Prior to ComBat harmonization, two acquisition sites contributing only one
+(CMU) or two (UCLA\_1) participants were excluded, as a single-participant batch cannot be
+harmonized; this left 11 sites. After ComBat harmonization and Tukey IQR-based outlier removal on
+whole-brain coevolutionary energy, the GSR analysis sample comprised 78 ASD and 86 TD participants,
+and the no-GSR (CompCor) sample comprised 78 ASD and 87 TD participants. The small difference in
+final sample size between pipelines reflects pipeline-specific outlier removal applied to each
+pipeline's own energy distribution.
+\end{flushleft}
+\end{table}
+\clearpage
+\endgroup
+
+\end{document}

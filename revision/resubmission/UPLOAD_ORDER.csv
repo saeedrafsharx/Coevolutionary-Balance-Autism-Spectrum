@@ -1,0 +1,19 @@
+filename,upload_category,status
+manuscript_submission.pdf,Manuscript,Required
+manuscript_marked.pdf,Revised Manuscript with Track Changes / Revised Article with Changes Highlighted,Required
+response_to_reviewers.pdf,Response to Reviewers,Required
+supporting_information.pdf,Supporting Information: S1 Appendix,Required
+S2_Data.zip,Supporting Information: S2 Data,Required
+S3_Code.zip,Supporting Information: S3 Code,Required
+Fig1.tif,Figure,Required
+Fig2.tif,Figure,Required
+Fig3.tif,Figure,Required
+Fig4.tif,Figure,Required
+Fig5.tif,Figure,Required
+Fig6.tif,Figure,Required
+Fig7.tif,Figure,Required
+Fig8.tif,Figure,Required
+Fig9.tif,Figure,Required
+Fig10.tif,Figure,Required
+Fig11.tif,Figure,Required
+manuscript_source.zip,LaTeX source,Only if requested by the portal
