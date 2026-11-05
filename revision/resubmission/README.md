@@ -1,3 +1,5 @@
+> **Submitted:** The user confirmed approval of revision PONE-D-26-34219R1 in the journal portal. See submission_status.json and portal_pdf_review.json for the approved build record.
+
 # Final revision files — November 5, 2026
 
 Start with **manuscript_illustrated.pdf** to read the complete article with plots

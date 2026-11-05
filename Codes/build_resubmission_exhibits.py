@@ -60,12 +60,9 @@ def featlabel(value):
  replacements={'Whole_Energy_global':'H','Whole_GlobalEfficiency':'Global efficiency','Whole_LocalEfficiency':'Local efficiency','Whole_Prop_':'Prop. ','Inter_':'','Intra_':'Within ','AvgWeight':'W','AvgFalffW':'F','EnergyBlock':'E','imbalanced_same':'imbalanced same','imbalanced_opp':'imbalanced opposite',**ABBR}
  for a,b in replacements.items():value=value.replace(a,b)
  return value.replace('__','–').replace('_',' ')
-# Fig1: cohort and exact separation of upstream derivatives/local work.
-fig,ax=plt.subplots(figsize=(7.5,6.2),constrained_layout=True);ax.set(xlim=(0,1),ylim=(0,1));ax.axis('off')
-boxes=[(.5,.92,.88,.10,'Existing ABIDE I source pool: 182 (90 ASD / 92 controls)'),(.5,.76,.88,.12,'Age 18–30; observed FIQ >80 → 140 (69 ASD / 71 controls)\nFixed coverage-qualified CC200 network: 106 nodes'),(.25,.55,.43,.15,'Downloaded filtered ROI series\nGSR and no-GSR\nLocal Fisher-transformed FC'),(.75,.55,.43,.15,'Downloaded fALFF maps/masks\nUpstream computation\nLocal ROI means / relative states'),(.5,.34,.88,.12,'Static H; pairwise configurations; global/local efficiency\nWithin-network and between-network descriptors'),(.2,.11,.29,.15,'Null configurations\nAll 140 participants\nBoth diagnoses'),(.51,.11,.29,.15,'Adjusted group models\n136 (67 ASD / 69 controls)\nSite, age, FIQ and FD'),(.82,.11,.29,.15,'Clinical / prediction\nScore-wise missingness\nSite-held-out models')]
-for x,y,w,h,label in boxes:
- ax.add_patch(FancyBboxPatch((x-w/2,y-h/2),w,h,boxstyle='round,pad=.012',facecolor='#f3f5f7',edgecolor='#405465',lw=1));ax.text(x,y,label,ha='center',va='center',fontsize=9)
-for a,b in [((.5,.865),(.5,.83)),((.35,.695),(.25,.635)),((.65,.695),(.75,.635)),((.25,.47),(.4,.41)),((.75,.47),(.6,.41)),((.35,.27),(.2,.195)),((.5,.27),(.51,.195)),((.65,.27),(.82,.195))]:ax.annotate('',xy=b,xytext=a,arrowprops={'arrowstyle':'->','color':'#405465'})
+# Fig1: preserve the current workflow and manuscript palette.
+from build_workflow_figure import draw_workflow
+fig=draw_workflow()
 save(fig,1,'Workflow and participant flow')
 # Fig2: both-diagnosis participant differences against own null expectation.
 null=pd.read_csv(CONT/'both_groups_null_comparisons.csv');null['delta']=null.observed_H-null.null_mean

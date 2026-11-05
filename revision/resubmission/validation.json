@@ -25,7 +25,7 @@
   "supporting_figures": 13,
   "main_tables": 9,
   "indexed_data_payloads": 179,
-  "code_payloads": 58,
+  "code_payloads": 59,
   "feature_table_sha256": "25178d5b3f5b87ad10c4b2f60f0574fb5fe51b26d042ddac7255f9030894848b",
   "original_file_hashes": {
     "manuscript.tex": "1dff55b40ae5a9638e57b5bee68aed787e505c336e9790df8bc4c159ce8952c6",
@@ -37,13 +37,9 @@
   "provider_falff_implementation_independently_verified": false,
   "provider_documentation_limitation_disclosed": true,
   "reviewer_upstream_question_claimed_fully_verified": false,
-  "visual_review": "Reviewed November 5: title page, separate abstract page, marked deletion appendix tables 1 and 12 and red deletion text; earlier main/supporting figure and page reviews retained.",
+  "visual_review": "Final Methods page and response opening inspected; earlier complete-page montage and representative figures reviewed.",
   "uploaded_or_published": false,
   "ready_for_author_upload": true,
   "deleted_original_main_tables_in_marked_copy": 12,
-  "journal_requirements_checked": "2026-11-05",
-  "standalone_latex_source_build_passed": true,
-  "standalone_source_pdf_text_matches_submission": true,
-  "upload_archive_integrity_verified": true,
-  "upload_archive_file_count": 21
+  "journal_requirements_checked": "2026-11-05"
 }

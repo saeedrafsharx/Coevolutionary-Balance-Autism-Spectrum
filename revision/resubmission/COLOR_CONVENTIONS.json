@@ -12,5 +12,10 @@
   },
   "font": "Arial",
   "main_figure_dpi": 600,
-  "note": "Group colors match original ml-gsr-nogsr-rerun.ipynb. State colors in the conceptual diagram denote mathematical labels, not diagnoses."
+  "note": "Group colors match original ml-gsr-nogsr-rerun.ipynb. State colors in the conceptual diagram denote mathematical labels, not diagnoses.",
+  "workflow_stage_colors": {
+    "magenta": "#DA005D",
+    "dark_green": "#00473A",
+    "meaning": "Workflow stage styling, not diagnosis"
+  }
 }

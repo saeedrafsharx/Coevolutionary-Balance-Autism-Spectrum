@@ -1,0 +1,54 @@
+{
+  "reviewed_pdf": "/home/qermez/Downloads/PONE-D-26-34219_R1 (1).pdf",
+  "sha256": "2ca265730eb3a3608711a43ddb46b5784d3d4f84e7ad45e0ce83f77525e7f602",
+  "pages": 122,
+  "ready_to_approve_assembled_revision": true,
+  "document_checks": {
+    "clean": {
+      "pages": [
+        7,
+        33
+      ],
+      "complete_local_document_text_present": true
+    },
+    "marked": {
+      "pages": [
+        49,
+        114
+      ],
+      "complete_local_document_text_present": true
+    },
+    "response": {
+      "pages": [
+        115,
+        122
+      ],
+      "complete_local_document_text_present": true
+    },
+    "cover_letter": {
+      "pages": [
+        6,
+        6
+      ],
+      "complete_local_document_text_present": true
+    }
+  },
+  "figure_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "ethics_field_matches_revised_statement": true,
+  "data_availability_field_corrected": true,
+  "superseded_cover_letter_replaced": true,
+  "supporting_file_link_entries_present": true,
+  "review_scope": "Compiled submission completeness, consistency with verified local documents, corrected portal fields, and figure rendering/order. This is not a guarantee of editorial acceptance or independent verification of upstream fALFF implementation."
+}

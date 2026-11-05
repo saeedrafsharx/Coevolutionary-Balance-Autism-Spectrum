@@ -47,3 +47,7 @@ revision/revised_paper/tables/
 revision/resubmission/repository_cleanup.json
 *.bundle
 .DS_Store
+
+# Local upload convenience copies and private portal corrections
+/1/
+revision/resubmission/cover_letter_revision.*
